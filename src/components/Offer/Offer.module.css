@@ -1,0 +1,81 @@
+* {
+    /* add color in index.css eg: --accent: 0, 200, 0;*/
+    --colorOffer: var(--accent);
+    --backgroundOffer: var(--backgroundCustom);
+    --backgroundLineOffer: var(--gray);
+}
+
+
+.background {
+    background: var(--backgroundOffer);
+}
+
+.container {
+    margin: 60px auto 0px auto;
+    max-width: 1200px;
+}
+
+.pages {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pages_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.pages_h1 {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    color: rgb(var(--colorOffer));
+}
+
+.pages_desc {
+    font-size: 1rem;
+    padding: 1rem;
+
+}
+
+.pages_desc::first-letter {
+    font-size: 200%;
+}
+
+.pages_h2 {
+    font-size: 1.5rem;
+    color: rgb(var(--colorOffer));
+    align-self: flex-start;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.pages_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pages_img {
+    width: 100%;
+    transition: .5s;
+    border-radius: 2rem;
+}
+
+.pages_img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:500px) {
+    .pages_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

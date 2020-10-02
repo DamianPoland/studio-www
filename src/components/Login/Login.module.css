@@ -1,0 +1,56 @@
+* {
+    /* add color in index.css eg: --accent: 0, 200, 0;*/
+    --colorLogin: var(--accent);
+    --backgroundLogin: var(--backgroundCustom);
+    --backgroundLineLogin: var(--gray);
+}
+
+
+.background {
+    background: white;
+}
+
+.loginContent {
+    min-height: 70vh;
+    margin: 60px auto 0px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginHeader {
+    padding: 1rem;
+    color: rgb(var(--colorLogin));
+    font-family: 'Handlee', cursive, Arial;
+}
+
+.loginDesc {
+
+    text-align: center;
+    padding: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+
+}
+
+.btn {
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 2px solid rgb(var(--colorContact));
+    color: black;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: rgba(var(--colorLogin), 0.4);
+}
+
+.figure {}
+
+.img {
+    width: 100%;
+    height: 100%;
+}

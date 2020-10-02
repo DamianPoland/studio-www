@@ -1,0 +1,39 @@
+/* basic */
+
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif
+}
+
+:root {
+  /* colors */
+  --accent: 0, 200, 0;
+
+  /* gray colors */
+  --grayBright: #F5F5F5;
+  --gray: #BDBDBD;
+  --grayDark: #212121;
+  --backgroundCustom: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(240, 241, 255) 100%);
+
+}
+
+html,
+body {
+  font-size: 16px;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+  html,
+  body {
+    font-size: 12px;
+  }
+}
