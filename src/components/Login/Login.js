@@ -29,11 +29,11 @@ const Login = props => {
                 <div className={style.loginContent}>
                     <h1 className={style.loginHeader}>Zostałeś poprawnie zalogowany.</h1>
                     <p className={style.loginDesc}>Aktualnie trwają prace związane z pobieraniem treści. </p>
-                    <p className={style.loginDesc}>Bardzo przepraszam za utrudnienia. </p>
-                    <button className={style.btn} onClick={handlerLogOut}>Wyloguj</button>
+                    <p className={style.loginDesc}>Przepraszamy za utrudnienia. </p>
                     <figure className={style.figure}>
                         <img className={style.img} src={waiting} alt='waiting' />
                     </figure>
+                    <button className={style.btn} onClick={handlerLogOut}>Wyloguj</button>
                 </div>
             </div>
 
