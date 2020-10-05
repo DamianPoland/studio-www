@@ -20,9 +20,10 @@ const Offer = () => {
 
                     <h2 className={style.pages_h2}>Obejrzyj przykładowe srony www:</h2>
                     <div className={style.pages_list}>
-                        <img className={style.pages_img} src={office} alt='project' />
-                        <img className={style.pages_img} src={office} alt='project' />
-                        <img className={style.pages_img} src={office} alt='project' />
+                        <a href='https://studio-exapmle-projects.web.app/electric' target='blank'><img className={style.pages_img} src={office} alt='project' /></a>
+                        <a href='https://studio-exapmle-projects.web.app/crypto' target='blank'><img className={style.pages_img} src={office} alt='project' /></a>
+                        <a href='https://studio-exapmle-projects.web.app/design' target='blank'><img className={style.pages_img} src={office} alt='project' /></a>
+                        <a href='https://studio-exapmle-projects.web.app/mobile' target='blank'><img className={style.pages_img} src={office} alt='project' /></a>
                         <img className={style.pages_img} src={office} alt='project' />
                         <img className={style.pages_img} src={office} alt='project' />
                     </div>
