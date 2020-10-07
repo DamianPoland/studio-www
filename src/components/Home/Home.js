@@ -3,7 +3,7 @@ import style from './Home.module.css'
 
 
 // assets
-import intro from '../../assets/intro.mp4'
+import intro from '../../assets/intro_ball.mp4'
 import team from '../../assets/team.jpg'
 import why from '../../assets/why.jpg'
 import firstImgBackground from '../../assets/firstImgBackground.png'

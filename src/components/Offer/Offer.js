@@ -1,6 +1,19 @@
 import React from 'react'
 import style from './Offer.module.css'
-import office from '../../assets/office.jpg'
+
+
+// assets
+import intro from '../../assets/intro.mp4'
+import not_ready from '../../assets/not_ready.jpg'
+import food from '../../assets/food.png'
+import next from '../../assets/next.png'
+import careo from '../../assets/careo.png'
+import health from '../../assets/health.png'
+import crypto from '../../assets/crypto.png'
+import design from '../../assets/design.png'
+import gym from '../../assets/gym.png'
+import mobile from '../../assets/mobile.png'
+
 
 const Offer = () => {
 
@@ -20,19 +33,25 @@ const Offer = () => {
 
                     <h2 className={style.pages_h2}>Obejrzyj przykładowe srony www:</h2>
                     <div className={style.pages_list}>
-                        <a href='https://studio-exapmle-projects.web.app/electric' target='blank'><img className={style.pages_img} src={office} alt='project' /></a>
-                        <a href='https://studio-exapmle-projects.web.app/crypto' target='blank'><img className={style.pages_img} src={office} alt='project' /></a>
-                        <a href='https://studio-exapmle-projects.web.app/design' target='blank'><img className={style.pages_img} src={office} alt='project' /></a>
-                        <a href='https://studio-exapmle-projects.web.app/mobile' target='blank'><img className={style.pages_img} src={office} alt='project' /></a>
-                        <img className={style.pages_img} src={office} alt='project' />
-                        <img className={style.pages_img} src={office} alt='project' />
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/food' target='blank'><img className={style.pages_img} src={food} alt='food' /></a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/next' target='blank'><img className={style.pages_img} src={next} alt='next' /></a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/mobile' target='blank'><img className={style.pages_img} src={mobile} alt='mobile' /></a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/health' target='blank'><img className={style.pages_img} src={health} alt='health' /></a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/crypto' target='blank'><img className={style.pages_img} src={crypto} alt='crypto' /></a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/gym' target='blank'><img className={style.pages_img} src={gym} alt='gym' /></a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/design' target='blank'><img className={style.pages_img} src={design} alt='design' /></a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/careo' target='blank'><img className={style.pages_img} src={careo} alt='careo' /></a>
                     </div>
                 </section>
 
                 <hr />
+                {/* movie */}
+                <video className={style.video} src={intro} autoPlay muted controls />
+
+                <hr />
 
                 {/* section Tworzenie aplikacji webowych */}
-                <section className={style.pages}>
+                <section id='web' className={style.pages}>
                     <div data-aos="flip-up" className={style.pages_content}>
                         <h1 className={style.pages_h1}><strong>Aplikacje web</strong></h1>
                         <p className={style.pages_desc}>Aplikacje webowe są dostosowane konkretnie do twoich potrzeb. Począwszy od prostych aplikacji ze stroną logowania i wykonujących podstawowe obliczenia a skończywszy na skomplikowanych i rozbudowanych z możliwością aktualicji za pomocą systemów CMS.</p>
@@ -41,11 +60,10 @@ const Offer = () => {
 
                     <h2 className={style.pages_h2}>Obejrzyj przykładowe elementy aplikacji web:</h2>
                     <div className={style.pages_list}>
-                        <img className={style.pages_img} src={office} alt='project' />
-                        <img className={style.pages_img} src={office} alt='project' />
-                        <img className={style.pages_img} src={office} alt='project' />
-                        <img className={style.pages_img} src={office} alt='project' />
-                        <img className={style.pages_img} src={office} alt='project' />
+                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='project' /></a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='project' /></a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='project' /></a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='project' /></a>
                     </div>
                 </section>
             </div>
