@@ -80,26 +80,26 @@ const Contact = () => {
                 </div>
                 <div className={style.contact}>
                     <div className={style.content}>
-                        <div className={style.contentItem}>
-                            <a href='https://goo.gl/maps/sg7GDACAWaiDKWjL6' target='blank' className={style.contentIcon}>{location}</a>
+                        <a className={style.contentItem} href='https://goo.gl/maps/sg7GDACAWaiDKWjL6' target='blank' >
+                            <p className={style.contentIcon}>{location}</p>
                             <p className={style.contentDesc}>Poland, Gdynia, Kaliska 22</p>
-                        </div>
-                        <div className={style.contentItem}>
-                            <a href='tel:+48795631039' className={style.contentIcon}>{phone}</a>
+                        </a>
+                        <a className={style.contentItem} href='tel:+48795631039'>
+                            <p className={style.contentIcon}>{phone}</p>
                             <p className={style.contentDesc}>+48 795-631-039</p>
-                        </div>
-                        <div className={style.contentItem}>
-                            <a href='mailto:studiowww.com@gmail.com?subject=Zapytanie' className={style.contentIcon}>{email}</a>
+                        </a>
+                        <a className={style.contentItem} href='mailto:studiowww.com@gmail.com?subject=Zapytanie'>
+                            <p className={style.contentIcon}>{email}</p>
                             <p className={style.contentDesc}>info@studio-www.com</p>
-                        </div>
-                        <div className={style.contentItem}>
-                            <a href='https://www.fb.me/StudioWWWGdynia' target='blank' className={style.contentIcon}>{facebbok}</a>
+                        </a>
+                        <a className={style.contentItem} href='https://www.fb.me/StudioWWWGdynia' target='blank' >
+                            <p className={style.contentIcon}>{facebbok}</p>
                             <p className={style.contentDesc}>@StudioWWWGdynia</p>
-                        </div>
-                        <div className={style.contentItem}>
-                            <a href='/' className={style.contentIcon}>{clock}</a>
+                        </a>
+                        <a className={style.contentItem} href='/'>
+                            <p className={style.contentIcon}>{clock}</p>
                             <p className={style.contentDesc}>Pn - Pt 8.00-16.00</p>
-                        </div>
+                        </a>
                     </div>
 
                     <form className={style.form}>
