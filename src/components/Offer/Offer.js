@@ -31,22 +31,30 @@ const Offer = () => {
                         <p className={style.pages_desc}>Jeśli nie wiesz czym jest: domena, hosting, dns itp. to nic nie szkodzi. Przedstaw swój pomysł a ja zajmę się resztą. Zapytaj o ofertę - to nic nie kosztuje</p>
                     </div>
 
-                    <h2 className={style.pages_h2}>Obejrzyj przykładowe srony www:</h2>
+                    <h1 className={style.pages_h2}>Obejrzyj przykładowe srony www:</h1>
                     <div className={style.pages_list}>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/food' target='blank'><img className={style.pages_img} src={food} alt='food' /></a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/next' target='blank'><img className={style.pages_img} src={next} alt='next' /></a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/mobile' target='blank'><img className={style.pages_img} src={mobile} alt='mobile' /></a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/health' target='blank'><img className={style.pages_img} src={health} alt='health' /></a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/crypto' target='blank'><img className={style.pages_img} src={crypto} alt='crypto' /></a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/gym' target='blank'><img className={style.pages_img} src={gym} alt='gym' /></a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/design' target='blank'><img className={style.pages_img} src={design} alt='design' /></a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/careo' target='blank'><img className={style.pages_img} src={careo} alt='careo' /></a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/food' target='blank'><img className={style.pages_img} src={food} alt='strona internetowa food' />
+                        </a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/next' target='blank'><img className={style.pages_img} src={next} alt='strona internetowa next' />
+                        </a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/mobile' target='blank'><img className={style.pages_img} src={mobile} alt='strona internetowa mobile' />
+                        </a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/health' target='blank'><img className={style.pages_img} src={health} alt='strona internetowa health' />
+                        </a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/crypto' target='blank'><img className={style.pages_img} src={crypto} alt='strona internetowa crypto' />
+                        </a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/gym' target='blank'><img className={style.pages_img} src={gym} alt='strona internetowa gym' />
+                        </a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/design' target='blank'><img className={style.pages_img} src={design} alt='strona internetowa design' />
+                        </a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/careo' target='blank'><img className={style.pages_img} src={careo} alt='strona internetowa careo' />
+                        </a>
                     </div>
                 </section>
 
                 <hr />
                 {/* movie */}
-                <video className={style.video} src={intro} autoPlay muted controls />
+                <video className={style.video} src={intro} autoPlay muted controls alt='intro strony internetowe i aplikacje webowe' />
 
                 <hr />
 
@@ -58,12 +66,16 @@ const Offer = () => {
                         <p className={style.pages_desc}>Dzięki projektowaniu PWA (Progressive Web App) nie musisz płacić za wykonanie aplikacji mobilnej. Twoja aplikacja webowa będzie się zachowywać tak jak mobilna gdy bedzie używana na urządzeniu przenośnym. </p>
                     </div>
 
-                    <h2 className={style.pages_h2}>Obejrzyj przykładowe elementy aplikacji web:</h2>
+                    <h1 className={style.pages_h2}>Obejrzyj przykładowe elementy aplikacji web:</h1>
                     <div className={style.pages_list}>
-                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='project' /></a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='project' /></a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='project' /></a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='project' /></a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
+                        </a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
+                        </a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
+                        </a>
+                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
+                        </a>
                     </div>
                 </section>
             </div>

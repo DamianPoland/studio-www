@@ -30,7 +30,7 @@ const Home = () => {
                 {/* img intro */}
                 <div className={style.introContainer}>
                     <img className={style.introImgBackground} src={firstImgBackground} alt='background' />
-                    <img className={style.introImg} src={firstImg} alt='www' />
+                    <img className={style.introImg} src={firstImg} alt='strony internetowe' />
                     <div className={style.introBlack}></div>
                     <div className={style.introContainerText}>
                         <h1 className={`${style.introText} ${style.introText1}`}>Strony internetowe</h1>
@@ -75,7 +75,7 @@ const Home = () => {
                             <p className={style.section_desc}>Jestem osobą z tytułem mgr inż. Od kilku lat pracuję w branży IT. Mieszkam i pracuję w <strong>Gdynii</strong>. Zajmuję się tworzeniem <strong>stron www</strong>, <strong>aplikacji web</strong> oraz <strong>serwisów internetowych</strong>. Przy tworzeniu projektów kozystam z najnowszych i najczęsciej używanych technologii, dlatego każdy projekt jest wysokiej jakości i stosunkowo tani w produkcji oraz utrzymaniu. Dzięki nawiązaniu współpracy z innymi profesjonalnymi programistami jestem w stanie tworzyć duże i skomplikowane projekty.</p>
                         </div>
                     </div>
-                    <img data-aos="fade-up" className={style.section_img} src={team} alt='team' />
+                    <img data-aos="fade-up" className={style.section_img} src={team} alt='wykonywanie stron internetowych i aplikacji webowych' />
                 </section>
 
                 <hr />
@@ -89,13 +89,13 @@ const Home = () => {
                             <p className={style.section_desc}>Cena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę a się przekonasz.</p>
                         </div>
                     </div>
-                    <img data-aos="fade-up" className={style.section_img} src={why} alt='why' />
+                    <img data-aos="fade-up" className={style.section_img} src={why} alt='dlaczego studio-www' />
                 </section>
 
                 <hr />
 
                 {/* movie */}
-                <video className={style.video} src={intro} autoPlay muted controls />
+                <video className={style.video} src={intro} autoPlay muted controls alt="intro studio" />
 
                 <hr />
 
