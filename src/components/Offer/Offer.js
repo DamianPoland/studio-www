@@ -3,7 +3,7 @@ import style from './Offer.module.css'
 
 
 // assets
-import intro from '../../assets/intro.mp4'
+import intro from '../../assets/intro_blue_cubes.mp4'
 import not_ready from '../../assets/not_ready.jpg'
 import food from '../../assets/food.png'
 import next from '../../assets/next.png'
@@ -54,6 +54,7 @@ const Offer = () => {
 
                 <hr />
                 {/* movie */}
+
                 <video className={style.video} src={intro} autoPlay muted controls alt='intro strony internetowe i aplikacje webowe' />
 
                 <hr />

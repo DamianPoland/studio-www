@@ -3,6 +3,7 @@ import style from './Footer.module.css'
 import logo from '../../assets/logo.png'
 
 
+
 const Footer = () => {
     return (
         <div className={style.background}>

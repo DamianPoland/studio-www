@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import style from './Nav.module.css'
-import logo from '../../assets/logo.gif'
+import logo from '../../assets/logo_gif_small.gif'
 
 
 

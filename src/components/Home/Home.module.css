@@ -17,18 +17,16 @@
 
 
 .introContainer {
-    position: relative;
-
-}
-
-.introImgBackground {
     width: 100%;
-    height: 100%;
+    /*height jest 0 a padding to aspect ratio czyli h/w */
+    padding-top: 62.5%;
+    position: relative;
 }
 
 .introImg {
     width: 100%;
     height: 100%;
+    /* zdjęcie wpasuje się w kontener z ustawionym aspect ratio */
     position: absolute;
     left: 0;
     top: 0;
@@ -44,7 +42,6 @@
     animation: goUpAndDisaper 1s ease forwards;
     animation-delay: 3.5s;
 }
-
 
 .introContainerText {
     position: absolute;
@@ -245,10 +242,10 @@
 .video {
     display: flex;
     justify-items: center;
-    margin: auto;
     margin: 3rem 0;
     width: 100%;
 }
+
 
 .sectionContentTech {
     background: radial-gradient(circle, rgb(0, 120, 0) 0%, rgba(245, 245, 245, 1) 100%);
