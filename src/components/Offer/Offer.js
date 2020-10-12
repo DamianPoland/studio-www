@@ -32,7 +32,7 @@ const Offer = () => {
                                 <h1 className={style.pages_anim_header}>Strony internetowe</h1>
                             </div>
                             <div className={style.pages_anim_cyrcle}>
-                                <h1 className={style.pages_anim_header}>Strony internetowe</h1>
+                                <h2 className={style.pages_anim_header}>Strony internetowe</h2>
                             </div>
                         </div>
                         <p className={style.pages_desc}>Strona internetowa to wizytówka Twojej marki w Internecie, która nie tylko pozwala uzyskać podstawowe informacje o firmie, ale jest również wyjątkową okazją do wyróżnienia się na tle konkurencji i zachęcenia klientów do zakupu Twoich produktów lub usług.</p>
@@ -75,7 +75,7 @@ const Offer = () => {
                                 <h1 className={style.pages_anim_header}>Aplikacje webowe</h1>
                             </div>
                             <div className={style.pages_anim_cyrcle}>
-                                <h1 className={style.pages_anim_header}>Aplikacje webowe</h1>
+                                <h2 className={style.pages_anim_header}>Aplikacje webowe</h2>
                             </div>
                         </div>
                         <p className={style.pages_desc}>Aplikacje webowe są dostosowane konkretnie do twoich potrzeb. Począwszy od prostych aplikacji ze stroną logowania i wykonujących podstawowe obliczenia a skończywszy na skomplikowanych i rozbudowanych z możliwością aktualicji za pomocą systemów CMS.</p>
