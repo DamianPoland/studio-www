@@ -25,9 +25,17 @@ const Offer = () => {
 
                 {/* section Tworzenie stron www */}
                 <section className={style.pages}>
+
                     <div data-aos="flip-up" className={style.pages_content}>
-                        <h1 className={style.pages_h1}><strong>Strony www</strong></h1>
-                        <p className={style.pages_desc}>Strona www to wizytówka Twojej marki w Internecie, która nie tylko pozwala uzyskać podstawowe informacje o firmie, ale jest również wyjątkową okazją do wyróżnienia się na tle konkurencji i zachęcenia klientów do zakupu Twoich produktów lub usług.</p>
+                        <div className={style.pages_anim_container}>
+                            <div className={style.pages_anim_background}>
+                                <h1 className={style.pages_anim_header}>Strony internetowe</h1>
+                            </div>
+                            <div className={style.pages_anim_cyrcle}>
+                                <h1 className={style.pages_anim_header}>Strony internetowe</h1>
+                            </div>
+                        </div>
+                        <p className={style.pages_desc}>Strona internetowa to wizytówka Twojej marki w Internecie, która nie tylko pozwala uzyskać podstawowe informacje o firmie, ale jest również wyjątkową okazją do wyróżnienia się na tle konkurencji i zachęcenia klientów do zakupu Twoich produktów lub usług.</p>
                         <p className={style.pages_desc}>Jeśli nie wiesz czym jest: domena, hosting, dns itp. to nic nie szkodzi. Przedstaw swój pomysł a ja zajmę się resztą. Zapytaj o ofertę - to nic nie kosztuje</p>
                     </div>
 
@@ -62,12 +70,19 @@ const Offer = () => {
                 {/* section Tworzenie aplikacji webowych */}
                 <section id='web' className={style.pages}>
                     <div data-aos="flip-up" className={style.pages_content}>
-                        <h1 className={style.pages_h1}><strong>Aplikacje web</strong></h1>
+                        <div className={style.pages_anim_container}>
+                            <div className={style.pages_anim_background}>
+                                <h1 className={style.pages_anim_header}>Aplikacje webowe</h1>
+                            </div>
+                            <div className={style.pages_anim_cyrcle}>
+                                <h1 className={style.pages_anim_header}>Aplikacje webowe</h1>
+                            </div>
+                        </div>
                         <p className={style.pages_desc}>Aplikacje webowe są dostosowane konkretnie do twoich potrzeb. Począwszy od prostych aplikacji ze stroną logowania i wykonujących podstawowe obliczenia a skończywszy na skomplikowanych i rozbudowanych z możliwością aktualicji za pomocą systemów CMS.</p>
                         <p className={style.pages_desc}>Dzięki projektowaniu PWA (Progressive Web App) nie musisz płacić za wykonanie aplikacji mobilnej. Twoja aplikacja webowa będzie się zachowywać tak jak mobilna gdy bedzie używana na urządzeniu przenośnym. </p>
                     </div>
 
-                    <h1 className={style.pages_h2}>Obejrzyj przykładowe elementy aplikacji web:</h1>
+                    <h1 className={style.pages_h2}>Obejrzyj przykładowe elementy aplikacji webowych:</h1>
                     <div className={style.pages_list}>
                         <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
                         </a>

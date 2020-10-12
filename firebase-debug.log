@@ -1,0 +1,13 @@
+[debug] [2020-10-12T10:27:43.718Z] ----------------------------------------------------------------------
+[debug] [2020-10-12T10:27:43.721Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Damian\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2020-10-12T10:27:43.721Z] CLI Version:   8.11.2
+[debug] [2020-10-12T10:27:43.721Z] Platform:      win32
+[debug] [2020-10-12T10:27:43.722Z] Node Version:  v12.18.2
+[debug] [2020-10-12T10:27:43.723Z] Time:          Mon Oct 12 2020 12:27:43 GMT+0200 (GMT+02:00)
+[debug] [2020-10-12T10:27:43.724Z] ----------------------------------------------------------------------
+[debug] [2020-10-12T10:27:43.724Z] 
+[debug] [2020-10-12T10:27:43.731Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-12T10:27:43.732Z] > authorizing via signed-in user
+[debug] [2020-10-12T10:27:43.732Z] [iam] checking project studio--com for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-12T10:27:43.735Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/studio--com:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
