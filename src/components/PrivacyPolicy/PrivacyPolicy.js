@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
                         <li>Niniejsza polityka dotyczy Serwisu www, funkcjonującego pod adresem url: <b>studio-www.com</b></li>
                         <li>Operatorem serwisu oraz Administratorem danych osobowych jest: studio-www ul. Kaliska 22, Gdynia, Poland</li>
 
-                        <li>Adres kontaktowy poczty elektronicznej operatora: studiowww.com@gmail.com</li>
+                        <li>Adres kontaktowy poczty elektronicznej operatora: info@studio-www.com</li>
 
                         <li>Operator jest Administratorem Twoich danych osobowych w odniesieniu do danych podanych dobrowolnie w Serwisie.</li>
                         <li>Serwis wykorzystuje dane osobowe w następujących celach:</li>
@@ -38,7 +38,7 @@ const PrivacyPolicy = () => {
                     </ol>
                     <h2><strong>3. Hosting</strong></h2>
                     <ol>
-                        <li>Serwis jest hostowany (technicznie utrzymywany) na serwera operatora: home.pl</li>
+                        <li>Serwis jest hostowany (technicznie utrzymywany) na serwera operatora: ovh.pl</li>
                     </ol>
                     <h2><strong>4. Twoje prawa i dodatkowe informacje o sposobie wykorzystania danych</strong></h2>
                     <ol><li>W niektórych sytuacjach Administrator ma prawo przekazywać Twoje dane osobowe innym odbiorcom, jeśli będzie to niezbędne do wykonania zawartej z Tobą umowy lub do zrealizowania obowiązków ciążących na Administratorze. Dotyczy to takich grup odbiorców:<ul><li>firma hostingowa na zasadzie powierzenia</li></ul></li>
