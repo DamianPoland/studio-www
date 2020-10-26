@@ -17,7 +17,6 @@ import Login from '../../components/Login/Login'
 import Contact from '../../components/Contact/Contact'
 import PrivacyPolicy from '../../components/PrivacyPolicy/PrivacyPolicy'
 import Footer from '../../components/Footer/Footer'
-import ScrollToTop from '../../shared/ScrollToTop'//alvays scroll to top when new page is
 import AlertPrivacy from '../../UI/AlertPrivacy/AlertPrivacy'
 
 function App() {
@@ -57,7 +56,6 @@ function App() {
   return (
     <BrowserRouter>
       <Nav path='/' />
-      <ScrollToTop />
       <Switch>
         <Route path='/home' render={props => <Home {...props} />} />
         <Route path='/offer' render={props => <Offer {...props} />} />

@@ -57,7 +57,7 @@
 /* Firebase kontener divu z listą i z opisem */
 .firebaseui-container {
     margin: 0 !important;
-    padding: 0.5rem !important;
+    padding: 1rem 0.5rem !important;
     max-width: 100% !important;
     width: 100% !important;
 }
@@ -136,4 +136,10 @@
     .firebaseui-idp-button {
         max-width: 100px !important;
     }
+}
+
+/* info bar */
+.firebaseui-info-bar {
+    padding: 2px 8px !important;
+    border: none !important;
 }

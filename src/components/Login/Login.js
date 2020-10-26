@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import style from './Login.module.css'
 
 //components
@@ -13,7 +13,13 @@ import waiting from '../../assets/waiting.jpg'
 // constans
 import { IS_AUTH } from '../../shared/constans'
 
+
 const Login = props => {
+
+    // scroll to top when componene render
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     // log out button
     const handlerLogOut = () => {
@@ -27,7 +33,7 @@ const Login = props => {
             // user log in
             ? <div className={style.background}>
                 <div className={style.loginContent}>
-                    <h1 className={style.loginHeader}>Zostałeś poprawnie zalogowany.</h1>
+                    <h1 className={style.loginHeader}>Zostałeś poprawnie zalogowany</h1>
                     <p className={style.loginDesc}>Aktualnie trwają prace związane z pobieraniem treści. </p>
                     <p className={style.loginDesc}>Przepraszamy za utrudnienia. </p>
                     <figure className={style.figure}>

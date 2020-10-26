@@ -8,7 +8,9 @@
 
 .background {
     background: var(--backgroundOffer);
+    color: black;
 }
+
 
 .container {
     margin: 60px auto 0px auto;
@@ -32,33 +34,30 @@
     align-items: center;
 }
 
-
-
-.pages_content {
+.pages_title {
+    width: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    background-color: white;
-    border-radius: 1rem;
-    padding: 1rem 0;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.pages_anim_container {
-    height: 10rem;
-    width: 100%;
-    position: relative;
-}
+.pages_title_tech {
+    background: radial-gradient(circle, rgb(0, 120, 0) 0%, rgba(245, 245, 245, 1) 100%);
+    width: 90%;
 
-.pages_anim_background {
-    height: 100%;
-    width: 100%;
-    color: rgb(var(--colorOffer));
+    padding: 2rem 1rem;
     display: flex;
-    justify-content: center;
+    text-align: center;
+    flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.pages_title_H1 {
+    font-size: 2rem;
+    padding: 2rem;
 }
 
 .pages_anim_cyrcle {
@@ -73,27 +72,7 @@
     top: 0;
     left: 0;
     clip-path: ellipse(6rem 4rem);
-}
 
-
-.pages_anim_header {
-    font-size: 3rem;
-    white-space: nowrap;
-    animation: text_anim 5s ease-in-out infinite;
-}
-
-@keyframes text_anim {
-    0% {
-        transform: translateX(6rem);
-    }
-
-    50% {
-        transform: translateX(-6rem);
-    }
-
-    100% {
-        transform: translateX(6rem);
-    }
 }
 
 .pages_desc {
@@ -162,18 +141,8 @@
 
 @media screen and (max-width: 500px) {
 
-    .pages_anim_container {
-        height: 6rem;
-        width: 100%;
-        position: relative;
-    }
-
     .pages_anim_cyrcle {
         clip-path: ellipse(4rem 3rem);
-    }
-
-    .pages_anim_header {
-        font-size: 2rem;
     }
 
     @keyframes text_anim {
@@ -193,10 +162,6 @@
 
 
 @media screen and (max-width:800px) {
-
-    .pages_content {
-        width: 100%;
-    }
 
     .pages_list {
         grid-template-columns: repeat(2, 1fr);

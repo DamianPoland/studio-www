@@ -15,7 +15,7 @@ exports.testCollable = functions.https.onCall((data, context) => {
 exports.sendEmail = functions.https.onRequest((request, response) => {
     cors(request, response, () => {
         let transporter = nodemailer.createTransport({
-            host: 'poczta.o2.pl',
+            host: 'ssl0.ovh.net', //'poczta.o2.pl'
             port: 465,
             secure: true,
             auth: {
@@ -24,7 +24,7 @@ exports.sendEmail = functions.https.onRequest((request, response) => {
             }
         });
 
-        functions.logger.log('Before return request.body: ', request.body)
+        functions.logger.log('Before return request.body: ', request.body, 'process.env.EMAIL: ', process.env.EMAIL)
         let mailOptions = {
             from: process.env.EMAIL,
             to: process.env.TO,
@@ -35,7 +35,7 @@ exports.sendEmail = functions.https.onRequest((request, response) => {
         transporter.sendMail(mailOptions)
             .then(res => {
                 functions.logger.log('Email sent: ', res);
-                response.status(200).send({ message: 'succes', respMessage: res })
+                response.status(200).send({ message: 'success' })
                 return { message: res }
             })
             .catch(err => {

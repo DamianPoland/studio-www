@@ -31,10 +31,13 @@ const uiConfig = {
         firebase.auth.TwitterAuthProvider.PROVIDER_ID,
         //firebase.auth.GithubAuthProvider.PROVIDER_ID,
         firebase.auth.EmailAuthProvider.PROVIDER_ID,
-        firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+        {
+            provider: firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+            defaultCountry: 'PL', // default country phone code
+        }
     ],
-    tosUrl: '/privacy-policy', // przekierowanie do terms of servoce - można usunąć i nie będzie sie wyświetlał napis
-    privacyPolicyUrl: '/privacy-policy' // przekierowanie do privacy policy - można usunąć i nie będzie sie wyświetlał napis
+    //tosUrl: '/privacy-policy', // przekierowanie do terms of service - można usunąć i nie będzie sie wyświetlał napis
+    //privacyPolicyUrl: '/privacy-policy' // przekierowanie do privacy policy - można usunąć i nie będzie sie wyświetlał napis
 };
 
 

@@ -6,22 +6,23 @@ komponent do pokazywania Error
 w props musi się znaleść:
 - alertIcon -OPCJONALNIE => główna ikonka czy to jest błąd(domyślnie) czy może informacja i wtedy ustawić aletIcon='info'
 - alertInfo -OPCJONALNIE => główna informacja czy to jest błąd(domyślnie) czy może coś innego np informacja
+- alertColor -OPCJONALNIE => ustawienie koloru ramki i alertName, domyślnie jest czerwony
 - alertName => główna nazwa alertu
 - alertDetails => szczegóły alertu
 - click => kliknięcie na cały alert - może służyć do zamknięcia alertu
 */
 
-const Alert = ({ alertIcon = 'error', alertInfo = 'Wystąpił błąd!', alertName, alertDetails, click }) => {
+const Alert = ({ alertIcon = 'error', alertInfo = 'Wystąpił błąd!', alertColor = '#ff0000', alertName, alertDetails, click }) => {
 
 
     return (
-        <div onClick={click} className={style.container}>
+        <div onClick={click} className={style.container} style={{ borderColor: `${alertColor}` }}>
             <div className={style.alertView}>
                 {alertIcon === 'error' ? iconError : iconInfo}
                 <p className={style.alertInfo}>{alertInfo}</p>
             </div>
             <div className={style.alert}>
-                <p className={style.alertName}>{alertName}</p>
+                <p className={style.alertName} style={{ color: `${alertColor}` }}>{alertName}</p>
                 <p className={style.alertInfoDetail}>Szczegóły:</p>
                 <p className={style.alertDetails}>{alertDetails}</p>
             </div>

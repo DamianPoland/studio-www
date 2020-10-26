@@ -8,6 +8,7 @@
 
 .background {
     background: var(--backgroundHome);
+    color: black;
 }
 
 .container {
@@ -312,6 +313,8 @@
 .technologiesItemAnchor {
     align-self: flex-start;
     padding-left: 1rem;
+    font-variant: small-caps;
+    color: var(--grayDark);
 }
 
 @media (max-width: 1000px) {

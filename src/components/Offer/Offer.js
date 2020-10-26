@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import style from './Offer.module.css'
 
 
@@ -26,6 +26,10 @@ import { ReactComponent as Mobile } from '../../assets/mobile.svg'
 
 const Offer = () => {
 
+    // scroll to top when componene render
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
 
     return (
@@ -34,20 +38,15 @@ const Offer = () => {
 
                 {/* movie */}
                 <div className={style.video_container}>
-                    <video className={style.video} src={intro} autoPlay muted controls alt='intro strony internetowe i aplikacje webowe' />
+                    <video className={style.video} src={intro} muted autoPlay controls playsInline alt='intro strony internetowe i aplikacje webowe' />
                 </div>
 
                 {/* section Tworzenie stron www */}
                 <section className={style.pages}>
 
-                    <div className={style.pages_content}>
-                        <div className={style.pages_anim_container}>
-                            <div className={style.pages_anim_background}>
-                                <h1 className={style.pages_anim_header}>Strony internetowe</h1>
-                            </div>
-                            <div className={style.pages_anim_cyrcle}>
-                                <h2 className={style.pages_anim_header}>Strony internetowe</h2>
-                            </div>
+                    <div data-aos="flip-up" className={style.pages_title}>
+                        <div className={style.pages_title_tech}>
+                            <h1 className={style.pages_title_H1}>Strony internetowe</h1>
                         </div>
                     </div>
 
@@ -111,17 +110,14 @@ const Offer = () => {
                     </div>
                 </section>
 
+                <hr />
 
                 {/* section Tworzenie aplikacji webowych */}
                 <section id='web' className={style.pages}>
-                    <div className={style.pages_content}>
-                        <div className={style.pages_anim_container}>
-                            <div className={style.pages_anim_background}>
-                                <h1 className={style.pages_anim_header}>Aplikacje webowe</h1>
-                            </div>
-                            <div className={style.pages_anim_cyrcle}>
-                                <h2 className={style.pages_anim_header}>Aplikacje webowe</h2>
-                            </div>
+
+                    <div data-aos="flip-up" className={style.pages_title}>
+                        <div className={style.pages_title_tech}>
+                            <h1 className={style.pages_title_H1}>Aplikacje webowe</h1>
                         </div>
                     </div>
 
@@ -142,7 +138,7 @@ const Offer = () => {
 
                     <h1 className={style.pages_h2}>Obejrzyj przykładowe elementy aplikacji webowych:</h1>
                     <div className={style.pages_list}>
-                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
+                        <a data-aos="zoom-in" className={style.pages_a} style={{ scrollBehavior: 'smooth' }} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
                         </a>
                         <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
                         </a>

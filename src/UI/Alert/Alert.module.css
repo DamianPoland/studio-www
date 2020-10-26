@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 0.1rem solid red;
+    border: 0.1rem solid transparent;
     z-index: 101;
     animation: showAlert 1s;
 }

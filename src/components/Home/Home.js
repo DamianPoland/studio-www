@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import style from './Home.module.css'
 
 
@@ -17,6 +17,11 @@ import react from '../../assets/react.jpg'
 
 
 const Home = () => {
+
+    // scroll to top when componene render
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <div className={style.background}>
@@ -89,7 +94,7 @@ const Home = () => {
                 <hr />
 
                 {/* movie */}
-                <video className={style.video} src={intro} autoPlay muted controls alt="intro studio" />
+                <video className={style.video} src={intro} autoPlay muted controls playsInline alt="intro studio" />
 
                 <hr />
 
@@ -97,16 +102,15 @@ const Home = () => {
                 <section className={style.section}>
                     <div data-aos="flip-up" className={style.section_container}>
                         <div className={style.sectionContentTech}>
-                            <h1 className={style.section_H1}>Technologie</h1>
+                            <h1 className={style.section_H1}>Standardy</h1>
                         </div>
                     </div>
                     <div className={style.technologies}>
-
                         <div className={style.technologiesItem}>
                             <div className={style.technologiesItemContent}>
                                 <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>RWD</strong></h2>
                                 <h2 className={style.technologiesItemHeader2}>(<strong>Responsive Web Design</strong>)</h2>
-                                <p className={style.technologiesItemText}><strong>RWD</strong> to technologia projektowania widoków dzięki której Twoja strona wygląda dobrze na każdym urządzeniu. Niezależnie czy kożystasz z dużego monitora, smartfonu lub tableta, widok automatycznie dopasuje sie do danej rodzielczości.
+                                <p className={style.technologiesItemText}><strong>RWD</strong> to technika projektowania widoków dzięki której Twoja strona wygląda dobrze na każdym urządzeniu. Niezależnie czy kożystasz z dużego monitora, smartfonu lub tableta, widok automatycznie dopasuje sie do danej rodzielczości.
                                 </p>
                                 <a href='https://pl.wikipedia.org/wiki/Responsive_web_design' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
                             </div>
@@ -119,7 +123,7 @@ const Home = () => {
                             <div className={style.technologiesItemContent}>
                                 <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>PWA</strong></h2>
                                 <h2 className={style.technologiesItemHeader2}>(<strong>Progressive Web Apps</strong>)</h2>
-                                <p className={style.technologiesItemText}><strong>PWA</strong> to technologia pozwalająca zaprojektować stronę internetową tak aby na urządzeniu mobilnym mogła być używana jak aplikacja mobilna. Można ją zainstalować w telefonie i kożystać w trybie offline. Działa na platformie Android i iOS. Dzięki tej technologi można uzyskać dostęp do fukcji telefonu takich jak aparat, gps, zdjęcia, powiadomienia i inne.
+                                <p className={style.technologiesItemText}><strong>PWA</strong> pozwala tak zaprojektować stronę internetową, aby na urządzeniu mobilnym mogła być używana jak aplikacja mobilna. Można ją zainstalować w telefonie i kożystać w trybie offline. Działa na platformie Android i iOS. Dzięki tej technologi można uzyskać dostęp do fukcji telefonu takich jak aparat, gps, zdjęcia, powiadomienia i inne.
                                 </p>
                                 <a href='https://pl.wikipedia.org/wiki/Progressive_web_app' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
                             </div>
@@ -132,7 +136,7 @@ const Home = () => {
                             <div className={style.technologiesItemContent}>
                                 <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>TWA</strong></h2>
                                 <h2 className={style.technologiesItemHeader2}>(<strong>Trusted Web Activities</strong>)</h2>
-                                <p className={style.technologiesItemText}><strong>TWA</strong> to technologia dzięki której twoja aplikacj PWA może być udostępniona w sklepie Google Play. Nie ma potrzeby pisania oddzielnego kodu. TWA oferuje największą wydajność wśród dostępnych rozwiązań i gwarantuje wygodę korzystania z natywnej aplikacji.Wszelkie aktualizacje są automatycznie i nie wymagają ingerencji w sklepie, dzięki czemu utrzymanie całego projektu jest o wiele tańsze.
+                                <p className={style.technologiesItemText}><strong>TWA</strong> daje możliwość udostępniona w sklepie Google Play aplikacj PWA. Nie ma potrzeby pisania oddzielnego kodu. TWA oferuje największą wydajność wśród dostępnych rozwiązań i gwarantuje wygodę korzystania z natywnej aplikacji.Wszelkie aktualizacje są automatycznie i nie wymagają ingerencji w sklepie, dzięki czemu utrzymanie całego projektu jest o wiele tańsze.
                                 </p>
                                 <a href='https://developers.google.com/web/android/trusted-web-activity' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
                             </div>

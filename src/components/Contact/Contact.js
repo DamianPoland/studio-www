@@ -29,22 +29,28 @@ const Contact = () => {
     // click Send
     const sendMessage = event => {
         event.preventDefault()
-
-        // validation - check if is not empty
+        // validation 
         let isInvalid = false
-        if (inputName.trim() === '') {
+
+        // name validation if is min 3 chars
+        if (inputName.trim().length < 3) {
             setInputNameIsInvalid(true)
             isInvalid = true
         } else {
             setInputNameIsInvalid(false)
         }
-        if (inputEmail.trim() === '') {
+
+        //email validation
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!re.test(String(inputEmail).toLowerCase())) {
             setInputEmailIsInvalid(true)
             isInvalid = true
         } else {
             setInputEmailIsInvalid(false)
         }
-        if (inputMessage.trim() === '') {
+
+        // message validation if is min 10 chars
+        if (inputMessage.trim().length <= 10) {
             setInputMessageIsInvalid(true)
             isInvalid = true
         } else {
@@ -88,7 +94,7 @@ const Contact = () => {
                             <p className={style.contentIcon}>{phone}</p>
                             <p className={style.contentDesc}>+48 795-631-039</p>
                         </a>
-                        <a className={style.contentItem} href='mailto:studiowww.com@gmail.com?subject=Zapytanie'>
+                        <a className={style.contentItem} href='mailto:info@studio-www.com?subject=Zapytanie'>
                             <p className={style.contentIcon}>{email}</p>
                             <p className={style.contentDesc}>info@studio-www.com</p>
                         </a>
@@ -104,7 +110,7 @@ const Contact = () => {
 
                     <form className={style.form}>
 
-                        {isAlertShow && <Alert click={() => setIsAlertShow(false)} alertIcon='info' alertInfo='Informacja' alertName='Wiadomość' alertDetails='Dziękuję za kontakt. Odezwę się w najbliższym czasie. Pozdrawiam' />}
+                        {isAlertShow && <Alert click={() => setIsAlertShow(false)} alertIcon='info' alertColor='#00c800' alertInfo='Informacja' alertName='Wiadomość' alertDetails='Dziękuję za kontakt. Odezwę się w najbliższym czasie. Pozdrawiam' />}
 
                         {isSpinnerShow && <Spinner />}
 
