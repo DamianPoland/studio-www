@@ -33,7 +33,7 @@ const uiConfig = {
         firebase.auth.EmailAuthProvider.PROVIDER_ID,
         {
             provider: firebase.auth.PhoneAuthProvider.PROVIDER_ID,
-            defaultCountry: 'PL', // default country phone code
+            defaultCountry: 'PL', // default country phone
         }
     ],
     //tosUrl: '/privacy-policy', // przekierowanie do terms of service - można usunąć i nie będzie sie wyświetlał napis

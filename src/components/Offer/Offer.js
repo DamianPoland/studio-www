@@ -91,21 +91,21 @@ const Offer = () => {
                     <div className={style.pages_list}>
                         <a data-aos="zoom-in" className={style.pages_a} href='https://wolfmobileapps.com/pl/' target='blank'><img className={style.pages_img} src={wolfmobileapps} alt='strona internetowa wolfmobileapps' />
                         </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/food' target='blank'><img className={style.pages_img} src={food} alt='strona internetowa food' />
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//food' target='blank'><img className={style.pages_img} src={food} alt='strona internetowa food' />
                         </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/next' target='blank'><img className={style.pages_img} src={next} alt='strona internetowa next' />
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//next' target='blank'><img className={style.pages_img} src={next} alt='strona internetowa next' />
                         </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/mobile' target='blank'><img className={style.pages_img} src={mobile} alt='strona internetowa mobile' />
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//mobile' target='blank'><img className={style.pages_img} src={mobile} alt='strona internetowa mobile' />
                         </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/health' target='blank'><img className={style.pages_img} src={health} alt='strona internetowa health' />
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com/health' target='blank'><img className={style.pages_img} src={health} alt='strona internetowa health' />
                         </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/crypto' target='blank'><img className={style.pages_img} src={crypto} alt='strona internetowa crypto' />
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//crypto' target='blank'><img className={style.pages_img} src={crypto} alt='strona internetowa crypto' />
                         </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/design' target='blank'><img className={style.pages_img} src={design} alt='strona internetowa design' />
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//design' target='blank'><img className={style.pages_img} src={design} alt='strona internetowa design' />
                         </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/careo' target='blank'><img className={style.pages_img} src={careo} alt='strona internetowa careo' />
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//careo' target='blank'><img className={style.pages_img} src={careo} alt='strona internetowa careo' />
                         </a>
-                        {/* <a data-aos="zoom-in" className={style.pages_a} href='https://studio-exapmle-projects.web.app/gym' target='blank'><img className={style.pages_img} src={gym} alt='strona internetowa gym' />
+                        {/* <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//gym' target='blank'><img className={style.pages_img} src={gym} alt='strona internetowa gym' />
                         </a> */}
                     </div>
                 </section>
@@ -138,7 +138,7 @@ const Offer = () => {
 
                     <h1 className={style.pages_h2}>Obejrzyj przykładowe elementy aplikacji webowych:</h1>
                     <div className={style.pages_list}>
-                        <a data-aos="zoom-in" className={style.pages_a} style={{ scrollBehavior: 'smooth' }} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
+                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
                         </a>
                         <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
                         </a>
