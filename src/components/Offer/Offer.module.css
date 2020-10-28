@@ -139,6 +139,110 @@
     transform: scale(1.1);
 }
 
+/* svg animations */
+
+.animationUPDown {
+    animation: animationUPDown 4s ease-in-out infinite;
+}
+
+@keyframes animationUPDown {
+    50% {
+        transform: translateY(5%);
+    }
+}
+
+.animationShowHide {
+    animation: animationShowHide 3s ease-in-out infinite;
+}
+
+@keyframes animationShowHide {
+    50% {
+        opacity: 0.2;
+    }
+}
+
+.animationBackgroundColor {
+    animation: animationBackgroundColor 4s ease-in-out infinite;
+}
+
+@keyframes animationBackgroundColor {
+    0% {
+        fill: rgba(255, 255, 255, 1);
+    }
+
+    50% {
+        fill: rgb(0, 200, 0, 1);
+    }
+
+    100% {
+        fill: rgba(255, 255, 255, 1);
+    }
+}
+
+.animationSkew {
+    animation: animationSkew 4s ease-in-out infinite;
+}
+
+@keyframes animationSkew {
+    50% {
+        transform: scale(0.9, 0.9) skew(5deg, 5deg);
+        opacity: 0.2;
+
+    }
+}
+
+.animationBackgroundColorCheck1 {
+    animation: animationBackgroundColorCheck 3s ease-in-out infinite both;
+}
+
+.animationBackgroundColorCheck2 {
+    animation: animationBackgroundColorCheck 3s 1s ease-in-out infinite both;
+}
+
+.animationBackgroundColorCheck3 {
+    animation: animationBackgroundColorCheck 3s 2s ease-in-out infinite both;
+}
+
+@keyframes animationBackgroundColorCheck {
+    0% {
+        fill: transparent;
+    }
+
+    50% {
+        fill: rgb(0, 200, 0, 1);
+    }
+
+    100% {
+        fill: transparent;
+    }
+}
+
+.animationRotate {
+    animation: animationRotate 4s ease-in-out infinite;
+    transform-origin: 72% 65%;
+}
+
+@keyframes animationRotate {
+    0% {
+        transform: rotateY(0);
+        fill: rgb(0, 200, 0, 1);
+    }
+
+    50% {
+        transform: rotateY(360deg);
+        fill: rgb(141, 141, 141);
+    }
+
+    100% {
+        transform: rotateY(0);
+        fill: rgb(0, 200, 0, 1);
+    }
+}
+
+
+
+/* media query */
+
 @media screen and (max-width: 500px) {
 
     .pages_anim_cyrcle {

@@ -29,6 +29,32 @@ const Offer = () => {
     // scroll to top when componene render
     useEffect(() => {
         window.scrollTo(0, 0)
+
+        // svg 1 add animation
+        document.querySelector('#cardCardId').classList.add(style.animationUPDown)
+
+        // svg 2 add animation
+        document.querySelector('#standPeopleId').classList.add(style.animationShowHide)
+
+        // svg 3 add animation
+        document.querySelector('#deviceScreen1Id').classList.add(style.animationBackgroundColor)
+        document.querySelector('#deviceScreen2Id').classList.add(style.animationBackgroundColor)
+        document.querySelector('#deviceScreen3Id').classList.add(style.animationBackgroundColor)
+
+        // svg 4  add animation
+        document.querySelector('#domainId').classList.add(style.animationSkew)
+
+        // svg 5  add animation
+        document.querySelector('#walletId').classList.add(style.animationShowHide)
+
+        // svg 6  add animation
+        document.querySelector('#preferences1Id').classList.add(style.animationBackgroundColorCheck1)
+        document.querySelector('#preferences2Id').classList.add(style.animationBackgroundColorCheck2)
+        document.querySelector('#preferences3Id').classList.add(style.animationBackgroundColorCheck3)
+
+        // svg 7  add animation
+        document.querySelector('#mobileId').classList.add(style.animationRotate)
+
     }, [])
 
 
@@ -154,5 +180,3 @@ const Offer = () => {
 }
 
 export default Offer
-
-
