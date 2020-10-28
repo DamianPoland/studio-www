@@ -10,9 +10,9 @@
     background: white;
 }
 
-.loginContent {
-    min-height: 70vh;
+.projectContainer {
     margin: 60px auto 0px auto;
+    padding: 2rem;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -20,19 +20,39 @@
     align-items: center;
 }
 
-.loginHeader {
+.projectHeader {
     padding: 1rem;
     color: rgb(var(--colorLogin));
     font-family: cursive, Arial;
     text-align: center;
 }
 
-.loginDesc {
-    color: black;
-    text-align: center;
-    padding: 0 0 0.5rem 0;
-    font-size: 1.5rem;
+.projectCoontent {
+    background: rgb(240, 240, 240);
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+}
 
+.projectCoontentItem {
+    display: flex;
+    padding: 1rem;
+}
+
+.projectDesc {
+    color: rgba(0, 0, 0, 0.7);
+    padding: 1rem 0.5rem;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.projectText {
+    color: black;
+    padding: 0.5rem 0 0.5rem 1rem;
+    font-size: 1.5rem;
 }
 
 .btn {
@@ -50,9 +70,8 @@
     background-color: rgba(var(--colorLogin), 0.4);
 }
 
-.figure {}
-
-.img {
-    width: 100%;
-    height: 100%;
+@media (max-width: 800px) {
+    .projectCoontentItem {
+        flex-direction: column;
+    }
 }

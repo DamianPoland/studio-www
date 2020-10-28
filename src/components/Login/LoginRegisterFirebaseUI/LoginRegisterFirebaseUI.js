@@ -48,7 +48,7 @@ class Login_Register_Firebase_UI extends React.Component {
             <section className='login_regiter_UI_background'>
                 <div className='login_regiter_UI_container'>
                     <div className='login_regiter_UI_log'>
-                        <h1 className='login_regiter_UI_log__text'>Zaloguj się lub zarejestruj:</h1>
+                        <h1 className='login_regiter_UI_log__text'>Zaloguj się aby uzyskać informacje dotyczące Twojego projektu</h1>
                         <FirebaseUIAuth lang='pl' config={uiConfig} auth={auth} firebase={firebase} />
                     </div>
                     <figure className='login_regiter_UI_imgContainer'>
