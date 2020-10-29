@@ -7,7 +7,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 // constans
-import { PRIVACY_POLICY_PERMISSION, IS_AUTH } from '../../shared/constans'
+import { PRIVACY_POLICY_PERMISSION, IS_AUTH, USER_ID } from '../../shared/constans'
 
 // components
 import Nav from '../../components/Nav/Nav'
@@ -26,8 +26,11 @@ function App() {
     auth.onAuthStateChanged(user => {
       if (user) {
         localStorage.setItem(IS_AUTH, JSON.stringify(user))
+        localStorage.setItem(USER_ID, user.uid)
       } else {
-        localStorage.setItem(IS_AUTH, false)
+        localStorage.removeItem(IS_AUTH)
+        localStorage.removeItem(USER_ID)
+
       }
     })
   }, [])

@@ -1,2 +1,3 @@
 export const PRIVACY_POLICY_PERMISSION = 'PRIVACY_POLICY_PERMISSION'
 export const IS_AUTH = 'IS_AUTH'
+export const USER_ID = 'USER_ID'

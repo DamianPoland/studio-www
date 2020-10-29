@@ -5,44 +5,41 @@ import style from './Login.module.css'
 import LoginRegisterFirebaseUI from './LoginRegisterFirebaseUI/LoginRegisterFirebaseUI'
 
 //firebase
-import { auth } from '../../shared/fire'
-
-// img
-import waiting from '../../assets/waiting.jpg'
+import { auth, firestore } from '../../shared/fire'
 
 // constans
-import { IS_AUTH } from '../../shared/constans'
+import { IS_AUTH, USER_ID } from '../../shared/constans'
+
+
+// array with empty project
+const emptyData = [['Nazwa projektu', 'Nie masz żadnych projektów'], ['Nazwa zamawiającego', '-'], ['Data rozpoczęcia', '-'], ['Przewidywany czas zakończenia', '-'], ['Data zakończenia', '-'], ['Cena', '-'], ['Adres URL roboczy', '-'], ['Domena docelowa', '-'], ['Hosting', '-'], ['Krótki opis', '-'], ['Stopień zaawansowania prac', '-'], ['Uwagi', '-'],]
 
 
 const Login = props => {
 
-    const [data, setData] = useState('')
+    // save emptyData or add data from DB
+    const [dataFromDB, setDataFromDB] = useState(emptyData)
 
-    // scroll to top when componene render
     useEffect(() => {
+
+        // scroll to top when component render
         window.scrollTo(0, 0)
 
-        const dataFromDB = {
-            name: '-',
-            purchaser: '-',
-            start: '-',
-            time: '-',
-            stop: '-',
-            price: '-',
-            url: '-',
-            domain: '-',
-            decription: '-',
-            progress: '-',
-            comments: '-',
+        //get data about project if user is logged
+        if (localStorage.getItem(IS_AUTH)) {
+            firestore.collection('projects').doc(localStorage.getItem(USER_ID)).get() //get data with user id from 'projects'
+                .then(resp => {
+                    const arrayFromDatabase = Object.keys(resp.data()).map(key => [key, resp.data()[key]]) // convert object with all data to array of arrays
+                    setDataFromDB(arrayFromDatabase) //set data in useState
+                })
+                .catch(err => console.log('Nie masz żadnych projektów')) // this user don't have projects
         }
-        setData(dataFromDB)
-
     }, [])
 
     // log out button
     const handlerLogOut = () => {
         auth.signOut() // sign out
-        props.history.replace('/home') // go to home
+        props.history.replace('/home') // go to /home
     }
 
     return (
@@ -54,64 +51,18 @@ const Login = props => {
                     <h1 className={style.projectHeader}>Poniżej znajdziesz wszelkie informację dotyczące Twojego projeku</h1>
                     <div className={style.projectCoontent}>
 
-                        <div className={style.projectCoontentItem}>
-                            <p className={style.projectDesc}>Nazwa projektu: </p>
-                            <p className={style.projectText}>{data.name}</p>
-                        </div>
-
-                        <div className={style.projectCoontentItem}>
-                            <p className={style.projectDesc}>Nazwa zamawiającego: </p>
-                            <p className={style.projectText}>{data.purchaser}</p>
-                        </div>
-
-                        <div className={style.projectCoontentItem}>
-                            <p className={style.projectDesc}>Data rozpoczecia: </p>
-                            <p className={style.projectText}>{data.start}</p>
-                        </div>
-
-                        <div className={style.projectCoontentItem}>
-                            <p className={style.projectDesc}>Przewidywany czas wykonania: </p>
-                            <p className={style.projectText}>{data.time}</p>
-                        </div>
-
-                        <div className={style.projectCoontentItem}>
-                            <p className={style.projectDesc}>Data zakończenia: </p>
-                            <p className={style.projectText}>{data.stop}</p>
-                        </div>
-
-                        <div className={style.projectCoontentItem}>
-                            <p className={style.projectDesc}>Cena: </p>
-                            <p className={style.projectText}>{`${data.price} zł`}</p>
-                        </div>
-
-                        <div className={style.projectCoontentItem}>
-                            <p className={style.projectDesc}>Adres URL roboczy: </p>
-                            <p className={style.projectText}>{data.url}</p>
-                        </div>
-
-                        <div className={style.projectCoontentItem}>
-                            <p className={style.projectDesc}>Docelowa domena: </p>
-                            <p className={style.projectText}>{data.domain}</p>
-                        </div>
-
-                        <div className={style.projectCoontentItem}>
-                            <p className={style.projectDesc}>Krótki opis: </p>
-                            <p className={style.projectText}>{data.decription}</p>
-                        </div>
-
-                        <div className={style.projectCoontentItem}>
-                            <p className={style.projectDesc}>Postęp prac: </p>
-                            <p className={style.projectText}>{`${data.progress} %`}</p>
-                        </div>
-
-                        <div className={style.projectCoontentItem}>
-                            <p className={style.projectDesc}>Uwagi: </p>
-                            <p className={style.projectText}>{data.comments}</p>
-                        </div>
-
-
+                        {/* show data from db */}
+                        {
+                            dataFromDB.map((item, id) => {
+                                return (
+                                    <div key={id} className={style.projectCoontentItem}>
+                                        <p className={style.projectDesc}>{`${item[0]}: `}  </p>
+                                        <p className={style.projectText}>{item[1]}</p>
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
-
                     <button className={style.btn} onClick={handlerLogOut}>Wyloguj</button>
                 </div>
             </div>
