@@ -23,7 +23,7 @@
 .projectHeader {
     padding: 1rem;
     color: rgb(var(--colorLogin));
-    font-family: cursive, Arial;
+    font-family: Arial;
     text-align: center;
 }
 
