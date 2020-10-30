@@ -50,7 +50,7 @@ const Home = () => {
                     <div data-aos="zoom-in" className={style.sectionTechDesc_item}>
                         {iconTech}
                         <h2 className={style.sectionTechDesc_h2}>Technologia</h2>
-                        <p className={style.sectionTechDesc_p}>Kożystam z najnowszych technologi i stosuję się do aktualnych trendów. Stale ulepszam jakość swoich usług oraz narzędzia.</p>
+                        <p className={style.sectionTechDesc_p}>Kożystam z najnowszych technologi i stosuję się do aktualnych trendów. Stale ulepszam jakość swoich usług.</p>
                     </div>
                     <div data-aos="zoom-in" className={style.sectionTechDesc_item}>
                         {iconQuality}
@@ -60,7 +60,7 @@ const Home = () => {
                     <div data-aos="zoom-in" className={style.sectionTechDesc_item}>
                         {iconResponsive}
                         <h2 className={style.sectionTechDesc_h2}>Skalowanie</h2>
-                        <p className={style.sectionTechDesc_p}>Wszystkie projekty są robione w technoligii RWD dzięki temu są dopasowane do rozdzielczości monitorów oraz urządzeń przenośnych.  </p>
+                        <p className={style.sectionTechDesc_p}>Wszystkie projekty są robione w technoligii RWD dzięki czemu są dopasowane do rozdzielczości wszystkich urządzeń.  </p>
                     </div>
                 </section>
 
@@ -70,11 +70,13 @@ const Home = () => {
                 <section className={style.section}>
                     <div className={style.section_container}>
                         <div className={style.section_content}>
-                            <h1 className={style.section_H1}>KIM JESTEM</h1>
-                            <p className={style.section_desc}>Jestem osobą z tytułem mgr inż. Od kilku lat pracuję w branży IT. Mieszkam i pracuję w <strong>Gdynii</strong>. Zajmuję się tworzeniem <strong>stron internetowych</strong>, <strong>aplikacji webowych</strong> oraz <strong>serwisów internetowych</strong>. Przy tworzeniu projektów korzystam z najnowszych i najczęsciej używanych technologii, dlatego każdy projekt jest wysokiej jakości i stosunkowo tani w produkcji oraz utrzymaniu. Dzięki nawiązaniu współpracy z innymi profesjonalnymi programistami jestem w stanie tworzyć duże i skomplikowane projekty.</p>
+                            <h1 data-aos="zoom-in" className={style.section_H1}>KIM JESTEM</h1>
+                            <p className={style.section_desc}><span className={style.section_descBigLeter}>J</span>estem osobą z tytułem mgr inż. Od kilku lat pracuję w branży IT. Mieszkam i pracuję w <strong>Gdynii</strong>. Zajmuję się tworzeniem <strong>stron internetowych</strong>, <strong>aplikacji webowych</strong> oraz <strong>serwisów internetowych</strong>. Przy tworzeniu projektów korzystam z najnowszych i najczęsciej używanych technologii, dlatego każdy projekt jest wysokiej jakości i stosunkowo tani w produkcji oraz utrzymaniu.<br /> <span className={style.section_descBigLeter}>D</span>zięki nawiązaniu współpracy z innymi profesjonalnymi programistami jestem w stanie tworzyć duże i skomplikowane projekty.</p>
                         </div>
                     </div>
-                    <img data-aos="fade-up" className={style.section_img} src={team} alt='wykonywanie stron internetowych i aplikacji webowych' />
+                    <figure className={style.section_img}>
+                        <img data-aos="fade-up" src={team} alt='wykonywanie stron internetowych i aplikacji webowych' />
+                    </figure>
                 </section>
 
                 <hr />
@@ -83,12 +85,13 @@ const Home = () => {
                 <section className={style.section}>
                     <div className={style.section_container}>
                         <div className={style.section_content}>
-                            <h1 className={style.section_H1}>DLACZEGO JA</h1>
-                            <p className={style.section_desc}>Zajmuję się tworzeniem kompleksowych projektów od A-Z. Kożystam z najnowszych technologi jak <strong>React</strong>, <strong>FaaS</strong> i inne. Strony są projektowane jako <strong>RWD</strong> (<strong>Responsive Web Design</strong>) oraz <strong>PWA</strong> (<strong>Progressive Web Apps</strong>) dzięki czemu wyglądją dobrze na komputerze i na urządzeniu mobilnym. Każdy projekt jest przygotowany pod pozycjonowanie strony zgodnie z <strong>SEO</strong>.</p>
-                            <p className={style.section_desc}>Cena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę a się przekonasz.</p>
+                            <h1 data-aos="zoom-in" className={style.section_H1}>DLACZEGO JA</h1>
+                            <p className={style.section_desc}><span className={style.section_descBigLeter}>Z</span>ajmuję się tworzeniem kompleksowych projektów od A-Z. Kożystam z najnowszych technologi jak <strong>React</strong>, <strong>FaaS</strong> i inne. Strony są projektowane jako <strong>RWD</strong> (<strong>Responsive Web Design</strong>) oraz <strong>PWA</strong> (<strong>Progressive Web Apps</strong>) dzięki czemu wyglądją dobrze na komputerze i na urządzeniu mobilnym. Każdy projekt jest przygotowany pod pozycjonowanie strony zgodnie z <strong>SEO</strong>.<br /> <span className={style.section_descBigLeter}>C</span>ena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę a się przekonasz.</p>
                         </div>
                     </div>
-                    <img data-aos="fade-up" className={style.section_img} src={why} alt='dlaczego studio-www' />
+                    <figure className={style.section_img}>
+                        <img data-aos="fade-up" src={why} alt='dlaczego studio-www' />
+                    </figure>
                 </section>
 
                 <hr />
@@ -98,11 +101,11 @@ const Home = () => {
 
                 <hr />
 
-                {/* section technologies */}
-                <section className={style.section}>
+                {/* section standard technologies */}
+                <section className={style.sectionTechnologies}>
                     <div data-aos="flip-up" className={style.section_container}>
                         <div className={style.sectionContentTech}>
-                            <h1 className={style.section_H1}>Standardy</h1>
+                            <h1 className={style.section_H1_plate}>Standardy</h1>
                         </div>
                     </div>
                     <div className={style.technologies}>

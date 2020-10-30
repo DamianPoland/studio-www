@@ -48,7 +48,7 @@ const Login = props => {
             // user log in
             ? <div className={style.background}>
                 <div className={style.projectContainer}>
-                    <h1 className={style.projectHeader}>Poniżej znajdziesz wszelkie informację dotyczące Twojego projeku</h1>
+                    <h1 className={style.projectHeader}>Poniżej znajdziesz wszelkie informację dotyczące Twojego projeku:</h1>
                     <div className={style.projectCoontent}>
 
                         {/* show data from db */}

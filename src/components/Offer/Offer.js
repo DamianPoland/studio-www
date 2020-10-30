@@ -71,9 +71,7 @@ const Offer = () => {
                 <section className={style.pages}>
 
                     <div data-aos="flip-up" className={style.pages_title}>
-                        <div className={style.pages_title_tech}>
-                            <h1 className={style.pages_title_H1}>Strony internetowe</h1>
-                        </div>
+                        <h1 className={style.pages_title_H1}>Strony internetowe</h1>
                     </div>
 
                     <div className={style.pages_desc}>
@@ -113,7 +111,7 @@ const Offer = () => {
                         </div>
                     </div>
 
-                    <h1 className={style.pages_h2}>Obejrzyj przykładowe srony www:</h1>
+                    <h1 className={style.pages_h2}>Obejrzyj przykładowe strony www:</h1>
                     <div className={style.pages_list}>
                         <a data-aos="zoom-in" className={style.pages_a} href='https://wolfmobileapps.com/pl/' target='blank'><img className={style.pages_img} src={wolfmobileapps} alt='strona internetowa wolfmobileapps' />
                         </a>
@@ -142,9 +140,7 @@ const Offer = () => {
                 <section id='web' className={style.pages}>
 
                     <div data-aos="flip-up" className={style.pages_title}>
-                        <div className={style.pages_title_tech}>
-                            <h1 className={style.pages_title_H1}>Aplikacje webowe</h1>
-                        </div>
+                        <h1 className={style.pages_title_H1}>Aplikacje webowe</h1>
                     </div>
 
                     <div className={style.pages_desc}>
