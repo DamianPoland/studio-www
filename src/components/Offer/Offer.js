@@ -60,83 +60,87 @@ const Offer = () => {
 
     return (
         <div className={style.background}>
-            <div className={style.container}>
 
-                {/* movie */}
+            {/* movie */}
+            <div className={style.container}>
                 <div className={style.video_container}>
                     <video className={style.video} src={intro} muted autoPlay controls playsInline alt='intro strony internetowe i aplikacje webowe' />
                 </div>
+            </div>
 
-                {/* section Tworzenie stron www */}
-                <section className={style.pages}>
+            {/* section Tworzenie stron www */}
+            <div className={style.containerBackground}>
+                <div className={style.container}>
+                    <section className={style.pages}>
 
-                    <div data-aos="flip-up" className={style.pages_title}>
-                        <h1 className={style.pages_title_H1}>Strony internetowe</h1>
-                    </div>
+                        <div data-aos="flip-up" className={style.pages_title}>
+                            <h1 className={style.pages_title_H1}>Strony internetowe</h1>
+                        </div>
 
-                    <div className={style.pages_desc}>
-                        <div className={style.pages_desc_content}>
-                            <p data-aos="flip-up" className={style.pages_desc_P}>Strona internetowa to wizytówka Twojej marki w Internecie, która pozwala uzyskać informacje o firmie.</p>
-                            <div className={style.pages_desc_svg} data-aos="zoom-in">
-                                <Card />
+                        <div className={style.pages_desc}>
+                            <div className={style.pages_desc_content}>
+                                <p data-aos="flip-up" className={style.pages_desc_P}>Strona internetowa to wizytówka Twojej marki w Internecie, która pozwala uzyskać informacje o firmie.</p>
+                                <div className={style.pages_desc_svg} data-aos="zoom-in">
+                                    <Card />
+                                </div>
+                            </div>
+
+                            <div data-aos="customAnimation" className={style.pages_desc_content}>
+                                <div className={style.pages_desc_svg} data-aos="zoom-in">
+                                    <StandOut />
+                                </div>
+                                <p data-aos="flip-up" className={style.pages_desc_P}>Własna strona internetowa jest wyjątkową okazją do wyróżnienia się na tle konkurencji i zachęcenia klientów do zakupu Twoich produktów lub usług.</p>
+                            </div>
+
+                            <div className={style.pages_desc_content}>
+                                <p data-aos="flip-up" className={style.pages_desc_P}>Dzięki projektowaniu RWD (Responsive Web Design) Twoja strona wygląda dobrze na każdym urządzeniu niezależnie czy kożystasz z dużego monitora, smartfonu lub tableta.</p>
+                                <div className={style.pages_desc_svg} data-aos="zoom-in">
+                                    <Devices />
+                                </div>
+                            </div>
+
+                            <div className={style.pages_desc_content}>
+                                <div className={style.pages_desc_svg} data-aos="zoom-in">
+                                    <Domain />
+                                </div>
+                                <p data-aos="flip-up" className={style.pages_desc_P}>Jeśli nie wiesz czym jest: domena, hosting, dns itp. to nic nie szkodzi. Przedstaw swój pomysł a ja zajmę się resztą.</p>
+                            </div>
+
+                            <div className={style.pages_desc_content}>
+                                <p data-aos="flip-up" className={style.pages_desc_P}>Zapytaj o ofertę - to nic nie kosztuje.</p>
+                                <div className={style.pages_desc_svg} data-aos="zoom-in">
+                                    <Wallet />
+                                </div>
                             </div>
                         </div>
 
-                        <div data-aos="customAnimation" className={style.pages_desc_content}>
-                            <div className={style.pages_desc_svg} data-aos="zoom-in">
-                                <StandOut />
-                            </div>
-                            <p data-aos="flip-up" className={style.pages_desc_P}>Własna strona internetowa jest wyjątkową okazją do wyróżnienia się na tle konkurencji i zachęcenia klientów do zakupu Twoich produktów lub usług.</p>
-                        </div>
-
-                        <div className={style.pages_desc_content}>
-                            <p data-aos="flip-up" className={style.pages_desc_P}>Dzięki projektowaniu RWD (Responsive Web Design) Twoja strona wygląda dobrze na każdym urządzeniu niezależnie czy kożystasz z dużego monitora, smartfonu lub tableta.</p>
-                            <div className={style.pages_desc_svg} data-aos="zoom-in">
-                                <Devices />
-                            </div>
-                        </div>
-
-                        <div className={style.pages_desc_content}>
-                            <div className={style.pages_desc_svg} data-aos="zoom-in">
-                                <Domain />
-                            </div>
-                            <p data-aos="flip-up" className={style.pages_desc_P}>Jeśli nie wiesz czym jest: domena, hosting, dns itp. to nic nie szkodzi. Przedstaw swój pomysł a ja zajmę się resztą.</p>
-                        </div>
-
-                        <div className={style.pages_desc_content}>
-                            <p data-aos="flip-up" className={style.pages_desc_P}>Zapytaj o ofertę - to nic nie kosztuje.</p>
-                            <div className={style.pages_desc_svg} data-aos="zoom-in">
-                                <Wallet />
-                            </div>
-                        </div>
-                    </div>
-
-                    <h1 className={style.pages_h2}>Obejrzyj przykładowe strony www:</h1>
-                    <div className={style.pages_list}>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://wolfmobileapps.com/pl/' target='blank'><img className={style.pages_img} src={wolfmobileapps} alt='strona internetowa wolfmobileapps' />
-                        </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//food' target='blank'><img className={style.pages_img} src={food} alt='strona internetowa food' />
-                        </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//next' target='blank'><img className={style.pages_img} src={next} alt='strona internetowa next' />
-                        </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//mobile' target='blank'><img className={style.pages_img} src={mobile} alt='strona internetowa mobile' />
-                        </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com/health' target='blank'><img className={style.pages_img} src={health} alt='strona internetowa health' />
-                        </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//crypto' target='blank'><img className={style.pages_img} src={crypto} alt='strona internetowa crypto' />
-                        </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//design' target='blank'><img className={style.pages_img} src={design} alt='strona internetowa design' />
-                        </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//careo' target='blank'><img className={style.pages_img} src={careo} alt='strona internetowa careo' />
-                        </a>
-                        {/* <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//gym' target='blank'><img className={style.pages_img} src={gym} alt='strona internetowa gym' />
+                        <h1 className={style.pages_h2}>Obejrzyj przykładowe strony www:</h1>
+                        <div className={style.pages_list}>
+                            <a data-aos="zoom-in" className={style.pages_a} href='https://wolfmobileapps.com/pl/' target='blank'><img className={style.pages_img} src={wolfmobileapps} alt='strona internetowa wolfmobileapps' />
+                            </a>
+                            <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//food' target='blank'><img className={style.pages_img} src={food} alt='strona internetowa food' />
+                            </a>
+                            <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//next' target='blank'><img className={style.pages_img} src={next} alt='strona internetowa next' />
+                            </a>
+                            <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//mobile' target='blank'><img className={style.pages_img} src={mobile} alt='strona internetowa mobile' />
+                            </a>
+                            <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com/health' target='blank'><img className={style.pages_img} src={health} alt='strona internetowa health' />
+                            </a>
+                            <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//crypto' target='blank'><img className={style.pages_img} src={crypto} alt='strona internetowa crypto' />
+                            </a>
+                            <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//design' target='blank'><img className={style.pages_img} src={design} alt='strona internetowa design' />
+                            </a>
+                            <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//careo' target='blank'><img className={style.pages_img} src={careo} alt='strona internetowa careo' />
+                            </a>
+                            {/* <a data-aos="zoom-in" className={style.pages_a} href='https://examples.studio-www.com//gym' target='blank'><img className={style.pages_img} src={gym} alt='strona internetowa gym' />
                         </a> */}
-                    </div>
-                </section>
+                        </div>
+                    </section>
+                </div>
+            </div>
 
-                <hr />
-
-                {/* section Tworzenie aplikacji webowych */}
+            {/* section Tworzenie aplikacji webowych */}
+            <div className={style.container}>
                 <section id='web' className={style.pages}>
 
                     <div data-aos="flip-up" className={style.pages_title}>

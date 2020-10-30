@@ -24,174 +24,175 @@ const Home = () => {
     }, [])
 
     return (
-        <div className={style.background}>
-            <main className={style.container}>
+        <main className={style.background}>
 
-                {/* img intro */}
-                <div className={style.introContainer}>
-                    <img className={style.introImg} src={firstImg} alt='strony internetowe' />
-                    <div className={style.introBlack}></div>
-                    <div className={style.introContainerText}>
-                        <h1 className={`${style.introText} ${style.introText1}`}>Strony internetowe</h1>
-                        <h2 className={`${style.introText} ${style.introText2}`}>Aplikacje webowe</h2>
-                        <h2 className={`${style.introText} ${style.introText3}`}>Portale internetowe</h2>
+            {/* img intro */}
+            <div className={style.containerBackground}>
+                <section className={style.section}>
+                    <div className={style.introContainer}>
+                        <img className={style.introImg} src={firstImg} alt='strony internetowe' />
+                        <div className={style.introBlack}></div>
+                        <div className={style.introContainerText}>
+                            <h1 className={`${style.introText} ${style.introText1}`}>Strony internetowe</h1>
+                            <h2 className={`${style.introText} ${style.introText2}`}>Aplikacje webowe</h2>
+                            <h2 className={`${style.introText} ${style.introText3}`}>Portale internetowe</h2>
+                        </div>
+                        <h1 className={style.headerName}>studio-www.com</h1>
                     </div>
-                    <h1 className={style.headerName}>studio-www.com</h1>
-                </div>
-
+                </section>
 
                 {/* section technologies desc */}
-                <section className={style.sectionTechDesc}>
-                    <div data-aos="zoom-in" className={style.sectionTechDesc_item}>
-                        {iconAperance}
-                        <h2 className={style.sectionTechDesc_h2}>Wygląd</h2>
-                        <p className={style.sectionTechDesc_p}>Wygląd to sprawa priorytetowa. Każda zrobiona przeze mnie strona wygląda nowocześnie i jest niepowtarzalna.</p>
-                    </div>
-                    <div data-aos="zoom-in" className={style.sectionTechDesc_item}>
-                        {iconTech}
-                        <h2 className={style.sectionTechDesc_h2}>Technologia</h2>
-                        <p className={style.sectionTechDesc_p}>Kożystam z najnowszych technologi i stosuję się do aktualnych trendów. Stale ulepszam jakość swoich usług.</p>
-                    </div>
-                    <div data-aos="zoom-in" className={style.sectionTechDesc_item}>
-                        {iconQuality}
-                        <h2 className={style.sectionTechDesc_h2}>Jakość</h2>
-                        <p className={style.sectionTechDesc_p}>Zawsze stawiam na jakość. Nigdy nie idę na kompromis. Dzięki temu moje produkty są łatwe w utrzymaniu i rozwoju. </p>
-                    </div>
-                    <div data-aos="zoom-in" className={style.sectionTechDesc_item}>
-                        {iconResponsive}
-                        <h2 className={style.sectionTechDesc_h2}>Skalowanie</h2>
-                        <p className={style.sectionTechDesc_p}>Wszystkie projekty są robione w technoligii RWD dzięki czemu są dopasowane do rozdzielczości wszystkich urządzeń.  </p>
-                    </div>
-                </section>
-
-                <hr />
-
-                {/* section who I am */}
                 <section className={style.section}>
-                    <div className={style.section_container}>
-                        <div className={style.section_content}>
-                            <h1 data-aos="zoom-in" className={style.section_H1}>KIM JESTEM</h1>
-                            <p className={style.section_desc}><span className={style.section_descBigLeter}>J</span>estem osobą z tytułem mgr inż. Od kilku lat pracuję w branży IT. Mieszkam i pracuję w <strong>Gdynii</strong>. Zajmuję się tworzeniem <strong>stron internetowych</strong>, <strong>aplikacji webowych</strong> oraz <strong>serwisów internetowych</strong>. Przy tworzeniu projektów korzystam z najnowszych i najczęsciej używanych technologii, dlatego każdy projekt jest wysokiej jakości i stosunkowo tani w produkcji oraz utrzymaniu.<br /> <span className={style.section_descBigLeter}>D</span>zięki nawiązaniu współpracy z innymi profesjonalnymi programistami jestem w stanie tworzyć duże i skomplikowane projekty.</p>
+                    <div className={style.sectionTechDesc}>
+                        <div data-aos="zoom-in" className={style.sectionTechDesc_item}>
+                            {iconAperance}
+                            <h2 className={style.sectionTechDesc_h2}>Wygląd</h2>
+                            <p className={style.sectionTechDesc_p}>Wygląd to sprawa priorytetowa. Każda zrobiona przeze mnie strona wygląda nowocześnie i jest niepowtarzalna.</p>
+                        </div>
+                        <div data-aos="zoom-in" className={style.sectionTechDesc_item}>
+                            {iconTech}
+                            <h2 className={style.sectionTechDesc_h2}>Technologia</h2>
+                            <p className={style.sectionTechDesc_p}>Kożystam z najnowszych technologi i stosuję się do aktualnych trendów. Stale ulepszam jakość swoich usług.</p>
+                        </div>
+                        <div data-aos="zoom-in" className={style.sectionTechDesc_item}>
+                            {iconQuality}
+                            <h2 className={style.sectionTechDesc_h2}>Jakość</h2>
+                            <p className={style.sectionTechDesc_p}>Zawsze stawiam na jakość. Nigdy nie idę na kompromis. Dzięki temu moje produkty są łatwe w utrzymaniu i rozwoju. </p>
+                        </div>
+                        <div data-aos="zoom-in" className={style.sectionTechDesc_item}>
+                            {iconResponsive}
+                            <h2 className={style.sectionTechDesc_h2}>Skalowanie</h2>
+                            <p className={style.sectionTechDesc_p}>Wszystkie projekty są robione w technoligii RWD dzięki czemu są dopasowane do rozdzielczości wszystkich urządzeń.  </p>
                         </div>
                     </div>
-                    <figure className={style.section_img}>
-                        <img data-aos="fade-up" src={team} alt='wykonywanie stron internetowych i aplikacji webowych' />
-                    </figure>
                 </section>
+            </div>
 
-                <hr />
-
-                {/* section why me */}
-                <section className={style.section}>
-                    <div className={style.section_container}>
-                        <div className={style.section_content}>
-                            <h1 data-aos="zoom-in" className={style.section_H1}>DLACZEGO JA</h1>
-                            <p className={style.section_desc}><span className={style.section_descBigLeter}>Z</span>ajmuję się tworzeniem kompleksowych projektów od A-Z. Kożystam z najnowszych technologi jak <strong>React</strong>, <strong>FaaS</strong> i inne. Strony są projektowane jako <strong>RWD</strong> (<strong>Responsive Web Design</strong>) oraz <strong>PWA</strong> (<strong>Progressive Web Apps</strong>) dzięki czemu wyglądją dobrze na komputerze i na urządzeniu mobilnym. Każdy projekt jest przygotowany pod pozycjonowanie strony zgodnie z <strong>SEO</strong>.<br /> <span className={style.section_descBigLeter}>C</span>ena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę a się przekonasz.</p>
-                        </div>
+            {/* section who I am */}
+            <section className={style.section}>
+                <div className={style.section_container}>
+                    <div className={style.section_content}>
+                        <h1 data-aos="zoom-in" className={style.section_H1}>KIM JESTEM</h1>
+                        <p className={style.section_desc}><span className={style.section_descBigLeter}>J</span>estem osobą z tytułem mgr inż. Od kilku lat pracuję w branży IT. Mieszkam i pracuję w <strong>Gdynii</strong>. Zajmuję się tworzeniem <strong>stron internetowych</strong>, <strong>aplikacji webowych</strong> oraz <strong>serwisów internetowych</strong>. Przy tworzeniu projektów korzystam z najnowszych i najczęsciej używanych technologii, dlatego każdy projekt jest wysokiej jakości i stosunkowo tani w produkcji oraz utrzymaniu.<br /> <span className={style.section_descBigLeter}>D</span>zięki nawiązaniu współpracy z innymi profesjonalnymi programistami jestem w stanie tworzyć duże i skomplikowane projekty.</p>
                     </div>
-                    <figure className={style.section_img}>
-                        <img data-aos="fade-up" src={why} alt='dlaczego studio-www' />
-                    </figure>
-                </section>
+                </div>
+                <figure className={style.section_img}>
+                    <img data-aos="fade-up" src={team} alt='wykonywanie stron internetowych i aplikacji webowych' />
+                </figure>
+            </section>
 
-                <hr />
+            {/* section why me */}
+            <section className={style.section}>
+                <div className={style.section_container}>
+                    <div className={style.section_content}>
+                        <h1 data-aos="zoom-in" className={style.section_H1}>DLACZEGO JA</h1>
+                        <p className={style.section_desc}><span className={style.section_descBigLeter}>Z</span>ajmuję się tworzeniem kompleksowych projektów od A-Z. Kożystam z najnowszych rozwiązań jak <strong>React</strong> i <strong>FaaS</strong>. Strony są projektowane jako <strong>RWD</strong> (<strong>Responsive Web Design</strong>) oraz <strong>PWA</strong> (<strong>Progressive Web Apps</strong>) dzięki czemu wyglądją dobrze na komputerze i na urządzeniu mobilnym. Każdy projekt jest przygotowany pod pozycjonowanie strony zgodnie z <strong>SEO</strong>.<br /> <span className={style.section_descBigLeter}>C</span>ena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę a się przekonasz.</p>
+                    </div>
+                </div>
+                <figure className={style.section_img}>
+                    <img data-aos="fade-up" src={why} alt='dlaczego studio-www' />
+                </figure>
+            </section>
 
-                {/* movie */}
+            {/* section movie */}
+            <section className={style.section}>
                 <video className={style.video} src={intro} autoPlay muted controls playsInline alt="intro studio" />
+            </section>
 
-                <hr />
+            {/* section standard technologies */}
+            <div className={style.containerBackground}>
+                <section className={style.section}>
+                    <div className={style.sectionTechnologies}>
+                        <div data-aos="flip-up" className={style.section_container}>
+                            <div className={style.sectionContentTech}>
+                                <h1 className={style.section_H1_plate}>Standardy</h1>
+                            </div>
+                        </div>
+                        <div className={style.technologies}>
+                            <div className={style.technologiesItem}>
+                                <div className={style.technologiesItemContent}>
+                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>RWD</strong></h2>
+                                    <h2 className={style.technologiesItemHeader2}>(<strong>Responsive Web Design</strong>)</h2>
+                                    <p className={style.technologiesItemText}><strong>RWD</strong> to technika projektowania widoków dzięki której Twoja strona wygląda dobrze na każdym urządzeniu. Niezależnie czy kożystasz z dużego monitora, smartfonu lub tableta, widok automatycznie dopasuje sie do danej rodzielczości.
+                                </p>
+                                    <a href='https://pl.wikipedia.org/wiki/Responsive_web_design' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
+                                </div>
+                                <figure className={style.technologiesItemFigure}>
+                                    <img data-aos="fade-up-left" className={style.technologiesItemImg} src={rwd} alt='Responsive Web Design' />
+                                </figure>
+                            </div>
 
-                {/* section standard technologies */}
-                <section className={style.sectionTechnologies}>
-                    <div data-aos="flip-up" className={style.section_container}>
-                        <div className={style.sectionContentTech}>
-                            <h1 className={style.section_H1_plate}>Standardy</h1>
+                            <div className={style.technologiesItem}>
+                                <div className={style.technologiesItemContent}>
+                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>PWA</strong></h2>
+                                    <h2 className={style.technologiesItemHeader2}>(<strong>Progressive Web Apps</strong>)</h2>
+                                    <p className={style.technologiesItemText}><strong>PWA</strong> pozwala tak zaprojektować stronę internetową, aby na urządzeniu mobilnym mogła być używana jak aplikacja mobilna. Można ją zainstalować w telefonie i kożystać w trybie offline. Działa na platformie Android i iOS. Dzięki tej technologi można uzyskać dostęp do fukcji telefonu takich jak aparat, gps, zdjęcia, powiadomienia i inne.
+                                </p>
+                                    <a href='https://pl.wikipedia.org/wiki/Progressive_web_app' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
+                                </div>
+                                <figure className={style.technologiesItemFigure}>
+                                    <img data-aos="fade-up-left" className={style.technologiesItemImg} src={pwa} alt='Progressive Web Apps' />
+                                </figure>
+                            </div>
+
+                            <div className={style.technologiesItem}>
+                                <div className={style.technologiesItemContent}>
+                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>TWA</strong></h2>
+                                    <h2 className={style.technologiesItemHeader2}>(<strong>Trusted Web Activities</strong>)</h2>
+                                    <p className={style.technologiesItemText}><strong>TWA</strong> daje możliwość udostępniona w sklepie Google Play aplikacj PWA. Nie ma potrzeby pisania oddzielnego kodu. TWA oferuje największą wydajność wśród dostępnych rozwiązań i gwarantuje wygodę korzystania z natywnej aplikacji.Wszelkie aktualizacje są automatycznie i nie wymagają ingerencji w sklepie, dzięki czemu utrzymanie całego projektu jest o wiele tańsze.
+                                </p>
+                                    <a href='https://developers.google.com/web/android/trusted-web-activity' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
+                                </div>
+                                <figure className={style.technologiesItemFigure}>
+                                    <img data-aos="fade-up-left" className={style.technologiesItemImg} src={twa} alt='Trusted Web Activities' />
+                                </figure>
+                            </div>
+
+                            <div className={style.technologiesItem}>
+                                <div className={style.technologiesItemContent}>
+                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>SEO</strong></h2>
+                                    <h2 className={style.technologiesItemHeader2}>(<strong>Search Engine Optimization</strong>)</h2>
+                                    <p className={style.technologiesItemText}><strong>SEO</strong> to projektowanie zgodne z zasadami optymalizacji pozwalającymi na osiągnięcie wysokich wyników w wyszukiwarkach dla wybranówch słów lub fraz kluczowych. Kod strony, jej treść oraz responsywność są dostosowane do aktualnych algorytmów wyszukiwarek w celu poprawienia pozycji danego serwisu na liście wynikowej.
+                                </p>
+                                    <a href='https://pl.wikipedia.org/wiki/Optymalizacja_dla_wyszukiwarek_internetowych' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
+                                </div>
+                                <figure className={style.technologiesItemFigure}>
+                                    <img data-aos="fade-up-left" className={style.technologiesItemImg} src={seo} alt='Search Engine Optimization' />
+                                </figure>
+                            </div>
+
+                            <div className={style.technologiesItem}>
+                                <div className={style.technologiesItemContent}>
+                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>FaaS</strong></h2>
+                                    <h2 className={style.technologiesItemHeader2}>(<strong>Function as a Service</strong>)</h2>
+                                    <p className={style.technologiesItemText}><strong>FaaS</strong> to usługa chmurowa pozwalająca na bardzo łatwe, sybkie i tanie projektowanie tzw. backendu. Projekty wykonane w oparciu o FaaS dostarczane przez takich gigantów jak Amazon lub Google są bardzo tanie w utrzymaniu, w 100% niezawodne i dobrze zabezpieczone.
+                                </p>
+                                    <a href='https://en.wikipedia.org/wiki/Function_as_a_service' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
+                                </div>
+                                <figure className={style.technologiesItemFigure}>
+                                    <img data-aos="fade-up-left" className={style.technologiesItemImg} src={faas} alt='Function as a Service' />
+                                </figure>
+                            </div>
+
+                            <div className={style.technologiesItem}>
+                                <div className={style.technologiesItemContent}>
+                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>React</strong></h2>
+                                    <h2 className={style.technologiesItemHeader2}>(<strong>JavaScript Library</strong>)</h2>
+                                    <p className={style.technologiesItemText}><strong>React</strong> to javascriptowa biblioteka służąca do tworzenia interfejsów użytkownika. Aktualnie jest to najczęściej używana biblioteka wykożystywana przy tworzeniu aplikacji webowych, posiadjąca ogromne wsparcie i nowoczesne rozwiązania.
+                                </p>
+                                    <a href='https://pl.wikipedia.org/wiki/React.js' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
+                                </div>
+                                <figure className={style.technologiesItemFigure}>
+                                    <img data-aos="fade-up-left" className={style.technologiesItemImg} src={react} alt='React JavaScript Library' />
+                                </figure>
+                            </div>
+
                         </div>
                     </div>
-                    <div className={style.technologies}>
-                        <div className={style.technologiesItem}>
-                            <div className={style.technologiesItemContent}>
-                                <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>RWD</strong></h2>
-                                <h2 className={style.technologiesItemHeader2}>(<strong>Responsive Web Design</strong>)</h2>
-                                <p className={style.technologiesItemText}><strong>RWD</strong> to technika projektowania widoków dzięki której Twoja strona wygląda dobrze na każdym urządzeniu. Niezależnie czy kożystasz z dużego monitora, smartfonu lub tableta, widok automatycznie dopasuje sie do danej rodzielczości.
-                                </p>
-                                <a href='https://pl.wikipedia.org/wiki/Responsive_web_design' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
-                            </div>
-                            <figure className={style.technologiesItemFigure}>
-                                <img data-aos="fade-up-left" className={style.technologiesItemImg} src={rwd} alt='Responsive Web Design' />
-                            </figure>
-                        </div>
 
-                        <div className={style.technologiesItem}>
-                            <div className={style.technologiesItemContent}>
-                                <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>PWA</strong></h2>
-                                <h2 className={style.technologiesItemHeader2}>(<strong>Progressive Web Apps</strong>)</h2>
-                                <p className={style.technologiesItemText}><strong>PWA</strong> pozwala tak zaprojektować stronę internetową, aby na urządzeniu mobilnym mogła być używana jak aplikacja mobilna. Można ją zainstalować w telefonie i kożystać w trybie offline. Działa na platformie Android i iOS. Dzięki tej technologi można uzyskać dostęp do fukcji telefonu takich jak aparat, gps, zdjęcia, powiadomienia i inne.
-                                </p>
-                                <a href='https://pl.wikipedia.org/wiki/Progressive_web_app' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
-                            </div>
-                            <figure className={style.technologiesItemFigure}>
-                                <img data-aos="fade-up-left" className={style.technologiesItemImg} src={pwa} alt='Progressive Web Apps' />
-                            </figure>
-                        </div>
-
-                        <div className={style.technologiesItem}>
-                            <div className={style.technologiesItemContent}>
-                                <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>TWA</strong></h2>
-                                <h2 className={style.technologiesItemHeader2}>(<strong>Trusted Web Activities</strong>)</h2>
-                                <p className={style.technologiesItemText}><strong>TWA</strong> daje możliwość udostępniona w sklepie Google Play aplikacj PWA. Nie ma potrzeby pisania oddzielnego kodu. TWA oferuje największą wydajność wśród dostępnych rozwiązań i gwarantuje wygodę korzystania z natywnej aplikacji.Wszelkie aktualizacje są automatycznie i nie wymagają ingerencji w sklepie, dzięki czemu utrzymanie całego projektu jest o wiele tańsze.
-                                </p>
-                                <a href='https://developers.google.com/web/android/trusted-web-activity' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
-                            </div>
-                            <figure className={style.technologiesItemFigure}>
-                                <img data-aos="fade-up-left" className={style.technologiesItemImg} src={twa} alt='Trusted Web Activities' />
-                            </figure>
-                        </div>
-
-                        <div className={style.technologiesItem}>
-                            <div className={style.technologiesItemContent}>
-                                <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>SEO</strong></h2>
-                                <h2 className={style.technologiesItemHeader2}>(<strong>Search Engine Optimization</strong>)</h2>
-                                <p className={style.technologiesItemText}><strong>SEO</strong> to projektowanie zgodne z zasadami optymalizacji pozwalającymi na osiągnięcie wysokich wyników w wyszukiwarkach dla wybranówch słów lub fraz kluczowych. Kod strony, jej treść oraz responsywność są dostosowane do aktualnych algorytmów wyszukiwarek w celu poprawienia pozycji danego serwisu na liście wynikowej.
-                                </p>
-                                <a href='https://pl.wikipedia.org/wiki/Optymalizacja_dla_wyszukiwarek_internetowych' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
-                            </div>
-                            <figure className={style.technologiesItemFigure}>
-                                <img data-aos="fade-up-left" className={style.technologiesItemImg} src={seo} alt='Search Engine Optimization' />
-                            </figure>
-                        </div>
-
-                        <div className={style.technologiesItem}>
-                            <div className={style.technologiesItemContent}>
-                                <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>FaaS</strong></h2>
-                                <h2 className={style.technologiesItemHeader2}>(<strong>Function as a Service</strong>)</h2>
-                                <p className={style.technologiesItemText}><strong>FaaS</strong> to usługa chmurowa pozwalająca na bardzo łatwe, sybkie i tanie projektowanie tzw. backendu. Projekty wykonane w oparciu o FaaS dostarczane przez takich gigantów jak Amazon lub Google są bardzo tanie w utrzymaniu, w 100% niezawodne i dobrze zabezpieczone.
-                                </p>
-                                <a href='https://en.wikipedia.org/wiki/Function_as_a_service' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
-                            </div>
-                            <figure className={style.technologiesItemFigure}>
-                                <img data-aos="fade-up-left" className={style.technologiesItemImg} src={faas} alt='Function as a Service' />
-                            </figure>
-                        </div>
-
-                        <div className={style.technologiesItem}>
-                            <div className={style.technologiesItemContent}>
-                                <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>React</strong></h2>
-                                <h2 className={style.technologiesItemHeader2}>(<strong>JavaScript Library</strong>)</h2>
-                                <p className={style.technologiesItemText}><strong>React</strong> to javascriptowa biblioteka służąca do tworzenia interfejsów użytkownika. Aktualnie jest to najczęściej używana biblioteka wykożystywana przy tworzeniu aplikacji webowych, posiadjąca ogromne wsparcie i nowoczesne rozwiązania.
-                                </p>
-                                <a href='https://pl.wikipedia.org/wiki/React.js' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
-                            </div>
-                            <figure className={style.technologiesItemFigure}>
-                                <img data-aos="fade-up-left" className={style.technologiesItemImg} src={react} alt='React JavaScript Library' />
-                            </figure>
-                        </div>
-
-                    </div>
                 </section>
-
-            </main>
-        </div >
+            </div>
+        </main >
     )
 }
 

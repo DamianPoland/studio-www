@@ -2,6 +2,7 @@
     /* add color in index.css eg: --accent: 0, 200, 0;*/
     --colorHome: var(--accent);
     --backgroundHome: var(--backgroundCustom);
+    --backgroundHome2: var(--backgroundCustom2);
     --backgroundLineHome: var(--gray);
 }
 
@@ -11,14 +12,19 @@
     color: black;
 }
 
-.container {
-    margin: 60px auto 0px auto;
+.containerBackground {
+    background: var(--backgroundHome2);
+}
+
+.section {
+    margin: auto;
     max-width: 1200px;
 }
 
 
 .introContainer {
     width: 100%;
+    margin: 60px 0 0 0;
     /*height jest 0 a padding to aspect ratio czyli h/w */
     padding-top: 62.5%;
     position: relative;
@@ -162,7 +168,7 @@
     flex-direction: column;
     align-items: center;
     background: white;
-    box-shadow: 0 0 20px rgba(94, 77, 77, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .sectionTechDesc_h2 {
@@ -174,10 +180,6 @@
     font-size: 1rem;
     text-align: center;
     line-height: 1.5rem;
-}
-
-.section {
-    padding: 0 0 3rem 0;
 }
 
 .section_container {
@@ -305,7 +307,7 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    box-shadow: 0 0 20px rgba(94, 77, 77, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     transform: translateX(1.5rem);
     z-index: 1;
 }
