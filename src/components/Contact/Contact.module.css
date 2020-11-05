@@ -100,7 +100,6 @@
 
 .contentItem:active {
     background-color: rgba(var(--colorContact), 0.4);
-    border-radius: 999px;
 }
 
 .contentIcon {

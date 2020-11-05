@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import style from './Contact.module.css'
 import axios from 'axios'
 
@@ -8,6 +8,11 @@ import Spinner from '../../UI/Spinner/Spinner'
 
 
 const Contact = () => {
+
+    // scroll to top when componene render
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     // input Name
     const [inputName, setInputName] = useState('') // input value
