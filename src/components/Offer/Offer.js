@@ -13,6 +13,7 @@ import health from '../../assets/health.png'
 import crypto from '../../assets/crypto.png'
 import design from '../../assets/design.png'
 import mobile from '../../assets/mobile.png'
+import imgToText from '../../assets/imgToText.png'
 
 // svg
 import { ReactComponent as Card } from '../../assets/card.svg'
@@ -162,9 +163,9 @@ const Offer = () => {
                         </div>
                     </div>
 
-                    <h1 className={style.pages_h2}>Obejrzyj przykładowe elementy aplikacji webowych:</h1>
+                    <h1 className={style.pages_h2}>Obejrzyj przykładowe aplikacje webowe:</h1>
                     <div className={style.pages_list}>
-                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://text-ze-zdjecia.web.app' target='blank'><img className={style.pages_img} src={imgToText} alt='applikacja webowa' />
                         </a>
                         <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
                         </a>
