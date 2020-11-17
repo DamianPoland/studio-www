@@ -1,5 +1,5 @@
 .background {
-    background: radial-gradient(circle, rgb(var(--accent)) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgb(var(--accent)) 50%, rgba(0, 0, 0, 1) 100%);
 }
 
 .container {

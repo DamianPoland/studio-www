@@ -5,7 +5,7 @@
 
 
 .background {
-    background: radial-gradient(circle, rgb(var(--colorNav)) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgb(var(--colorNav)) 50%, rgba(0, 0, 0, 1) 100%);
     position: fixed;
     left: 0;
     right: 0;
@@ -50,7 +50,6 @@
 }
 
 .listItem {
-    opacity: 0.9;
     margin: 1rem 0;
 }
 
@@ -62,7 +61,6 @@
     padding: 1rem;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
-    font-weight: bold;
     font-size: 1rem;
 }
 
