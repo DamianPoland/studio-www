@@ -111,7 +111,7 @@ const Home = () => {
                         <div className={style.technologies}>
                             <div className={style.technologiesItem}>
                                 <div className={style.technologiesItemContent}>
-                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>RWD</strong></h2>
+                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong className={style.font}>RWD</strong></h2>
                                     <h2 className={style.technologiesItemHeader2}>(<strong>Responsive Web Design</strong>)</h2>
                                     <p className={style.technologiesItemText}><strong>RWD</strong> to technika projektowania widoków dzięki której Twoja strona wygląda dobrze na każdym urządzeniu. Niezależnie czy kożystasz z dużego monitora, smartfonu lub tableta, widok automatycznie dopasuje sie do danej rodzielczości.
                                 </p>
@@ -124,7 +124,7 @@ const Home = () => {
 
                             <div className={style.technologiesItem}>
                                 <div className={style.technologiesItemContent}>
-                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>PWA</strong></h2>
+                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong className={style.font}>PWA</strong></h2>
                                     <h2 className={style.technologiesItemHeader2}>(<strong>Progressive Web Apps</strong>)</h2>
                                     <p className={style.technologiesItemText}><strong>PWA</strong> pozwala tak zaprojektować stronę internetową, aby na urządzeniu mobilnym mogła być używana jak aplikacja mobilna. Można ją zainstalować w telefonie i kożystać w trybie offline. Działa na platformie Android i iOS. Dzięki tej technologi można uzyskać dostęp do fukcji telefonu takich jak aparat, gps, zdjęcia, powiadomienia i inne.
                                 </p>
@@ -137,7 +137,7 @@ const Home = () => {
 
                             <div className={style.technologiesItem}>
                                 <div className={style.technologiesItemContent}>
-                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>TWA</strong></h2>
+                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong className={style.font}>TWA</strong></h2>
                                     <h2 className={style.technologiesItemHeader2}>(<strong>Trusted Web Activities</strong>)</h2>
                                     <p className={style.technologiesItemText}><strong>TWA</strong> daje możliwość udostępniona w sklepie Google Play aplikacj PWA. Nie ma potrzeby pisania oddzielnego kodu. TWA oferuje największą wydajność wśród dostępnych rozwiązań i gwarantuje wygodę korzystania z natywnej aplikacji.Wszelkie aktualizacje są automatycznie i nie wymagają ingerencji w sklepie, dzięki czemu utrzymanie całego projektu jest o wiele tańsze.
                                 </p>
@@ -150,7 +150,7 @@ const Home = () => {
 
                             <div className={style.technologiesItem}>
                                 <div className={style.technologiesItemContent}>
-                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>SEO</strong></h2>
+                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong className={style.font}>SEO</strong></h2>
                                     <h2 className={style.technologiesItemHeader2}>(<strong>Search Engine Optimization</strong>)</h2>
                                     <p className={style.technologiesItemText}><strong>SEO</strong> to projektowanie zgodne z zasadami optymalizacji pozwalającymi na osiągnięcie wysokich wyników w wyszukiwarkach dla wybranówch słów lub fraz kluczowych. Kod strony, jej treść oraz responsywność są dostosowane do aktualnych algorytmów wyszukiwarek w celu poprawienia pozycji danego serwisu na liście wynikowej.
                                 </p>
@@ -163,7 +163,7 @@ const Home = () => {
 
                             <div className={style.technologiesItem}>
                                 <div className={style.technologiesItemContent}>
-                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>FaaS</strong></h2>
+                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong className={style.font}>FaaS</strong></h2>
                                     <h2 className={style.technologiesItemHeader2}>(<strong>Function as a Service</strong>)</h2>
                                     <p className={style.technologiesItemText}><strong>FaaS</strong> to usługa chmurowa pozwalająca na bardzo łatwe, sybkie i tanie projektowanie tzw. backendu. Projekty wykonane w oparciu o FaaS dostarczane przez takich gigantów jak Amazon lub Google są bardzo tanie w utrzymaniu, w 100% niezawodne i dobrze zabezpieczone.
                                 </p>
@@ -176,7 +176,7 @@ const Home = () => {
 
                             <div className={style.technologiesItem}>
                                 <div className={style.technologiesItemContent}>
-                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong>React</strong></h2>
+                                    <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong className={style.font}>React</strong></h2>
                                     <h2 className={style.technologiesItemHeader2}>(<strong>JavaScript Library</strong>)</h2>
                                     <p className={style.technologiesItemText}><strong>React</strong> to javascriptowa biblioteka służąca do tworzenia interfejsów użytkownika. Aktualnie jest to najczęściej używana biblioteka wykożystywana przy tworzeniu aplikacji webowych, posiadjąca ogromne wsparcie i nowoczesne rozwiązania.
                                 </p>

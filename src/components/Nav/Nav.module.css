@@ -5,7 +5,7 @@
 
 
 .background {
-    background: radial-gradient(circle, rgba(26, 35, 126, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: radial-gradient(circle, rgb(var(--colorNav)) 0%, rgba(0, 0, 0, 1) 100%);
     position: fixed;
     left: 0;
     right: 0;
@@ -36,9 +36,9 @@
 
 .headerDesc {
     padding-left: 10px;
-    font-size: 20px;
+    font-size: 1.5rem;
     color: white;
-    font-family: 'Handlee', cursive, Arial;
+    font-family: 'Kalam', cursive;
     font-weight: bold;
 }
 
@@ -61,12 +61,13 @@
 .listItemAnchor {
     padding: 1rem;
     text-decoration: none;
-    color: white;
-
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .activeLink {
-    color: rgb(var(--colorNav));
+    color: rgba(255, 255, 255, 1);
 }
 
 
@@ -133,7 +134,7 @@
         position: absolute;
         top: 60px;
         right: 0;
-        background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, rgba(26, 35, 126, 1) 100%);
+        background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, rgba(var(--colorNav), 1) 100%);
         height: calc(100vh - 60px);
         width: 50%;
         transform: translateX(100%);

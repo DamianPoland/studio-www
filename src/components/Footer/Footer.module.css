@@ -1,5 +1,5 @@
 .background {
-    background: radial-gradient(circle, rgba(26, 35, 126, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: radial-gradient(circle, rgb(var(--accent)) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .container {
@@ -15,7 +15,8 @@
     padding: 1rem;
     color: white;
     text-decoration: none;
-    opacity: 0.8;
+    opacity: 1;
+    font-size: 1rem;
 }
 
 .textLeft {
@@ -33,7 +34,6 @@
 
 .link:hover {
     opacity: 1;
-
 }
 
 .designedBy {

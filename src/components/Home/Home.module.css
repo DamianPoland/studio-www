@@ -16,6 +16,10 @@
     background: var(--backgroundHome2);
 }
 
+.font {
+    font-family: 'Kalam', cursive;
+}
+
 .section {
     margin: auto;
     max-width: 1200px;
@@ -99,7 +103,7 @@
     height: 100%;
     width: 100%;
     font-size: 4rem;
-    font-family: 'Handlee', cursive, Arial;
+    font-family: 'Kalam', cursive;
     color: rgb(var(--colorHome));
     transform: scale(0);
     animation: showHeader 1s ease forwards;
