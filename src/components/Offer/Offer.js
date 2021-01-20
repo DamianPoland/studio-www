@@ -14,6 +14,7 @@ import crypto from '../../assets/crypto.png'
 import design from '../../assets/design.png'
 import mobile from '../../assets/mobile.png'
 import imgToText from '../../assets/imgToText.png'
+import calendar from '../../assets/calendar.png'
 
 // svg
 import { ReactComponent as Card } from '../../assets/card.svg'
@@ -167,12 +168,10 @@ const Offer = () => {
                     <div className={style.pages_list}>
                         <a data-aos="zoom-in" className={style.pages_a} href='https://imgtotext.web.app/' target='blank'><img className={style.pages_img} src={imgToText} alt='applikacja webowa' />
                         </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
+                        <a data-aos="zoom-in" className={style.pages_a} href='https://kalendarz.studio-www.com' target='blank'><img className={style.pages_img} src={calendar} alt='moduł kalendarza' />
                         </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
-                        </a>
-                        <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
-                        </a>
+                        {/* <a data-aos="zoom-in" className={style.pages_a} href='#web'><img className={style.pages_img} src={not_ready} alt='applikacja webowa' />
+                        </a> */}
                     </div>
                 </section>
             </div>
