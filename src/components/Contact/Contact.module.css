@@ -188,7 +188,7 @@ textarea::-webkit-scrollbar-thumb {
 .label {
     font-size: 1.5rem;
     padding: 1rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgb(190, 190, 190);
     position: absolute;
     left: 0;
     top: 0;
@@ -219,7 +219,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .input::placeholder {
-    color: rgba(255, 255, 255, 0.6)
+    color: rgb(190, 190, 190);
 }
 
 .btn {
