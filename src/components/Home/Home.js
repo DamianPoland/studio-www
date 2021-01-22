@@ -52,7 +52,7 @@ const Home = () => {
                         <div data-aos="zoom-in" className={style.sectionTechDesc_item}>
                             {iconTech}
                             <h2 className={style.sectionTechDesc_h2}>Technologia</h2>
-                            <p className={style.sectionTechDesc_p}>Kożystam z najnowszych technologi i stosuję się do aktualnych trendów. Stale ulepszam jakość swoich usług.</p>
+                            <p className={style.sectionTechDesc_p}>Korzystam z najnowszych technologii i stosuję się do aktualnych trendów. Stale ulepszam jakość swoich usług.</p>
                         </div>
                         <div data-aos="zoom-in" className={style.sectionTechDesc_item}>
                             {iconQuality}
@@ -86,7 +86,7 @@ const Home = () => {
                 <div className={style.section_container}>
                     <div className={style.section_content}>
                         <h1 data-aos="zoom-in" className={style.section_H1}>DLACZEGO JA</h1>
-                        <p className={style.section_desc}><span className={style.section_descBigLeter}>Z</span>ajmuję się tworzeniem kompleksowych projektów od A-Z. Kożystam z najnowszych rozwiązań jak <strong>React</strong> i <strong>FaaS</strong>. Strony są projektowane jako <strong>RWD</strong> (<strong>Responsive Web Design</strong>) oraz <strong>PWA</strong> (<strong>Progressive Web Apps</strong>) dzięki czemu wyglądją dobrze na komputerze i na urządzeniu mobilnym. Każdy projekt jest przygotowany pod pozycjonowanie strony zgodnie z <strong>SEO</strong>.<br /> <span className={style.section_descBigLeter}>C</span>ena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę a się przekonasz.</p>
+                        <p className={style.section_desc}><span className={style.section_descBigLeter}>Z</span>ajmuję się tworzeniem kompleksowych projektów od A-Z. Korzystam z najnowszych rozwiązań jak <strong>React</strong> i <strong>FaaS</strong>. Strony są projektowane jako <strong>RWD</strong> (<strong>Responsive Web Design</strong>) oraz <strong>PWA</strong> (<strong>Progressive Web Apps</strong>) dzięki czemu wyglądją dobrze na komputerze i na urządzeniu mobilnym. Każdy projekt jest przygotowany pod pozycjonowanie strony zgodnie z <strong>SEO</strong>.<br /> <span className={style.section_descBigLeter}>C</span>ena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę a się przekonasz.</p>
                     </div>
                 </div>
                 <figure className={style.section_img}>
