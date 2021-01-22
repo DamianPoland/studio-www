@@ -62,7 +62,7 @@ const Home = () => {
                         <div data-aos="zoom-in" className={style.sectionTechDesc_item}>
                             {iconResponsive}
                             <h2 className={style.sectionTechDesc_h2}>Skalowanie</h2>
-                            <p className={style.sectionTechDesc_p}>Wszystkie projekty są robione w technoligii RWD dzięki czemu są dopasowane do rozdzielczości wszystkich urządzeń.  </p>
+                            <p className={style.sectionTechDesc_p}>Wszystkie projekty są robione w technologii RWD, dzięki czemu są dopasowane do rozdzielczości wszystkich urządzeń.  </p>
                         </div>
                     </div>
                 </section>
@@ -73,7 +73,7 @@ const Home = () => {
                 <div className={style.section_container}>
                     <div className={style.section_content}>
                         <h1 data-aos="zoom-in" className={style.section_H1}>KIM JESTEM</h1>
-                        <p className={style.section_desc}><span className={style.section_descBigLeter}>J</span>estem osobą z tytułem mgr inż. Od kilku lat pracuję w branży IT. Mieszkam i pracuję w <strong>Gdynii</strong>. Zajmuję się tworzeniem <strong>stron internetowych</strong>, <strong>aplikacji webowych</strong> oraz <strong>serwisów internetowych</strong>. Przy tworzeniu projektów korzystam z najnowszych i najczęsciej używanych technologii, dlatego każdy projekt jest wysokiej jakości i stosunkowo tani w produkcji oraz utrzymaniu.<br /> <span className={style.section_descBigLeter}>D</span>zięki nawiązaniu współpracy z innymi profesjonalnymi programistami jestem w stanie tworzyć duże i skomplikowane projekty.</p>
+                        <p className={style.section_desc}><span className={style.section_descBigLeter}>J</span>estem osobą z tytułem mgr inż. Od kilku lat pracuję w branży IT. Mieszkam i pracuję w <strong>Gdyni</strong>. Zajmuję się tworzeniem <strong>stron internetowych</strong>, <strong>aplikacji webowych</strong> oraz <strong>serwisów internetowych</strong>. Przy tworzeniu projektów korzystam z najnowszych i najczęściej używanych technologii, dlatego każdy projekt jest wysokiej jakości i stosunkowo tani w produkcji oraz utrzymaniu.<br /> <span className={style.section_descBigLeter}>D</span>zięki nawiązaniu współpracy z innymi profesjonalnymi programistami jestem w stanie tworzyć duże i skomplikowane projekty.</p>
                     </div>
                 </div>
                 <figure className={style.section_img}>
@@ -86,7 +86,7 @@ const Home = () => {
                 <div className={style.section_container}>
                     <div className={style.section_content}>
                         <h1 data-aos="zoom-in" className={style.section_H1}>DLACZEGO JA</h1>
-                        <p className={style.section_desc}><span className={style.section_descBigLeter}>Z</span>ajmuję się tworzeniem kompleksowych projektów od A-Z. Korzystam z najnowszych rozwiązań jak <strong>React</strong> i <strong>FaaS</strong>. Strony są projektowane jako <strong>RWD</strong> (<strong>Responsive Web Design</strong>) oraz <strong>PWA</strong> (<strong>Progressive Web Apps</strong>) dzięki czemu wyglądją dobrze na komputerze i na urządzeniu mobilnym. Każdy projekt jest przygotowany pod pozycjonowanie strony zgodnie z <strong>SEO</strong>.<br /> <span className={style.section_descBigLeter}>C</span>ena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę a się przekonasz.</p>
+                        <p className={style.section_desc}><span className={style.section_descBigLeter}>Z</span>ajmuję się tworzeniem kompleksowych projektów od A-Z. Korzystam z najnowszych rozwiązań jak <strong>React</strong> i <strong>FaaS</strong>. Strony są projektowane jako <strong>RWD</strong> (<strong>Responsive Web Design</strong>) oraz <strong>PWA</strong> (<strong>Progressive Web Apps</strong>) dzięki czemu wyglądają dobrze na komputerze i na urządzeniu mobilnym. Każdy projekt jest przygotowany pod pozycjonowanie strony zgodnie z <strong>SEO</strong>.<br /> <span className={style.section_descBigLeter}>C</span>ena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem, a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę, a się przekonasz.</p>
                     </div>
                 </div>
                 <figure className={style.section_img}>
@@ -113,7 +113,7 @@ const Home = () => {
                                 <div className={style.technologiesItemContent}>
                                     <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong className={style.font}>RWD</strong></h2>
                                     <h2 className={style.technologiesItemHeader2}>(<strong>Responsive Web Design</strong>)</h2>
-                                    <p className={style.technologiesItemText}><strong>RWD</strong> to technika projektowania widoków dzięki której Twoja strona wygląda dobrze na każdym urządzeniu. Niezależnie czy kożystasz z dużego monitora, smartfonu lub tableta, widok automatycznie dopasuje sie do danej rodzielczości.
+                                    <p className={style.technologiesItemText}><strong>RWD</strong> to technika projektowania widoków, dzięki której Twoja strona wygląda dobrze na każdym urządzeniu. Niezależnie czy korzystasz z dużego monitora, smartfonu lub tableta, widok automatycznie dopasuje się do danej rozdzielczości.
                                 </p>
                                     <a href='https://pl.wikipedia.org/wiki/Responsive_web_design' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
                                 </div>
@@ -126,7 +126,7 @@ const Home = () => {
                                 <div className={style.technologiesItemContent}>
                                     <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong className={style.font}>PWA</strong></h2>
                                     <h2 className={style.technologiesItemHeader2}>(<strong>Progressive Web Apps</strong>)</h2>
-                                    <p className={style.technologiesItemText}><strong>PWA</strong> pozwala tak zaprojektować stronę internetową, aby na urządzeniu mobilnym mogła być używana jak aplikacja mobilna. Można ją zainstalować w telefonie i kożystać w trybie offline. Działa na platformie Android i iOS. Dzięki tej technologi można uzyskać dostęp do fukcji telefonu takich jak aparat, gps, zdjęcia, powiadomienia i inne.
+                                    <p className={style.technologiesItemText}><strong>PWA</strong> pozwala tak zaprojektować stronę internetową, aby na urządzeniu mobilnym mogła być używana jak aplikacja mobilna. Można ją zainstalować w telefonie i korzystać w trybie offline. Działa na platformie Android i iOS. Dzięki tej technologii można uzyskać dostęp do funkcji telefonu, takich jak aparat, gps, zdjęcia, powiadomienia i inne.
                                 </p>
                                     <a href='https://pl.wikipedia.org/wiki/Progressive_web_app' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
                                 </div>
@@ -139,7 +139,7 @@ const Home = () => {
                                 <div className={style.technologiesItemContent}>
                                     <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong className={style.font}>TWA</strong></h2>
                                     <h2 className={style.technologiesItemHeader2}>(<strong>Trusted Web Activities</strong>)</h2>
-                                    <p className={style.technologiesItemText}><strong>TWA</strong> daje możliwość udostępniona w sklepie Google Play aplikacj PWA. Nie ma potrzeby pisania oddzielnego kodu. TWA oferuje największą wydajność wśród dostępnych rozwiązań i gwarantuje wygodę korzystania z natywnej aplikacji.Wszelkie aktualizacje są automatycznie i nie wymagają ingerencji w sklepie, dzięki czemu utrzymanie całego projektu jest o wiele tańsze.
+                                    <p className={style.technologiesItemText}><strong>TWA</strong> daje możliwość udostępniania w sklepie Google Play aplikacji PWA. Nie ma potrzeby pisania oddzielnego kodu. TWA oferuje największą wydajność wśród dostępnych rozwiązań i gwarantuje wygodę korzystania z natywnej aplikacji. Wszelkie aktualizacje są automatyczne i nie wymagają ingerencji w sklepie, dzięki czemu utrzymanie całego projektu jest o wiele tańsze.
                                 </p>
                                     <a href='https://developers.google.com/web/android/trusted-web-activity' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
                                 </div>
@@ -152,7 +152,7 @@ const Home = () => {
                                 <div className={style.technologiesItemContent}>
                                     <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong className={style.font}>SEO</strong></h2>
                                     <h2 className={style.technologiesItemHeader2}>(<strong>Search Engine Optimization</strong>)</h2>
-                                    <p className={style.technologiesItemText}><strong>SEO</strong> to projektowanie zgodne z zasadami optymalizacji pozwalającymi na osiągnięcie wysokich wyników w wyszukiwarkach dla wybranówch słów lub fraz kluczowych. Kod strony, jej treść oraz responsywność są dostosowane do aktualnych algorytmów wyszukiwarek w celu poprawienia pozycji danego serwisu na liście wynikowej.
+                                    <p className={style.technologiesItemText}><strong>SEO</strong> to projektowanie zgodne z zasadami optymalizacji pozwalającymi na osiągnięcie wysokich wyników w wyszukiwarkach dla wybranych słów lub fraz kluczowych. Kod strony, jej treść oraz responsywność są dostosowane do aktualnych algorytmów wyszukiwarek w celu poprawienia pozycji danego serwisu na liście wynikowej.
                                 </p>
                                     <a href='https://pl.wikipedia.org/wiki/Optymalizacja_dla_wyszukiwarek_internetowych' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
                                 </div>
@@ -165,7 +165,7 @@ const Home = () => {
                                 <div className={style.technologiesItemContent}>
                                     <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong className={style.font}>FaaS</strong></h2>
                                     <h2 className={style.technologiesItemHeader2}>(<strong>Function as a Service</strong>)</h2>
-                                    <p className={style.technologiesItemText}><strong>FaaS</strong> to usługa chmurowa pozwalająca na bardzo łatwe, sybkie i tanie projektowanie tzw. backendu. Projekty wykonane w oparciu o FaaS dostarczane przez takich gigantów jak Amazon lub Google są bardzo tanie w utrzymaniu, w 100% niezawodne i dobrze zabezpieczone.
+                                    <p className={style.technologiesItemText}><strong>FaaS</strong> to usługa chmurowa pozwalająca na bardzo łatwe, szybkie i tanie projektowanie tzw. backendu. Projekty wykonane w oparciu o FaaS, dostarczane przez takich gigantów jak Amazon lub Google, są bardzo tanie w utrzymaniu, w 100% niezawodne i dobrze zabezpieczone.
                                 </p>
                                     <a href='https://en.wikipedia.org/wiki/Function_as_a_service' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
                                 </div>
@@ -178,7 +178,7 @@ const Home = () => {
                                 <div className={style.technologiesItemContent}>
                                     <h2 data-aos="zoom-in" className={style.technologiesItemHeader}><strong className={style.font}>React</strong></h2>
                                     <h2 className={style.technologiesItemHeader2}>(<strong>JavaScript Library</strong>)</h2>
-                                    <p className={style.technologiesItemText}><strong>React</strong> to javascriptowa biblioteka służąca do tworzenia interfejsów użytkownika. Aktualnie jest to najczęściej używana biblioteka wykożystywana przy tworzeniu aplikacji webowych, posiadjąca ogromne wsparcie i nowoczesne rozwiązania.
+                                    <p className={style.technologiesItemText}><strong>React</strong> to javascriptowa biblioteka służąca do tworzenia interfejsów użytkownika. Aktualnie jest to najczęściej używana biblioteka wykorzystywana przy tworzeniu aplikacji webowych, posiadająca ogromne wsparcie i nowoczesne rozwiązania.
                                 </p>
                                     <a href='https://pl.wikipedia.org/wiki/React.js' target='blank' className={style.technologiesItemAnchor}>Czytaj więcej...</a>
                                 </div>

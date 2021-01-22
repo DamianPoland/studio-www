@@ -95,7 +95,7 @@ const Offer = () => {
                             </div>
 
                             <div className={style.pages_desc_content}>
-                                <p data-aos="flip-up" className={style.pages_desc_P}>Dzięki projektowaniu RWD (Responsive Web Design) Twoja strona wygląda dobrze na każdym urządzeniu niezależnie czy kożystasz z dużego monitora, smartfonu lub tableta.</p>
+                                <p data-aos="flip-up" className={style.pages_desc_P}>Dzięki projektowaniu RWD (Responsive Web Design) Twoja strona wygląda dobrze na każdym urządzeniu niezależnie czy korzystasz z dużego monitora, smartfonu lub tableta.</p>
                                 <div className={style.pages_desc_svg} data-aos="zoom-in">
                                     <Devices />
                                 </div>
@@ -105,7 +105,7 @@ const Offer = () => {
                                 <div className={style.pages_desc_svg} data-aos="zoom-in">
                                     <Domain />
                                 </div>
-                                <p data-aos="flip-up" className={style.pages_desc_P}>Jeśli nie wiesz czym jest: domena, hosting, dns itp. to nic nie szkodzi. Przedstaw swój pomysł a ja zajmę się resztą.</p>
+                                <p data-aos="flip-up" className={style.pages_desc_P}>Jeśli nie wiesz czym jest: domena, hosting, dns itp. to nic nie szkodzi. Przedstaw swój pomysł, a ja zajmę się resztą.</p>
                             </div>
 
                             <div className={style.pages_desc_content}>
@@ -151,7 +151,7 @@ const Offer = () => {
 
                     <div className={style.pages_desc}>
                         <div className={style.pages_desc_content}>
-                            <p data-aos="flip-up" className={style.pages_desc_P}>Aplikacje webowe są dostosowane konkretnie do twoich potrzeb. Począwszy od prostych aplikacji ze stroną logowania a skończywszy na skomplikowanych z możliwością aktualicji za pomocą systemów CMS.</p>
+                            <p data-aos="flip-up" className={style.pages_desc_P}>Aplikacje webowe są dostosowane konkretnie do twoich potrzeb. Począwszy od prostych aplikacji ze stroną logowania, a skończywszy na skomplikowanych z możliwością aktualizacji za pomocą systemów CMS.</p>
                             <div className={style.pages_desc_svg} data-aos="zoom-in">
                                 <Preferences />
                             </div>
@@ -160,7 +160,7 @@ const Offer = () => {
                             <div className={style.pages_desc_svg} data-aos="zoom-in">
                                 <Mobile />
                             </div>
-                            <p data-aos="flip-up" className={style.pages_desc_P}>Dzięki projektowaniu PWA (Progressive Web App) nie musisz płacić za wykonanie aplikacji mobilnej. Twoja aplikacja webowa będzie się zachowywać tak jak mobilna gdy bedzie używana na urządzeniu przenośnym.</p>
+                            <p data-aos="flip-up" className={style.pages_desc_P}>Dzięki projektowaniu PWA (Progressive Web App) nie musisz płacić za wykonanie aplikacji mobilnej. Twoja aplikacja webowa będzie się zachowywać tak jak mobilna, gdy będzie używana na urządzeniu przenośnym.</p>
                         </div>
                     </div>
 
