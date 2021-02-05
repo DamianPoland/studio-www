@@ -4,7 +4,6 @@ import style from './Offer.module.css'
 
 // assets
 import intro from '../../assets/intro_blue_cubes.mp4'
-import not_ready from '../../assets/not_ready.jpg'
 import wolfmobileapps from '../../assets/wolfmobileapps.png'
 import food from '../../assets/food.png'
 import next from '../../assets/next.png'

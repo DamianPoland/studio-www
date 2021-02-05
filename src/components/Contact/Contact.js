@@ -6,6 +6,9 @@ import axios from 'axios'
 import Alert from '../../UI/Alert/Alert'
 import Spinner from '../../UI/Spinner/Spinner'
 
+// images
+import BackgroundImg from '../../assets/contact.jpg'
+
 
 const Contact = () => {
 
@@ -13,6 +16,9 @@ const Contact = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+
+    // is loading background image - only first time
+    const [isLoading, setIsLoading] = useState(true) // input value
 
     // input Name
     const [inputName, setInputName] = useState('') // input value
@@ -109,63 +115,67 @@ const Contact = () => {
 
     return (
         <section className={style.background}>
-            <div className={style.section}>
-                <div className={style.head}>
-                    <h1 className={style.header}>Skontaktuj się</h1>
-                    <p className={style.line}></p>
-                </div>
-                <div className={style.contact}>
-
-                    {/* contact links  */}
-                    <div className={style.content}>
-                        <a className={style.contentItem} href='https://goo.gl/maps/sg7GDACAWaiDKWjL6' target='blank' >
-                            <p className={style.contentIcon}>{location}</p>
-                            <p className={style.contentDesc}>Poland, Gdynia, Kaliska 22</p>
-                        </a>
-                        <a className={style.contentItem} href='tel:+48795631039'>
-                            <p className={style.contentIcon}>{phone}</p>
-                            <p className={style.contentDesc}>+48 795-631-039</p>
-                        </a>
-                        <a className={style.contentItem} href='mailto:info@studio-www.com?subject=Zapytanie'>
-                            <p className={style.contentIcon}>{email}</p>
-                            <p className={style.contentDesc}>info@studio-www.com</p>
-                        </a>
-                        <a className={style.contentItem} href='https://www.fb.me/StudioWWWGdynia' target='blank' >
-                            <p className={style.contentIcon}>{facebbok}</p>
-                            <p className={style.contentDesc}>@StudioWWWGdynia</p>
-                        </a>
-                        <a className={style.contentItem} href='/'>
-                            <p className={style.contentIcon}>{clock}</p>
-                            <p className={style.contentDesc}>Pn - Pt 8.00-16.00</p>
-                        </a>
+            < img className={style.backgroundImg} src={BackgroundImg} alt="background contact" onLoad={() => setIsLoading(false)} />
+            {isLoading
+                ? <Spinner />
+                : <div className={style.section}>
+                    <div className={style.head}>
+                        <h1 className={style.header}>Skontaktuj się</h1>
+                        <p className={style.line}></p>
                     </div>
+                    <div className={style.contact}>
 
-                    {/* form */}
-                    <div className={style.formContainer}>
-                        <form className={`${style.form} ${isFormAnimation && style.formAnim}`}>
-                            {isAlertShow && <Alert click={() => setIsAlertShow(false)} alertName='Przepraszamy' alertDetails='Wiadomości nie udało się wysłać. Proszę skorzystać z innej formy kontaktu' />}
-                            {isSpinnerShow && <Spinner />}
-                            <div className={style.inputContainer}>
-                                <input onChange={event => setInputName(event.target.value)} value={inputName} onFocus={() => setInputNameIsInvalid(false)} className={`${style.input} ${inputNameIsInvalid && style.inputIsInvalid}`} type='text' required />
-                                <label className={style.label}>Twoje imię</label>
-                            </div>
-                            <div className={style.inputContainer}>
-                                <input onChange={event => setInputEmail(event.target.value)} value={inputEmail} onFocus={() => setInputEmailIsInvalid(false)} className={`${style.input} ${inputEmailIsInvalid && style.inputIsInvalid}`} type='text' required />
-                                <label className={style.label}>Twój e-mail</label>
-                            </div>
-                            <div className={style.inputContainer}>
-                                <textarea onChange={event => setInputMessage(event.target.value)} value={inputMessage} onFocus={() => setInputMessageIsInvalid(false)} className={`${style.input} ${inputMessageIsInvalid && style.inputIsInvalid}`} type='textarea' rows='5' required />
-                                <label className={style.label}>Wiadomość</label>
-                            </div>
-                            <button onClick={sendMessage} className={style.btn}>Wyślij</button>
-                        </form>
-                        <div className={`${style.envelope} ${isFormAnimation && style.envelopeAnim}`}>
-                            {envelope}
+                        {/* contact links  */}
+                        <div className={style.content}>
+                            <a className={style.contentItem} href='https://goo.gl/maps/sg7GDACAWaiDKWjL6' target='blank' >
+                                <p className={style.contentIcon}>{location}</p>
+                                <p className={style.contentDesc}>Poland, Gdynia, Kaliska 22</p>
+                            </a>
+                            <a className={style.contentItem} href='tel:+48795631039'>
+                                <p className={style.contentIcon}>{phone}</p>
+                                <p className={style.contentDesc}>+48 795-631-039</p>
+                            </a>
+                            <a className={style.contentItem} href='mailto:info@studio-www.com?subject=Zapytanie'>
+                                <p className={style.contentIcon}>{email}</p>
+                                <p className={style.contentDesc}>info@studio-www.com</p>
+                            </a>
+                            <a className={style.contentItem} href='https://www.fb.me/StudioWWWGdynia' target='blank' >
+                                <p className={style.contentIcon}>{facebbok}</p>
+                                <p className={style.contentDesc}>@StudioWWWGdynia</p>
+                            </a>
+                            <a className={style.contentItem} href='/'>
+                                <p className={style.contentIcon}>{clock}</p>
+                                <p className={style.contentDesc}>Pn - Pt 8.00-16.00</p>
+                            </a>
                         </div>
-                    </div>
 
+                        {/* form */}
+                        <div className={style.formContainer}>
+                            <form className={`${style.form} ${isFormAnimation && style.formAnim}`}>
+                                {isAlertShow && <Alert click={() => setIsAlertShow(false)} alertName='Przepraszamy' alertDetails='Wiadomości nie udało się wysłać. Proszę skorzystać z innej formy kontaktu' />}
+                                {isSpinnerShow && <Spinner />}
+                                <div className={style.inputContainer}>
+                                    <input onChange={event => setInputName(event.target.value)} value={inputName} onFocus={() => setInputNameIsInvalid(false)} className={`${style.input} ${inputNameIsInvalid && style.inputIsInvalid}`} type='text' required />
+                                    <label className={style.label}>Twoje imię</label>
+                                </div>
+                                <div className={style.inputContainer}>
+                                    <input onChange={event => setInputEmail(event.target.value)} value={inputEmail} onFocus={() => setInputEmailIsInvalid(false)} className={`${style.input} ${inputEmailIsInvalid && style.inputIsInvalid}`} type='text' required />
+                                    <label className={style.label}>Twój e-mail</label>
+                                </div>
+                                <div className={style.inputContainer}>
+                                    <textarea onChange={event => setInputMessage(event.target.value)} value={inputMessage} onFocus={() => setInputMessageIsInvalid(false)} className={`${style.input} ${inputMessageIsInvalid && style.inputIsInvalid}`} type='textarea' rows='5' required />
+                                    <label className={style.label}>Wiadomość</label>
+                                </div>
+                                <button onClick={sendMessage} className={style.btn}>Wyślij</button>
+                            </form>
+                            <div className={`${style.envelope} ${isFormAnimation && style.envelopeAnim}`}>
+                                {envelope}
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
+            }
         </section>
     )
 }

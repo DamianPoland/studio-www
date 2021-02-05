@@ -5,12 +5,21 @@
 
 
 .background {
-    background: radial-gradient(circle, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, 0.6) 100%) center, url(../../assets/contact.jpg) center;
-    background-attachment: fixed;
-    background-size: cover;
-    color: black;
     width: 100%;
+    min-height: calc(100vh - 10rem);
     margin-top: 4rem;
+    position: relative;
+}
+
+.backgroundImg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    object-fit: cover;
 }
 
 .section {
@@ -33,12 +42,14 @@
     flex-direction: column;
     padding-top: 3rem;
     align-self: center;
+    z-index: 0;
 
 }
 
 .header {
     color: white;
     font-size: 2.5rem;
+    opacity: 1;
 }
 
 .line {
