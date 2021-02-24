@@ -312,6 +312,10 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 @keyframes envelopeSvgOkIdAnimation {
+    0% {
+        opacity: 0;
+    }
+
     25% {
         opacity: 0;
     }
