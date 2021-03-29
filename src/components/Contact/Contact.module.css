@@ -1,10 +1,5 @@
-* {
-    /* add color in index.css eg: --accent: 0, 200, 0;*/
-    --colorContact: var(--accent);
-}
-
-
 .background {
+    background: black;
     width: 100%;
     min-height: calc(100vh - 10rem);
     margin-top: 4rem;
@@ -33,6 +28,7 @@
 .contact {
     max-width: 1200px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
@@ -71,6 +67,7 @@
 .contentItem {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
@@ -110,13 +107,13 @@
 }
 
 .contentItem:active {
-    background-color: rgba(var(--colorContact), 0.4);
+    background-color: rgba(var(--accent), 0.4);
 }
 
 .contentIcon {
     width: 6rem;
     height: 4rem;
-    border: rgb(var(--colorContact)) solid 2px;
+    border: rgb(var(--accent)) solid 2px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -131,7 +128,7 @@
 }
 
 .contentIcon:hover {
-    background-color: rgba(var(--colorContact), 0.2);
+    background-color: rgba(var(--accent), 0.2);
 }
 
 .contentDesc {
@@ -139,6 +136,7 @@
     padding: 1rem;
     color: white;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 /* END of contact links */
@@ -193,7 +191,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .inputIsInvalid {
-    border: red 2px solid;
+    border: red 1px solid;
 }
 
 .label {
@@ -208,12 +206,20 @@ textarea::-webkit-scrollbar-thumb {
     transition: 0.5s ease;
 }
 
+.isValid {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    color: red;
+    font-size: 0.8rem;
+}
+
 .input:focus+.label,
 .input:required:valid+.label {
     /* to work in htmml must be required:true*/
     display: flex;
     transform: scale(0.7) translate(-1rem, -4rem);
-    color: rgb(var(--colorContact));
+    color: rgb(var(--accent));
 }
 
 .input:focus {
@@ -237,7 +243,7 @@ textarea::-webkit-scrollbar-thumb {
     align-self: flex-end;
     font-size: 1.5rem;
     background-color: transparent;
-    border: 2px solid rgb(var(--colorContact));
+    border: 2px solid rgb(var(--accent));
     color: white;
     padding: 0.5rem 2rem;
     cursor: pointer;
@@ -245,12 +251,12 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .btn:hover {
-    background-color: rgba(var(--colorContact), 0.4);
+    background-color: rgba(var(--accent), 0.4);
 }
 
 .btn:active {
-    background-color: rgba(var(--colorContact), 0.8);
-    box-shadow: 0 0 40px rgba(var(--colorContact), 0.8);
+    background-color: rgba(var(--accent), 0.8);
+    box-shadow: 0 0 40px rgba(var(--accent), 0.8);
 }
 
 .formAnim {
@@ -329,21 +335,19 @@ textarea::-webkit-scrollbar-thumb {
 
 /* END of form */
 
-
-@media screen and (max-width: 1000px) {
-    .contact {
-        flex-direction: column;
-    }
-}
-
-
-@media screen and (max-width: 380px) {
+@media (min-width: 500px) {
 
     .contentItem {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .contentDesc {
-        text-align: center;
+        text-align: start;
+    }
+}
+
+@media (min-width: 1000px) {
+    .contact {
+        flex-direction: row;
     }
 }

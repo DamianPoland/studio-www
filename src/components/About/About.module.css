@@ -1,0 +1,150 @@
+.background {
+    background: white;
+    color: black;
+}
+
+.text__desc {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 1rem;
+    text-align: justify;
+    column-count: 1;
+    column-gap: 2rem;
+}
+
+.text__bigLeter {
+    font-size: 200%;
+    line-height: 2rem;
+}
+
+.figure__img {
+    max-width: 100%;
+    z-index: 0;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+
+/* section WHO */
+
+.who {
+    margin: 4rem auto 0 auto;
+    max-width: 1200px;
+    padding: 1rem 0 4rem 0;
+
+}
+
+.who__textContainer {
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    padding: 1rem;
+    transform: translateY(3rem);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+
+/* section APPROACH */
+
+.approach {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2)0%, rgba(0, 0, 0, 0.2)100%) center center no-repeat, url("../../assets/about_background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+    .approach {
+        background-attachment: scroll;
+    }
+}
+
+.approach__textContainer {
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+.approach__item {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+.approach__h2 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.approach__p {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+/* section WHY */
+
+.why {
+    margin: auto;
+    max-width: 1200px;
+    padding: 1rem 0 4rem 0;
+
+}
+
+.why__textContainer {
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    padding: 1rem;
+    transform: translateY(3rem);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+/* MEDIA */
+
+@media (min-width: 600px) {
+
+    .who__textContainer {
+        margin: 0 4rem;
+        padding: 2rem;
+    }
+
+
+    .approach__textContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why__textContainer {
+        margin: 0 4rem;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .approach__textContainer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .text__desc {
+        column-count: 2;
+    }
+}

@@ -49,7 +49,7 @@ const Contact = () => {
 
         // name validation if is min 3 chars
         if (inputName.trim().length < 3) {
-            setInputNameIsInvalid(true)
+            setInputNameIsInvalid("Niepoprawne imię.")
             isInvalid = true
         } else {
             setInputNameIsInvalid(false)
@@ -58,7 +58,7 @@ const Contact = () => {
         //email validation
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (!re.test(String(inputEmail).toLowerCase())) {
-            setInputEmailIsInvalid(true)
+            setInputEmailIsInvalid("Niepoprawny adres e-mail.")
             isInvalid = true
         } else {
             setInputEmailIsInvalid(false)
@@ -66,7 +66,7 @@ const Contact = () => {
 
         // message validation if is min 10 chars
         if (inputMessage.trim().length <= 10) {
-            setInputMessageIsInvalid(true)
+            setInputMessageIsInvalid("Wiadomość powinna zawierać minimum 10 znaków")
             isInvalid = true
         } else {
             setInputMessageIsInvalid(false)
@@ -151,22 +151,25 @@ const Contact = () => {
 
                         {/* form */}
                         <div className={style.formContainer}>
-                            <form className={`${style.form} ${isFormAnimation && style.formAnim}`}>
+                            <form className={`${style.form} ${isFormAnimation && style.formAnim}`} onSubmit={sendMessage} noValidate>
                                 {isAlertShow && <Alert click={() => setIsAlertShow(false)} alertName='Przepraszamy' alertDetails='Wiadomości nie udało się wysłać. Proszę skorzystać z innej formy kontaktu' />}
                                 {isSpinnerShow && <Spinner />}
                                 <div className={style.inputContainer}>
                                     <input onChange={event => setInputName(event.target.value)} value={inputName} onFocus={() => setInputNameIsInvalid(false)} className={`${style.input} ${inputNameIsInvalid && style.inputIsInvalid}`} type='text' required />
                                     <label className={style.label}>Twoje imię</label>
+                                    {inputNameIsInvalid && <p className={style.isValid}>{inputNameIsInvalid}</p>}
                                 </div>
                                 <div className={style.inputContainer}>
                                     <input onChange={event => setInputEmail(event.target.value)} value={inputEmail} onFocus={() => setInputEmailIsInvalid(false)} className={`${style.input} ${inputEmailIsInvalid && style.inputIsInvalid}`} type='text' required />
                                     <label className={style.label}>Twój e-mail</label>
+                                    {inputEmailIsInvalid && <p className={style.isValid}>{inputEmailIsInvalid}</p>}
                                 </div>
                                 <div className={style.inputContainer}>
                                     <textarea onChange={event => setInputMessage(event.target.value)} value={inputMessage} onFocus={() => setInputMessageIsInvalid(false)} className={`${style.input} ${inputMessageIsInvalid && style.inputIsInvalid}`} type='textarea' rows='5' required />
                                     <label className={style.label}>Wiadomość</label>
+                                    {inputMessageIsInvalid && <p className={style.isValid}>{inputMessageIsInvalid}</p>}
                                 </div>
-                                <button onClick={sendMessage} className={style.btn}>Wyślij</button>
+                                <input className={style.btn} type="submit" value="Wyślij" />
                             </form>
                             <div className={`${style.envelope} ${isFormAnimation && style.envelopeAnim}`}>
                                 {envelope}

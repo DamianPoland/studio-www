@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import style from './Nav.module.css'
 import logo from '../../assets/logo_gif_small.gif'
 
@@ -18,13 +18,15 @@ const Nav = props => {
     return (
         <header className={style.background}>
             <nav className={style.container}>
-                <div className={style.header}>
+                <Link to='/home' className={style.header}>
                     <img className={style.headerImg} src={logo} alt='logo' />
                     <p className={style.headerDesc}>studio-www.com</p>
-                </div>
+                </Link>
                 <ul onClick={() => setIsOpenMobileMenu(false)} className={`${style.list} ${styleMobileMenu}`}>
                     <li className={style.listItem}><NavLink to='/home' activeClassName={style.activeLink} className={style.listItemAnchor}>Strona główna</NavLink></li>
+                    <li className={style.listItem}><NavLink to='/about' activeClassName={style.activeLink} className={style.listItemAnchor}>O mnie</NavLink></li>
                     <li className={style.listItem}><NavLink to='/offer' activeClassName={style.activeLink} className={style.listItemAnchor}>Oferta</NavLink></li>
+                    <li className={style.listItem}><NavLink to='/realizations' activeClassName={style.activeLink} className={style.listItemAnchor}>Realizacje</NavLink></li>
                     <li className={style.listItem}><NavLink to='/login' activeClassName={style.activeLink} className={style.listItemAnchor}>Strefa klienta</NavLink></li>
                     <li className={style.listItem}><NavLink to='/contact' activeClassName={style.activeLink} className={style.listItemAnchor}>Kontakt</NavLink></li>
                 </ul>

@@ -1,11 +1,3 @@
-* {
-    /* add color in index.css eg: --accent: 0, 200, 0;*/
-    --colorLogin: var(--accent);
-    --backgroundLogin: var(--backgroundCustom);
-    --backgroundLineLogin: var(--gray);
-}
-
-
 .background {
     background: white;
 }
@@ -21,7 +13,7 @@
 }
 
 .projectHeader {
-    color: rgb(var(--colorLogin));
+    color: rgb(var(--accent));
     font-family: Arial;
     margin-bottom: 3rem;
     align-self: flex-start;
@@ -39,6 +31,7 @@
 
 .projectCoontentItem {
     display: flex;
+    flex-direction: column;
     padding: 1.5rem;
 }
 
@@ -56,7 +49,7 @@
 .btn {
     font-size: 1.5rem;
     background-color: transparent;
-    border: 2px solid rgba(var(--colorLogin), 1);
+    border: 2px solid rgba(var(--accent), 1);
     color: black;
     padding: 0.5rem 2rem;
     cursor: pointer;
@@ -64,16 +57,17 @@
 }
 
 .btn:hover {
-    background-color: rgba(var(--colorLogin), 1);
+    background-color: rgba(var(--accent), 1);
     color: white;
 }
 
 .btn:active {
-    box-shadow: 0 0 30px rgba(var(--colorLogin), 1);
+    box-shadow: 0 0 30px rgba(var(--accent), 1);
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
+
     .projectCoontentItem {
-        flex-direction: column;
+        flex-direction: row;
     }
 }

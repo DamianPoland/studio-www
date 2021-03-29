@@ -12,12 +12,16 @@ import { PRIVACY_POLICY_PERMISSION, IS_AUTH, USER_ID } from '../../shared/consta
 // components
 import Nav from '../../components/Nav/Nav'
 import Home from '../../components/Home/Home'
+import About from '../../components/About/About'
 import Offer from '../../components/Offer/Offer'
+import Realizations from '../../components/Realizations/Realizations'
 import Login from '../../components/Login/Login'
 import Contact from '../../components/Contact/Contact'
 import PrivacyPolicy from '../../components/PrivacyPolicy/PrivacyPolicy'
 import Footer from '../../components/Footer/Footer'
 import AlertPrivacy from '../../UI/AlertPrivacy/AlertPrivacy'
+
+
 
 function App() {
 
@@ -61,7 +65,9 @@ function App() {
       <Nav path='/' />
       <Switch>
         <Route path='/home' render={props => <Home {...props} />} />
+        <Route path='/about' render={props => <About {...props} />} />
         <Route path='/offer' render={props => <Offer {...props} />} />
+        <Route path='/realizations' render={props => <Realizations {...props} />} />
         <Route path='/login' render={props => <Login {...props} />} />
         <Route path='/contact' render={props => <Contact {...props} />} />
         <Route path='/privacy-policy' component={PrivacyPolicy} />

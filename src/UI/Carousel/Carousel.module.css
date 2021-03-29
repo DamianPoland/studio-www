@@ -1,0 +1,53 @@
+.boxContainer {
+    padding: 1rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    width: 30%;
+    padding-top: 20%;
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: perspective(2000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(2000px) rotateY(360deg);
+
+    }
+}
+
+.box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+
+    /* shadow => not support firefox, rest OK */
+    -webkit-box-reflect: below 10px linear-gradient(transparent 60%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 800px) {
+    .boxContainer {
+        padding: 3rem 0 5rem 0;
+    }
+}
