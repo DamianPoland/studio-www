@@ -66,9 +66,9 @@ const Realizations = () => {
                         <p className={style.realizations__text}>Strona internetowa firmy hydraulicznej: tatarczuk.com.pl</p>
                         <a href="https://tatarczuk.com.pl" target="_blank" rel="noopener noreferrer" className={style.realizations__link}>Zobacz...</a>
                     </div>
-                    <figure data-aos="fade-up-left" className={style.realizations__figure}>
+                    <a href="https://tatarczuk.com.pl" target="_blank" rel="noopener noreferrer" data-aos="fade-up-left" className={style.realizations__figure}>
                         <img className={style.img} src={tatarczuk} alt='tatarczuk.com.pl' />
-                    </figure>
+                    </a>
                 </div>
 
                 <div className={style.realizations__item}>
@@ -77,9 +77,9 @@ const Realizations = () => {
                         <p className={style.realizations__text}>Ogólnopolski portal ogłoszeniowy jaTestuje.pl</p>
                         <a href='https://jatestuje.pl' target="_blank" rel="noopener noreferrer" className={style.realizations__link}>Zobacz...</a>
                     </div>
-                    <figure data-aos="fade-up-left" className={style.realizations__figure}>
+                    <a href='https://jatestuje.pl' target="_blank" rel="noopener noreferrer" data-aos="fade-up-left" className={style.realizations__figure}>
                         <img className={style.img} src={jatestuje} alt='jatestuje.pl' />
-                    </figure>
+                    </a>
                 </div>
 
                 <div className={style.realizations__container}>
@@ -90,9 +90,9 @@ const Realizations = () => {
                             <p className={style.realizations__text}>Strona internetowa firmy ogólnobudowlanej: wlaczremont.pl</p>
                             <a href="http://wlaczremont.pl/" target="_blank" rel="noopener noreferrer" className={style.realizations__link}>Zobacz...</a>
                         </div>
-                        <figure data-aos="fade-up-left" className={style.realizations__figure}>
+                        <a href="http://wlaczremont.pl/" target="_blank" rel="noopener noreferrer" data-aos="fade-up-left" className={style.realizations__figure}>
                             <img className={style.img} src={wlaczremont} alt='wlaczremont.pl' />
-                        </figure>
+                        </a>
                     </div>
 
                     <div className={style.realizations__item}>
@@ -101,9 +101,9 @@ const Realizations = () => {
                             <p className={style.realizations__text}>Strona internetowa firmy elektrycznej: getpol.com.pl</p>
                             <a href="https://getpol.com.pl" target="_blank" rel="noopener noreferrer" className={style.realizations__link}>Zobacz...</a>
                         </div>
-                        <figure data-aos="fade-up-left" className={style.realizations__figure}>
+                        <a href="https://getpol.com.pl" target="_blank" rel="noopener noreferrer" data-aos="fade-up-left" className={style.realizations__figure}>
                             <img className={style.img} src={getpol} alt='getpol.com.pl' />
-                        </figure>
+                        </a>
                     </div>
 
                     <div className={style.realizations__item}>
@@ -112,9 +112,9 @@ const Realizations = () => {
                             <p className={style.realizations__text}>Modół kalendarza do rezerwacji wizyt lub obiektów </p>
                             <a href='https://kalendarz.studio-www.com' target="_blank" rel="noopener noreferrer" className={style.realizations__link}>Zobacz...</a>
                         </div>
-                        <figure data-aos="fade-up-left" className={style.realizations__figure}>
+                        <a href='https://kalendarz.studio-www.com' target="_blank" rel="noopener noreferrer" data-aos="fade-up-left" className={style.realizations__figure}>
                             <img className={style.img} src={calendar} alt='calendar' />
-                        </figure>
+                        </a>
                     </div>
 
                     <div className={style.realizations__item}>
@@ -123,9 +123,9 @@ const Realizations = () => {
                             <p className={style.realizations__text}>Strona internetowa salonu piękności: beautystudio.com.pl</p>
                             <a href="https://beautystudio.com.pl/" target="_blank" rel="noopener noreferrer" className={style.realizations__link}>Zobacz...</a>
                         </div>
-                        <figure data-aos="fade-up-left" className={style.realizations__figure}>
+                        <a href="https://beautystudio.com.pl/" target="_blank" rel="noopener noreferrer" data-aos="fade-up-left" className={style.realizations__figure}>
                             <img className={style.img} src={beautystudio} alt='beautystudio.com.pl' />
-                        </figure>
+                        </a>
                     </div>
 
                     <div className={style.realizations__item}>
@@ -134,19 +134,12 @@ const Realizations = () => {
                             <p className={style.realizations__text}>Aplikacja służąca do rozpoznawania i tłumaczenia tekstu</p>
                             <a href='https://imgtotext.web.app' target="_blank" rel="noopener noreferrer" className={style.realizations__link}>Zobacz...</a>
                         </div>
-                        <figure data-aos="fade-up-left" className={style.realizations__figure}>
+                        <a href='https://imgtotext.web.app' target="_blank" rel="noopener noreferrer" data-aos="fade-up-left" className={style.realizations__figure}>
                             <img className={style.img} src={imgToText} alt='imgToText' />
-                        </figure>
+                        </a>
                     </div>
 
                 </div>
-
-
-                {/* <a data-aos="zoom-in" className={style.a} href='https://imgtotext.web.app/' target='blank'><img className={style.img} src={imgToText} alt='applikacja webowa' />
-                    </a>
-                    <a data-aos="zoom-in" className={style.a} href='https://kalendarz.studio-www.com' target='blank'><img className={style.img} src={calendar} alt='moduł kalendarza' />
-                    </a> */}
-
             </section>
 
             {/* section SAMPLES */}

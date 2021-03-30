@@ -5,11 +5,13 @@ import { Link } from 'react-router-dom'
 // components
 import Carousel from '../../UI/Carousel/Carousel'
 
+//video
+import start_video from '../../assets/home_start_video.mp4'
 
 // images
-import firstImg from '../../assets/firstImg.jpg'
-import rwd from '../../assets/rwd.jpg'
-import react from '../../assets/react.jpg'
+import sitesImg from '../../assets/laptop2.png'
+import appsImg from '../../assets/laptop.png'
+import userImg from '../../assets/user.png'
 
 // images 
 import html from '../../assets/tools/html.png'
@@ -54,18 +56,20 @@ const Home = () => {
     return (
         <main className={style.background}>
 
-            {/* img intro */}
-            <section className={style.section}>
-                <div className={style.introContainer}>
-                    <img className={style.introImg} src={firstImg} alt='strony internetowe' />
-                    <div className={style.introBlack}></div>
-                    <div className={style.introContainerText}>
-                        <h1 className={`${style.introText} ${style.introText1}`}>Strony internetowe</h1>
-                        <h2 className={`${style.introText} ${style.introText2}`}>Aplikacje webowe</h2>
-                        <h2 className={`${style.introText} ${style.introText3}`}>Portale internetowe</h2>
-                    </div>
-                    <h1 className={style.headerName}>studio-www.com</h1>
+            {/* section START */}
+            <section className={style.start}>
+                <div className={style.start__videoContainer}>
+                    <video className={style.start__video} src={start_video} autoPlay loop muted playsInline alt="intro"
+                        onLoadedData={() => console.log('video onLoadedData')}
+                        onCanPlay={() => console.log('video onCanPlay')} />
+                    <div className={style.start__videoFilter}></div>
                 </div>
+                <div className={style.start__container}>
+                    <h1 className={`${style.start__text} ${style.start__text1}`}>Strony internetowe</h1>
+                    <h2 className={`${style.start__text} ${style.start__text2}`}>Aplikacje webowe</h2>
+                    <h2 className={`${style.start__text} ${style.start__text3}`}>Portale internetowe</h2>
+                </div>
+                <i className={style.start__arrow} />
             </section>
 
             {/* section TOOLS */}
@@ -107,37 +111,37 @@ const Home = () => {
                     <div className={style.approach__container}>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={rwd} alt='approach studio-www' />
+                                <img className={style.img} src={sitesImg} alt='approach studio-www' />
                             </figure>
                             <p className={style.approach__text}>Wosoka<br /><span className={style.approach__textEmphasize}>jakość</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={rwd} alt='approach studio-www' />
+                                <img className={style.img} src={sitesImg} alt='approach studio-www' />
                             </figure>
                             <p className={style.approach__text}>Konkurencyjna<br /><span className={style.approach__textEmphasize}>cena</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={rwd} alt='approach studio-www' />
+                                <img className={style.img} src={sitesImg} alt='approach studio-www' />
                             </figure>
                             <p className={style.approach__text}>Nowoczesny<br /><span className={style.approach__textEmphasize}>wygląd</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={rwd} alt='approach studio-www' />
+                                <img className={style.img} src={sitesImg} alt='approach studio-www' />
                             </figure>
                             <p className={style.approach__text}>Wykonanie na<br /><span className={style.approach__textEmphasize}>czas</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={rwd} alt='approach studio-www' />
+                                <img className={style.img} src={sitesImg} alt='approach studio-www' />
                             </figure>
-                            <p className={style.approach__text}>Nowoczesne<br /><span className={style.approach__textEmphasize}>rozwiązania</span></p>
+                            <p className={style.approach__text}>Sprawdzone<br /><span className={style.approach__textEmphasize}>rozwiązania</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={rwd} alt='approach studio-www' />
+                                <img className={style.img} src={sitesImg} alt='approach studio-www' />
                             </figure>
                             <p className={style.approach__text}>Indywidualne<br /><span className={style.approach__textEmphasize}>podejście</span></p>
                         </div>
@@ -155,25 +159,24 @@ const Home = () => {
                 </div>
 
                 <div className={style.offer__item}>
+                    <figure className={style.offer__figure}>
+                        <img data-aos="fade-up-left" className={style.img} src={appsImg} alt='Responsive Web Design' />
+                        <img className={style.offer__img} src={seo} alt='seo' />
+                    </figure>
                     <div className={style.offer__content}>
                         <h2 data-aos="zoom-in" className={style.offer__header}><strong className={style.font}>Strony internetowe</strong></h2>
                         <p className={style.offer__text}><strong>Strona internetowa</strong> to wizytówka Twojej marki w Internecie, która pozwala uzyskać informacje o firmie. Jest wyjątkową okazją do wyróżnienia się na tle konkurencji.</p>
                     </div>
-                    <figure className={style.offer__figure}>
-                        <img data-aos="fade-up-left" className={style.img} src={rwd} alt='Responsive Web Design' />
-                        <img className={style.offer__img} src={seo} alt='seo' />
-                    </figure>
                 </div>
 
                 <div className={style.offer__item}>
                     <div className={style.offer__content}>
                         <h2 data-aos="zoom-in" className={style.offer__header}><strong className={style.font}>Aplikacje webowe</strong></h2>
-                        <p className={style.offer__text}><strong>Aplikacje webowe (aplikacje internetowe)</strong> to moźliwość realizacji Twojej idei w internecie. Jeśli masz pomysł jak mógłbyś zarabiać to zgłoś się do mnie a ja wykonam projekt od początku do końca.</p>
+                        <p className={style.offer__text}><strong>Aplikacje webowe (aplikacje internetowe)</strong> to moźliwość realizacji Twojej idei w internecie. Jeśli masz pomysł to zgłoś się do mnie a ja wykonam projekt od początku do końca.</p>
                     </div>
                     <figure className={style.offer__figure}>
-                        <img data-aos="fade-up-left" className={style.img} src={react} alt='React JavaScript Library' />
+                        <img data-aos="fade-up-left" className={style.img} src={sitesImg} alt='React JavaScript Library' />
                         <img className={style.offer__img} src={reactJs} alt='react js' />
-
                     </figure>
                 </div>
                 <Link to='/offer' className={`${style.link} ${style.linkLeftPadding}`}>Zobacz pełną ofertę<p className={style.linkArrow}></p></Link>
@@ -196,10 +199,7 @@ const Home = () => {
 
             {/* section USER */}
             <section className={style.user}>
-                <div className={style.user__content}>
-                    <figure className={style.user__figure}>
-                        <img className={style.img} src={rwd} alt='approach studio-www' />
-                    </figure>
+                <div className={style.user__container}>
                     <div className={style.user__textContainer}>
                         <div className="textContainer">
                             <p className="text1">STREFA KLIENTA</p>
@@ -208,6 +208,9 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                <figure className={style.user__figure}>
+                    <img className={style.user__img} src={userImg} alt='userImg studio-www' />
+                </figure>
             </section>
 
 

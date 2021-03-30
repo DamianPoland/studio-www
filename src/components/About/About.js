@@ -32,7 +32,7 @@ const About = () => {
                 <div className={style.who__textContainer}>
                     <div className="textContainer">
                         <p className="text1">O MNIE</p>
-                        <h1 className="text2">Kim jestem.</h1>
+                        <h1 className="text2">Kim jestem?</h1>
                     </div>
                     <p className={style.text__desc}><span className={style.text__bigLeter}>J</span>estem osobą z tytułem mgr inż. Od kilku lat pracuję w branży IT. Mieszkam i pracuję w <strong>Gdyni</strong>. Zajmuję się tworzeniem <strong>stron internetowych</strong>, <strong>aplikacji webowych</strong> oraz <strong>serwisów internetowych</strong>. Przy tworzeniu projektów korzystam z najnowszych i najczęściej używanych technologii, dlatego każdy projekt jest wysokiej jakości i stosunkowo tani w produkcji oraz utrzymaniu.<br /> <span className={style.text__bigLeter}>D</span>zięki nawiązaniu współpracy z innymi profesjonalnymi programistami jestem w stanie tworzyć duże i skomplikowane projekty.</p>
                 </div>
@@ -47,9 +47,9 @@ const About = () => {
                 <div className={style.why__textContainer}>
                     <div className="textContainer">
                         <p className="text1">O MNIE</p>
-                        <h1 className="text2">Dlaczego ja.</h1>
+                        <h1 className="text2">Dlaczego ja?</h1>
                     </div>
-                    <p className={style.text__desc}><span className={style.text__bigLeter}>Z</span>ajmuję się tworzeniem kompleksowych projektów od A-Z. Korzystam z najnowszych rozwiązań jak <strong>React</strong> i <strong>FaaS</strong>. Strony są projektowane jako <strong>RWD</strong> (<strong>Responsive Web Design</strong>) oraz <strong>PWA</strong> (<strong>Progressive Web Apps</strong>) dzięki czemu wyglądają dobrze na komputerze i na urządzeniu mobilnym. Każdy projekt jest przygotowany pod pozycjonowanie strony zgodnie z <strong>SEO</strong>.<br /> <span className={style.text__bigLeter}>C</span>ena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem, a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę, a się przekonasz.</p>
+                    <p className={style.text__desc}><span className={style.text__bigLeter}>Z</span>ajmuję się tworzeniem kompleksowych projektów od A-Z. Korzystam z nowoczesnych rozwiązań takich jak <strong>React</strong> i <strong>XaaS</strong>. Strony są projektowane jako <strong>RWD</strong> (<strong>Responsive Web Design</strong>) oraz <strong>PWA</strong> (<strong>Progressive Web Apps</strong>) dzięki czemu wyglądają dobrze na komputerze i na urządzeniu mobilnym. Każdy projekt jest przygotowany pod pozycjonowanie strony zgodnie z <strong>SEO</strong>.<br /> <span className={style.text__bigLeter}>C</span>ena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem, a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę, a się przekonasz.</p>
                 </div>
                 <figure className={style.figure__img}>
                     <img className={style.img} data-aos="fade-up" src={why} alt='dlaczego studio-www' />

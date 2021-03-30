@@ -36,6 +36,9 @@
     margin: 4rem auto 0 auto;
     max-width: 1200px;
     padding: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
 }
 
@@ -58,6 +61,8 @@
     margin: auto;
     max-width: 1200px;
     padding: 1rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -76,7 +81,7 @@
 /* section APPROACH */
 
 .approach {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2)0%, rgba(0, 0, 0, 0.2)100%) center center no-repeat, url("../../assets/about_background.jpg");
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2)0%, rgba(0, 0, 0, 0.2)100%) center center no-repeat, url("../../assets/background_about.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -197,6 +202,14 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (min-width: 800px) {
+
+    .figure__img {
+        max-width: 60%;
+    }
+}
+
 
 @media (min-width: 1000px) {
 
