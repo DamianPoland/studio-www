@@ -160,7 +160,7 @@ const Home = () => {
                     <div className={style.standards__content}>
                         <h2 data-aos="zoom-in" className={style.standards__header}><strong className={style.font}>PWA</strong></h2>
                         <h2 className={style.standards__header2}>(<strong>Progressive Web Apps</strong>)</h2>
-                        <p className={style.standards__text}><strong>PWA</strong> pozwala tak zaprojektować stronę internetową, aby na urządzeniu mobilnym mogła być używana jak aplikacja mobilna. Można ją zainstalować w telefonie i korzystać w trybie offline. Działa na platformie Android i iOS. Dzięki tej technologii można uzyskać dostęp do funkcji telefonu, takich jak aparat, gps, zdjęcia, powiadomienia i inne.
+                        <p className={style.standards__text}><strong>PWA</strong> pozwala tak zaprojektować stronę internetową, aby na urządzeniu mobilnym mogła być używana jak aplikacja mobilna. Można ją zainstalować w telefonie i korzystać w trybie offline. Działa na platformie Android i iOS.
                                 </p>
                         <a href='https://pl.wikipedia.org/wiki/Progressive_web_app' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
                     </div>
@@ -173,7 +173,7 @@ const Home = () => {
                     <div className={style.standards__content}>
                         <h2 data-aos="zoom-in" className={style.standards__header}><strong className={style.font}>TWA</strong></h2>
                         <h2 className={style.standards__header2}>(<strong>Trusted Web Activities</strong>)</h2>
-                        <p className={style.standards__text}><strong>TWA</strong> daje możliwość udostępniania w sklepie Google Play aplikacji PWA. Nie ma potrzeby pisania oddzielnego kodu. TWA oferuje największą wydajność wśród dostępnych rozwiązań i gwarantuje wygodę korzystania z natywnej aplikacji. Wszelkie aktualizacje są automatyczne i nie wymagają ingerencji w sklepie, dzięki czemu utrzymanie całego projektu jest o wiele tańsze.
+                        <p className={style.standards__text}><strong>TWA</strong> daje możliwość udostępniania w sklepie Google Play aplikacji PWA. Nie ma potrzeby pisania oddzielnego kodu. Wszelkie aktualizacje są automatyczne i nie wymagają ingerencji w sklepie, dzięki czemu utrzymanie całego projektu jest o wiele tańsze.
                                 </p>
                         <a href='https://developers.google.com/web/android/trusted-web-activity' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
                     </div>

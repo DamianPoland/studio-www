@@ -4,7 +4,7 @@ import './TouchSlider.css' // change classes eg pagination color
 
 
 // Swiper
-import SwiperCore, { EffectCoverflow, Navigation, Pagination, EffectCube, } from 'swiper';
+import SwiperCore, { EffectCoverflow, Navigation, Pagination, EffectCube, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 
@@ -17,7 +17,7 @@ import 'swiper/components/effect-cube/effect-cube.scss'// effect cube
 
 
 // install Swiper modules
-SwiperCore.use([Navigation, Pagination, EffectCoverflow, EffectCube]);
+SwiperCore.use([Navigation, Pagination, EffectCoverflow, EffectCube, Autoplay]);
 
 
 /* Description:
@@ -30,21 +30,34 @@ SwiperCore.use([Navigation, Pagination, EffectCoverflow, EffectCube]);
 const TouchSlider = props => {
     return (
         <Swiper
-            style={{ padding: "1rem 0 1.5rem 0" }}
-            effect="coverflow" // cube or coverflow
-            spaceBetween={0} // margin
-            slidesPerView={window.innerWidth > 500 ? 3 : 1} // how many slides visible => according to with (pnone => 1 and PC => 3)
+            style={{ padding: "2rem 0 2rem 0" }}
+
+            speed={1000}
+            autoplay={{ delay: 2000 }}
+
+            // effect="coverflow" // cube or coverflow
+
+            spaceBetween={32} // margin
+
+            slidesPerView={1}
+            breakpoints={{
+                500: { slidesPerView: 2, }, // when window width is >= 500px
+                800: { slidesPerView: 3, }, // when window width is >= 800px
+            }}
+
             loop={true}
+
             navigation
             pagination={{ clickable: true }}
+
         // onSlideChange={() => console.log('slide change')}
         // onSwiper={(swiper) => console.log(swiper)}
         >
             {props.itemsArray.map((item, index) =>
 
                 // slider item
-                <SwiperSlide key={index} onClick={() => console.log("click: ", item)}>
-                    <a href={item.href} className="swiper-slider-ontainer-custom" target="_blank">
+                <SwiperSlide key={index} onClick={() => "console.log(item)"}>
+                    <a href={item.props.href} className="swiper-slider-ontainer-custom" target="_blank" rel="noopener noreferrer">
                         {item}
                     </a>
                 </SwiperSlide>)}

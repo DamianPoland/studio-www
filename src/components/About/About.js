@@ -6,6 +6,14 @@ import style from './About.module.css'
 import team from '../../assets/team.jpg'
 import why from '../../assets/why.jpg'
 
+// images standards
+import rwd from '../../assets/rwd.jpg'
+import pwa from '../../assets/pwa.jpg'
+import twa from '../../assets/twa.jpg'
+import seo from '../../assets/seo.jpg'
+import faas from '../../assets/faas.jpg'
+import react from '../../assets/react.jpg'
+
 
 
 const About = () => {
@@ -55,7 +63,7 @@ const About = () => {
                     <div data-aos="zoom-in" className={style.approach__item}>
                         {iconResponsive}
                         <h2 className={style.approach__h2}>Skalowanie</h2>
-                        <p className={style.approach__p}>Wszystkie projekty są robione w technologii RWD, dzięki czemu są dopasowane do rozdzielczości wszystkich urządzeń.  </p>
+                        <p className={style.approach__p}>Wszystkie projekty robię w technologii RWD, dzięki czemu są dopasowane do rozdzielczości wszystkich urządzeń.  </p>
                     </div>
                 </div>
             </section>
@@ -72,6 +80,92 @@ const About = () => {
                 <figure className={style.figure__img}>
                     <img className={style.img} data-aos="fade-up" src={why} alt='dlaczego studio-www' />
                 </figure>
+            </section>
+
+            {/* section STANDARDS */}
+            <section className={style.standards}>
+                <div className="textContainer marginLeftRight">
+                    <p className="text1">ROZWIĄZANIA</p>
+                    <h1 className="text2">Standardy których używam:</h1>
+                </div>
+
+                <div className={style.standards__item}>
+                    <div className={style.standards__content}>
+                        <h2 data-aos="zoom-in" className={style.standards__header}><strong className={style.font}>RWD</strong></h2>
+                        <h2 className={style.standards__header2}>(<strong>Responsive Web Design</strong>)</h2>
+                        <p className={style.standards__text}><strong>RWD</strong> to technika projektowania widoków, dzięki której Twoja strona wygląda dobrze na każdym urządzeniu. Niezależnie czy korzystasz z dużego monitora, smartfonu lub tableta, widok automatycznie dopasuje się do danej rozdzielczości.
+                                </p>
+                        <a href='https://pl.wikipedia.org/wiki/Responsive_web_design' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
+                    </div>
+                    <figure className={style.standards__figure}>
+                        <img data-aos="fade-up-left" className={style.img} src={rwd} alt='Responsive Web Design' />
+                    </figure>
+                </div>
+
+                <div className={style.standards__item}>
+                    <div className={style.standards__content}>
+                        <h2 data-aos="zoom-in" className={style.standards__header}><strong className={style.font}>PWA</strong></h2>
+                        <h2 className={style.standards__header2}>(<strong>Progressive Web Apps</strong>)</h2>
+                        <p className={style.standards__text}><strong>PWA</strong> pozwala tak zaprojektować stronę internetową, aby na urządzeniu mobilnym mogła być używana jak aplikacja mobilna. Można ją zainstalować w telefonie i korzystać w trybie offline. Działa na platformie Android i iOS.
+                                </p>
+                        <a href='https://pl.wikipedia.org/wiki/Progressive_web_app' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
+                    </div>
+                    <figure className={style.standards__figure}>
+                        <img data-aos="fade-up-left" className={style.img} src={pwa} alt='Progressive Web Apps' />
+                    </figure>
+                </div>
+
+                <div className={style.standards__item}>
+                    <div className={style.standards__content}>
+                        <h2 data-aos="zoom-in" className={style.standards__header}><strong className={style.font}>TWA</strong></h2>
+                        <h2 className={style.standards__header2}>(<strong>Trusted Web Activities</strong>)</h2>
+                        <p className={style.standards__text}><strong>TWA</strong> daje możliwość udostępniania w sklepie Google Play aplikacji PWA. Nie ma potrzeby pisania oddzielnego kodu. Wszelkie aktualizacje są automatyczne i nie wymagają ingerencji w sklepie, dzięki czemu utrzymanie całego projektu jest o wiele tańsze.
+                                </p>
+                        <a href='https://developers.google.com/web/android/trusted-web-activity' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
+                    </div>
+                    <figure className={style.standards__figure}>
+                        <img data-aos="fade-up-left" className={style.img} src={twa} alt='Trusted Web Activities' />
+                    </figure>
+                </div>
+
+                <div className={style.standards__item}>
+                    <div className={style.standards__content}>
+                        <h2 data-aos="zoom-in" className={style.standards__header}><strong className={style.font}>SEO</strong></h2>
+                        <h2 className={style.standards__header2}>(<strong>Search Engine Optimization</strong>)</h2>
+                        <p className={style.standards__text}><strong>SEO</strong> to projektowanie zgodne z zasadami optymalizacji pozwalającymi na osiągnięcie wysokich wyników w wyszukiwarkach dla wybranych słów lub fraz kluczowych. Kod strony, jej treść oraz responsywność są dostosowane do aktualnych algorytmów wyszukiwarek w celu poprawienia pozycji danego serwisu na liście wynikowej.
+                                </p>
+                        <a href='https://pl.wikipedia.org/wiki/Optymalizacja_dla_wyszukiwarek_internetowych' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
+                    </div>
+                    <figure className={style.standards__figure}>
+                        <img data-aos="fade-up-left" className={style.img} src={seo} alt='Search Engine Optimization' />
+                    </figure>
+                </div>
+
+                <div className={style.standards__item}>
+                    <div className={style.standards__content}>
+                        <h2 data-aos="zoom-in" className={style.standards__header}><strong className={style.font}>FaaS</strong></h2>
+                        <h2 className={style.standards__header2}>(<strong>Function as a Service</strong>)</h2>
+                        <p className={style.standards__text}><strong>FaaS</strong> to usługa chmurowa pozwalająca na bardzo łatwe, szybkie i tanie projektowanie tzw. backendu. Projekty wykonane w oparciu o FaaS, dostarczane przez takich gigantów jak Amazon lub Google, są bardzo tanie w utrzymaniu, w 100% niezawodne i dobrze zabezpieczone.
+                                </p>
+                        <a href='https://en.wikipedia.org/wiki/Function_as_a_service' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
+                    </div>
+                    <figure className={style.standards__figure}>
+                        <img data-aos="fade-up-left" className={style.img} src={faas} alt='Function as a Service' />
+                    </figure>
+                </div>
+
+                <div className={style.standards__item}>
+                    <div className={style.standards__content}>
+                        <h2 data-aos="zoom-in" className={style.standards__header}><strong className={style.font}>React</strong></h2>
+                        <h2 className={style.standards__header2}>(<strong>JavaScript Library</strong>)</h2>
+                        <p className={style.standards__text}><strong>React</strong> to javascriptowa biblioteka służąca do tworzenia interfejsów użytkownika. Aktualnie jest to najczęściej używana biblioteka wykorzystywana przy tworzeniu aplikacji webowych, posiadająca ogromne wsparcie i nowoczesne rozwiązania.
+                                </p>
+                        <a href='https://pl.wikipedia.org/wiki/React.js' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
+                    </div>
+                    <figure className={style.standards__figure}>
+                        <img data-aos="fade-up-left" className={style.img} src={react} alt='React JavaScript Library' />
+                    </figure>
+                </div>
             </section>
         </main >
     )

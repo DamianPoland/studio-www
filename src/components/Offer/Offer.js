@@ -2,13 +2,16 @@ import React, { useEffect } from 'react'
 import style from './Offer.module.css'
 
 // svg
-import { ReactComponent as Card } from '../../assets/card.svg'
-import { ReactComponent as StandOut } from '../../assets/stand_out.svg'
-import { ReactComponent as Devices } from '../../assets/devices.svg'
-import { ReactComponent as Domain } from '../../assets/domain.svg'
-import { ReactComponent as Wallet } from '../../assets/wallet.svg'
-import { ReactComponent as Preferences } from '../../assets/preferences.svg'
-import { ReactComponent as Mobile } from '../../assets/mobile.svg'
+import { ReactComponent as Card } from '../../assets/offer/card.svg'
+import { ReactComponent as StandOut } from '../../assets/offer/stand_out.svg'
+import { ReactComponent as Devices } from '../../assets/offer/devices.svg'
+import { ReactComponent as Domain } from '../../assets/offer/domain.svg'
+import { ReactComponent as Wallet } from '../../assets/offer/wallet.svg'
+import { ReactComponent as Preferences } from '../../assets/offer/preferences.svg'
+import { ReactComponent as Mobile } from '../../assets/offer/mobile.svg'
+
+
+import { ReactComponent as Presentation } from '../../assets/offer/presentation.svg'
 
 // images
 import info1 from '../../assets/info1.jpg'
@@ -21,29 +24,32 @@ const Offer = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
 
-        // svg 1 add animation
+        // svg add animation
         document.querySelector('#cardCardId').classList.add(style.animationUPDown)
 
-        // svg 2 add animation
+        // svg add animation
         document.querySelector('#standPeopleId').classList.add(style.animationShowHide)
 
-        // svg 3 add animation
+        // svg add animation
         document.querySelector('#deviceScreen1Id').classList.add(style.animationBackgroundColor)
         document.querySelector('#deviceScreen2Id').classList.add(style.animationBackgroundColor)
         document.querySelector('#deviceScreen3Id').classList.add(style.animationBackgroundColor)
 
-        // svg 4  add animation
+        // svg  add animation
         document.querySelector('#domainId').classList.add(style.animationSkew)
 
-        // svg 5  add animation
+        // svg  add animation
+        document.querySelector('#cardIdPresentation').classList.add(style.animationUPDown)
+
+        // svg  add animation
         document.querySelector('#walletId').classList.add(style.animationShowHide)
 
-        // svg 6  add animation
+        // svg  add animation
         document.querySelector('#preferences1Id').classList.add(style.animationBackgroundColorCheck1)
         document.querySelector('#preferences2Id').classList.add(style.animationBackgroundColorCheck2)
         document.querySelector('#preferences3Id').classList.add(style.animationBackgroundColorCheck3)
 
-        // svg 7  add animation
+        // svg  add animation
         document.querySelector('#mobileId').classList.add(style.animationRotate)
 
     }, [])
@@ -91,10 +97,17 @@ const Offer = () => {
                     </div>
 
                     <div className={style.pages__item}>
-                        <p data-aos="flip-up" className={style.desc}>Zapytaj o ofertę - to nic nie kosztuje.</p>
+                        <p data-aos="flip-up" className={style.desc}>SEO to projektowanie zgodne z zasadami optymalizacji pozwalającymi na osiągnięcie wysokich wyników w wyszukiwarkach.</p>
+                        <div className={style.svg} data-aos="zoom-in">
+                            <Presentation />
+                        </div>
+                    </div>
+
+                    <div className={style.pages__item}>
                         <div className={style.svg} data-aos="zoom-in">
                             <Wallet />
                         </div>
+                        <p data-aos="flip-up" className={style.desc}>Zapytaj o ofertę - to nic nie kosztuje.</p>
                     </div>
                 </div>
             </section>
