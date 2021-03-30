@@ -20,16 +20,6 @@
     display: block;
 }
 
-.svg {
-    max-width: 10rem;
-    max-height: 10rem;
-}
-
-.svg svg {
-    height: 100%;
-    width: 100%;
-}
-
 .link {
     margin-top: 2rem;
     color: black;
@@ -211,7 +201,7 @@
     }
 }
 
-/* section STANDARDS */
+/* section TOOLS */
 
 .tools {
     margin: auto;
@@ -226,8 +216,14 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     align-items: center;
     justify-items: center;
+}
+
+.tools__figure {
+    width: 100%;
+    height: 100%;
 }
 
 /* section APPROACH */
@@ -293,9 +289,9 @@
 }
 
 
-/* section STANDARDS */
+/* section OFFER */
 
-.standards {
+.offer {
     margin: auto;
     max-width: 1200px;
     padding: 4rem 0;
@@ -303,7 +299,7 @@
     flex-direction: column;
 }
 
-.standards__item {
+.offer__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -311,7 +307,7 @@
     padding-top: 2rem;
 }
 
-.standards__content {
+.offer__content {
     background-color: white;
     flex: 1;
     display: flex;
@@ -325,33 +321,35 @@
     z-index: 1;
 }
 
-.standards__header {
+.offer__header {
     font-size: 2rem;
     color: rgb(var(--accent));
     padding-bottom: 1rem;
 }
 
-.standards__header2 {
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-}
-
-.standards__text {
+.offer__text {
     font-size: 1rem;
     line-height: 1.5rem;
     padding-bottom: 1rem;
     text-align: justify;
 }
 
-.standards__anchor {
-    align-self: flex-start;
-}
-
-.standards__figure {
+.offer__figure {
     width: 100%;
     height: 100%;
     flex: 1.5;
     transform: translateX(0);
+}
+
+.offer__img {
+    height: 6rem;
+    width: 6rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
 }
 
 /* section REALIZATIONS */
@@ -482,12 +480,13 @@
         margin-top: 2rem;
     }
 
-    .tools__container {
-        grid-template-columns: repeat(6, 1fr);
-    }
-
     .approach__container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .offer__img {
+        height: 10rem;
+        width: 10rem;
     }
 }
 
@@ -505,6 +504,10 @@
     .contact__tel {
         font-size: 5rem;
     }
+
+    .tools__container {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
 
 @media (min-width: 1000px) {
@@ -513,17 +516,17 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .standards__item {
+    .offer__item {
         flex-direction: row;
         margin-top: 0;
     }
 
-    .standards__content {
+    .offer__content {
         transform: translateX(2rem);
         margin: 0;
     }
 
-    .standards__figure {
+    .offer__figure {
         transform: translateX(-2rem);
     }
 }

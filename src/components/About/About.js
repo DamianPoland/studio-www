@@ -42,6 +42,21 @@ const About = () => {
             </section>
 
 
+            {/* section WHY */}
+            <section className={style.why}>
+                <div className={style.why__textContainer}>
+                    <div className="textContainer">
+                        <p className="text1">O MNIE</p>
+                        <h1 className="text2">Dlaczego ja.</h1>
+                    </div>
+                    <p className={style.text__desc}><span className={style.text__bigLeter}>Z</span>ajmuję się tworzeniem kompleksowych projektów od A-Z. Korzystam z najnowszych rozwiązań jak <strong>React</strong> i <strong>FaaS</strong>. Strony są projektowane jako <strong>RWD</strong> (<strong>Responsive Web Design</strong>) oraz <strong>PWA</strong> (<strong>Progressive Web Apps</strong>) dzięki czemu wyglądają dobrze na komputerze i na urządzeniu mobilnym. Każdy projekt jest przygotowany pod pozycjonowanie strony zgodnie z <strong>SEO</strong>.<br /> <span className={style.text__bigLeter}>C</span>ena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem, a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę, a się przekonasz.</p>
+                </div>
+                <figure className={style.figure__img}>
+                    <img className={style.img} data-aos="fade-up" src={why} alt='dlaczego studio-www' />
+                </figure>
+            </section>
+
+
             {/* section APPROACH */}
             <section className={style.approach}>
                 <div className={style.approach__textContainer}>
@@ -68,19 +83,6 @@ const About = () => {
                 </div>
             </section>
 
-            {/* section WHY */}
-            <section className={style.why}>
-                <div className={style.why__textContainer}>
-                    <div className="textContainer">
-                        <p className="text1">O MNIE</p>
-                        <h1 className="text2">Dlaczego ja.</h1>
-                    </div>
-                    <p className={style.text__desc}><span className={style.text__bigLeter}>Z</span>ajmuję się tworzeniem kompleksowych projektów od A-Z. Korzystam z najnowszych rozwiązań jak <strong>React</strong> i <strong>FaaS</strong>. Strony są projektowane jako <strong>RWD</strong> (<strong>Responsive Web Design</strong>) oraz <strong>PWA</strong> (<strong>Progressive Web Apps</strong>) dzięki czemu wyglądają dobrze na komputerze i na urządzeniu mobilnym. Każdy projekt jest przygotowany pod pozycjonowanie strony zgodnie z <strong>SEO</strong>.<br /> <span className={style.text__bigLeter}>C</span>ena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem, a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę, a się przekonasz.</p>
-                </div>
-                <figure className={style.figure__img}>
-                    <img className={style.img} data-aos="fade-up" src={why} alt='dlaczego studio-www' />
-                </figure>
-            </section>
 
             {/* section STANDARDS */}
             <section className={style.standards}>
@@ -143,11 +145,11 @@ const About = () => {
 
                 <div className={style.standards__item}>
                     <div className={style.standards__content}>
-                        <h2 data-aos="zoom-in" className={style.standards__header}><strong className={style.font}>FaaS</strong></h2>
-                        <h2 className={style.standards__header2}>(<strong>Function as a Service</strong>)</h2>
-                        <p className={style.standards__text}><strong>FaaS</strong> to usługa chmurowa pozwalająca na bardzo łatwe, szybkie i tanie projektowanie tzw. backendu. Projekty wykonane w oparciu o FaaS, dostarczane przez takich gigantów jak Amazon lub Google, są bardzo tanie w utrzymaniu, w 100% niezawodne i dobrze zabezpieczone.
+                        <h2 data-aos="zoom-in" className={style.standards__header}><strong className={style.font}>Firebase</strong></h2>
+                        <h2 className={style.standards__header2}>(<strong>Cloud platform</strong>)</h2>
+                        <p className={style.standards__text}><strong>Firebase</strong> to usługi chmurowe pozwalająca na bardzo łatwe, szybkie i tanie projektowanie tzw. backendu. Projekty wykonane w oparciu o platformę, wspieraną przez takiego giganta jak Google, są bardzo tanie w utrzymaniu, w 100% niezawodne i dobrze zabezpieczone.
                                 </p>
-                        <a href='https://en.wikipedia.org/wiki/Function_as_a_service' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
+                        <a href='https://en.wikipedia.org/wiki/Firebase' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
                     </div>
                     <figure className={style.standards__figure}>
                         <img data-aos="fade-up-left" className={style.img} src={faas} alt='Function as a Service' />

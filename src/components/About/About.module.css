@@ -35,7 +35,7 @@
 .who {
     margin: 4rem auto 0 auto;
     max-width: 1200px;
-    padding: 1rem 0 4rem 0;
+    padding: 1rem 0 0 0;
 
 }
 
@@ -52,6 +52,26 @@
 }
 
 
+/* section WHY */
+
+.why {
+    margin: auto;
+    max-width: 1200px;
+    padding: 1rem 0 4rem 0;
+
+}
+
+.why__textContainer {
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    padding: 1rem;
+    transform: translateY(3rem);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
 
 /* section APPROACH */
 
@@ -94,27 +114,6 @@
     font-size: 1rem;
     text-align: center;
     line-height: 1.5rem;
-}
-
-/* section WHY */
-
-.why {
-    margin: auto;
-    max-width: 1200px;
-    padding: 1rem 0 0 0;
-
-}
-
-.why__textContainer {
-    background-color: white;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 0 1rem;
-    padding: 1rem;
-    transform: translateY(3rem);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    z-index: 1;
 }
 
 
@@ -189,14 +188,13 @@
         padding: 2rem;
     }
 
-
-    .approach__textContainer {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .why__textContainer {
         margin: 0 4rem;
         padding: 2rem;
+    }
+
+    .approach__textContainer {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

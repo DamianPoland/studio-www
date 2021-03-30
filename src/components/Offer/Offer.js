@@ -6,12 +6,14 @@ import { ReactComponent as Card } from '../../assets/offer/card.svg'
 import { ReactComponent as StandOut } from '../../assets/offer/stand_out.svg'
 import { ReactComponent as Devices } from '../../assets/offer/devices.svg'
 import { ReactComponent as Domain } from '../../assets/offer/domain.svg'
+import { ReactComponent as Presentation } from '../../assets/offer/presentation.svg'
 import { ReactComponent as Wallet } from '../../assets/offer/wallet.svg'
 import { ReactComponent as Preferences } from '../../assets/offer/preferences.svg'
 import { ReactComponent as Mobile } from '../../assets/offer/mobile.svg'
+import { ReactComponent as ReactIcon } from '../../assets/offer/react.svg'
+import { ReactComponent as Server } from '../../assets/offer/server.svg'
 
 
-import { ReactComponent as Presentation } from '../../assets/offer/presentation.svg'
 
 // images
 import info1 from '../../assets/info1.jpg'
@@ -51,6 +53,14 @@ const Offer = () => {
 
         // svg  add animation
         document.querySelector('#mobileId').classList.add(style.animationRotate)
+
+        // svg add animation
+        document.querySelector('#reactSign').classList.add(style.animationShowHide)
+
+        // svg  add animation
+        document.querySelector('#serverId1').classList.add(style.animationBackgroundColorCheck1)
+        document.querySelector('#serverId2').classList.add(style.animationBackgroundColorCheck2)
+        document.querySelector('#serverId3').classList.add(style.animationBackgroundColorCheck3)
 
     }, [])
 
@@ -142,17 +152,33 @@ const Offer = () => {
 
                 <div className={style.apps__container}>
                     <div className={style.apps__item}>
-                        <p data-aos="flip-up" className={style.desc}>Aplikacje webowe są dostosowane konkretnie do twoich potrzeb. Począwszy od prostych aplikacji ze stroną logowania, a skończywszy na skomplikowanych z możliwością aktualizacji za pomocą systemów CMS.</p>
+                        <p data-aos="flip-up" className={style.desc}>Aplikacje webowe począwszy od prostych aplikacji ze stroną logowania, a skończywszy na skomplikowanych z możliwością aktualizacji za pomocą systemów CMS.</p>
                         <div className={style.svg} data-aos="zoom-in">
                             <Preferences />
                         </div>
                     </div>
+
                     <div className={style.apps__item}>
                         <div className={style.svg} data-aos="zoom-in">
                             <Mobile />
                         </div>
                         <p data-aos="flip-up" className={style.desc}>Dzięki projektowaniu PWA (Progressive Web App) nie musisz płacić za wykonanie aplikacji mobilnej. Twoja aplikacja webowa będzie się zachowywać tak jak mobilna, gdy będzie używana na urządzeniu przenośnym.</p>
                     </div>
+
+                    <div className={style.apps__item}>
+                        <p data-aos="flip-up" className={style.desc}>React to najczęściej używana biblioteka wykorzystywana przy tworzeniu aplikacji webowych, posiadająca ogromne wsparcie i nowoczesne rozwiązania.</p>
+                        <div className={style.svg} data-aos="zoom-in">
+                            <ReactIcon />
+                        </div>
+                    </div>
+
+                    <div className={style.apps__item}>
+                        <div className={style.svg} data-aos="zoom-in">
+                            <Server />
+                        </div>
+                        <p data-aos="flip-up" className={style.desc}>Projekty wykonane w oparciu o rozwiązania chmurowe (np: Firebase) są bardzo tanie w utrzymaniu, w 100% niezawodne i dobrze zabezpieczone.</p>
+                    </div>
+
                 </div>
             </section>
         </div>
