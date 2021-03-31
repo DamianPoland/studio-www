@@ -23,10 +23,7 @@ import time from '../../assets/home/time.jpg'
 import solutions from '../../assets/home/solutions.jpg'
 import individual from '../../assets/home/individual.jpg'
 
-
-
-
-import sitesImg from '../../assets/home/laptop2.png'
+import sitesImg from '../../assets/home/desktop.png'
 import appsImg from '../../assets/home/laptop.png'
 import seo from '../../assets/home/seo.png'
 import reactJs from '../../assets/home/reactJs.png'
@@ -41,8 +38,12 @@ import wlaczremont from '../../assets/realizations/wlaczremont.jpg'
 
 import userImg from '../../assets/home/user.png'
 
+import contactImg from '../../assets/home/contact.png'
+
+
 //svg
 import { ReactComponent as Phone } from '../../assets/icons/phone__home.svg'
+import { ReactComponent as Mark } from '../../assets/icons/mark__OK.svg'
 
 
 const offer = [
@@ -55,6 +56,10 @@ const offer = [
     { img: wlaczremont, text: "Realizacja studio-www" },
 ]
 
+const siteSmall = ["Jeden widok", "Darmowy hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO",]
+const siteBig = ["Do 5 widoków", "Darmowy hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO", "Formularz kontaktowy", "Polityka prywatności (cookies)", "Framework React",]
+const siteApp = ["Wiele widoków", "Hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO", "Formularz kontaktowy", "Polityka prywatności (cookies)", "Framework React", "Usługi chmurowe (Firebase)", "Bazy danych noSQL", "Obliczenia", "API", "PWA (Progressive Web Apps)", "GPS, aparat", "Powiadomienia", "inne.."]
+
 
 const Home = () => {
 
@@ -66,12 +71,11 @@ const Home = () => {
             {/* section START */}
             <section className={style.start}>
                 <div className={style.start__videoContainer}>
-                    <video className={style.start__video} src={start_video} autoPlay loop muted playsInline alt="intro"
-                        onLoadedData={() => console.log('video onLoadedData')}
-                        onCanPlay={() => console.log('video onCanPlay')} />
+                    <video className={style.start__video} src={start_video} autoPlay loop muted playsInline alt="intro" onLoadedData={() => console.log('video onLoadedData')} />
                     <div className={style.start__videoFilter}></div>
                 </div>
                 <div className={style.start__container}>
+                    <h1 className={style.start__title}>studio-www</h1>
                     <h1 className={`${style.start__text} ${style.start__text1}`}>Strony internetowe</h1>
                     <h2 className={`${style.start__text} ${style.start__text2}`}>Aplikacje webowe</h2>
                     <h2 className={`${style.start__text} ${style.start__text3}`}>Portale internetowe</h2>
@@ -83,7 +87,7 @@ const Home = () => {
             <section className={style.tools}>
                 <div className="textContainer">
                     <p className="text1">NARZĘDZIA</p>
-                    <h1 className="text2">Czego używam w mojej pracy:</h1>
+                    <h1 className="text2">Czego używam w mojej pracy?</h1>
                 </div>
                 <div className={style.tools__container}>
                     <figure className={style.tools__figure}>
@@ -107,12 +111,13 @@ const Home = () => {
                 </div>
             </section>
 
+
             {/* section APPROACH */}
             <section className={style.approach}>
                 <div className={style.approach__content}>
                     <div className="textContainer">
                         <p className="text1">DLACZEGO WARTO</p>
-                        <h1 className="text2 text__white">Co cechuje moje projekty:</h1>
+                        <h1 className="text2 text__white">Co cechuje moje projekty?</h1>
                     </div>
                     <div className={style.approach__container}>
                         <div data-aos="flip-left" className={style.approach__item}>
@@ -161,12 +166,12 @@ const Home = () => {
             <section className={style.offer}>
                 <div className="textContainer marginLeftRight">
                     <p className="text1">OFERTA</p>
-                    <h1 className="text2">Co mogę Tobie zaoferować:</h1>
+                    <h1 className="text2">Co mogę Tobie zaoferować?</h1>
                 </div>
 
                 <div className={style.offer__item}>
                     <figure className={style.offer__figure}>
-                        <img data-aos="fade-up-left" className={style.img} src={appsImg} alt='Responsive Web Design' />
+                        <img data-aos="fade-up-right" className={style.img} src={sitesImg} alt='Responsive Web Design' />
                         <img className={style.offer__img} src={seo} alt='seo' />
                     </figure>
                     <div className={style.offer__content}>
@@ -181,7 +186,7 @@ const Home = () => {
                         <p className={style.offer__text}><strong>Aplikacje webowe (aplikacje internetowe)</strong> to moźliwość realizacji Twojej idei w internecie. Jeśli masz pomysł to zgłoś się do mnie a ja wykonam projekt od początku do końca.</p>
                     </div>
                     <figure className={style.offer__figure}>
-                        <img data-aos="fade-up-left" className={style.img} src={sitesImg} alt='React JavaScript Library' />
+                        <img data-aos="fade-up-left" className={style.img} src={appsImg} alt='React JavaScript Library' />
                         <img className={style.offer__img} src={reactJs} alt='react js' />
                     </figure>
                 </div>
@@ -189,16 +194,71 @@ const Home = () => {
             </section>
 
 
+            {/* section PRICE */}
+            <section className={style.price}>
+                <div className={style.price__container}>
+
+                    <div className="textContainer">
+                        <p className="text1">CENNIK</p>
+                        <h1 className="text2 text__white">Ile to kosztuje?</h1>
+                    </div>
+
+                    <div className={style.price__content}>
+
+                        <div data-aos="flip-left" className={style.price__item}>
+                            <p className={style.price__itemTextMine}>Strona internetowa<br />wizytówka</p>
+                            <p className={style.price__itemTextPrice}>800 zł</p>
+                            {siteSmall.map(item => {
+                                return (
+                                    <div key={item} className={style.price__itemContainer}>
+                                        <Mark />
+                                        <p className={style.price__itemDesc}>{item}</p>
+                                    </div>
+                                )
+                            })}
+                        </div>
+
+                        <div data-aos="flip-left" className={style.price__item}>
+                            <p className={style.price__itemTextMine}>Strona internetowa<br />rozbudowana</p>
+                            <p className={style.price__itemTextPrice}>1200 zł</p>
+                            {siteBig.map(item => {
+                                return (
+                                    <div key={item} className={style.price__itemContainer}>
+                                        <Mark />
+                                        <p className={style.price__itemDesc}>{item}</p>
+                                    </div>
+                                )
+                            })}
+                        </div>
+
+                        <div data-aos="flip-left" className={style.price__item}>
+                            <p className={style.price__itemTextMine}>Aplikacja webowa lub<br />portal internetowy</p>
+                            <p className={style.price__itemTextPrice}>od 1500 zł</p>
+                            {siteApp.map(item => {
+                                return (
+                                    <div key={item} className={style.price__itemContainer}>
+                                        <Mark />
+                                        <p className={style.price__itemDesc}>{item}</p>
+                                    </div>
+                                )
+                            })}
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
             {/* section REALIZATIONS */}
             <section className={style.realizations}>
                 <div className="textContainer">
                     <p className="text1">REALIZACJE</p>
-                    <h1 className="text2">Obejrzyj moje realizacje</h1>
+                    <h1 className="text2">Co już wykonałem?</h1>
                 </div>
 
-                <section className={style.carousel}>
+                <div className={style.carousel}>
                     <Carousel array={offer} />
-                </section>
+                </div>
 
                 <Link to='/realizations' className={style.link}>Zobacz moje ostatnie realizacje<p className={style.linkArrow}></p></Link>
             </section>
@@ -222,16 +282,24 @@ const Home = () => {
 
             {/* section CONTACT */}
             <section className={style.contact}>
-                <div className="textContainer">
-                    <p className="text1">KONTAKT</p>
-                    <h1 className="text2">Zadzwoń i zapytaj o ofertę</h1>
-                </div>
-                <p className={style.contact__tel}>
-                    <a href='tel:+48795631039' className={style.contact__telIcon}>
-                        <Phone />
-                    </a>
+                <div className={style.contact__container}>
+                    <div className={style.contact__desc}>
+                        <div className="textContainer">
+                            <p className="text1">KONTAKT</p>
+                            <h1 className="text2">Jak się skontaktować?</h1>
+                        </div>
+
+                        <p className={style.contact__tel}>
+                            <a href='tel:+48795631039' className={style.contact__telIcon}>
+                                <Phone />
+                            </a>
                         +48 795-631-039
                         </p>
+                    </div>
+                    <figure className={style.contact__figure}>
+                        <img className={style.img} src={contactImg} alt='userImg studio-www' />
+                    </figure>
+                </div>
                 <Link to='/contact' className={style.link}>Sprawdź inne formy kontaktu<p className={style.linkArrow}></p></Link>
             </section>
 

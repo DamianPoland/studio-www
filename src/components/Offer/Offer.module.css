@@ -210,17 +210,26 @@
     display: block;
 }
 
-.info__text::first-letter {
-    color: black;
-}
-
-
 .info__textContainer {
-    max-width: 60%;
     flex: 1;
-    padding: 0 1rem 1rem 1rem;
+    margin: 0 1rem;
     display: flex;
     flex-direction: column;
+}
+
+.info__text1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    align-self: center;
+}
+
+.info__text2 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    align-self: center;
+    margin: 2rem 0 0 4rem;
 }
 
 
@@ -254,11 +263,15 @@
         flex-direction: row;
     }
 
+    .info__textContainer {
+        margin: 0 -1rem;
+    }
+
     .info__figure1 {
-        clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+        clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
     }
 
     .info__figure2 {
-        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
     }
 }

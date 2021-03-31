@@ -85,6 +85,15 @@
     flex-direction: column;
 }
 
+.start__title {
+    font-size: 3.5rem;
+    color: rgb(var(--accent));
+    font-family: "Kalam", cursive;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
 .start__text {
     font-size: 1.2rem;
     text-align: left;
@@ -133,7 +142,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: radial-gradient(circle, rgba(var(--dark), 0.8) 0%, rgba(var(--dark), 0.4) 100%);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .start__arrow {
@@ -142,7 +151,7 @@
     left: 50%;
     width: 1.5rem;
     height: 1.5rem;
-    border: solid rgb(var(--accent));
+    border: solid white;
     border-width: 0.2rem 0.2rem 0 0;
     transform: rotate(135deg) translate(40%);
     animation: moveArrow 1s ease-in-out infinite;
@@ -305,11 +314,11 @@
 }
 
 .offer__img {
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 2rem;
+    right: 3rem;
     background-color: white;
     padding: 0.5rem;
     border-radius: 50%;
@@ -321,6 +330,71 @@
         transform: scale(0.9);
     }
 }
+
+
+
+/* section PRICE */
+
+.price {
+    width: 100%;
+    background: rgb(var(--dark));
+}
+
+.price__container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.price__content {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+.price__item {
+    background: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.price__itemTextMine {
+    font-size: 1.5rem;
+    color: rgb(var(--accent));
+    font-family: 'Kalam', cursive;
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.price__itemTextPrice {
+    font-size: 2.25rem;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.price__itemContainer {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.price__itemDesc {
+    font-size: 1rem;
+    color: black;
+    padding-left: 0.5rem;
+}
+
+
 
 /* section REALIZATIONS */
 
@@ -377,6 +451,23 @@
     max-width: 1200px;
     margin: auto;
     padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__figure {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+}
+
+.contact__desc {
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -443,20 +534,28 @@
         font-size: 3rem;
     }
 
+    .start__title {
+        font-size: 6rem;
+    }
+
     .approach__container {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .offer__img {
-        height: 8rem;
-        width: 8rem;
+        height: 6rem;
+        width: 6rem;
     }
 }
 
 @media (min-width: 800px) {
 
+    .price__content {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: initial;
+    }
+
     .user {
-        margin-top: 4rem;
         flex-direction: row;
     }
 
@@ -474,19 +573,8 @@
         margin-left: auto;
     }
 
-    .contact__tel {
-        font-size: 5rem;
-    }
-
     .tools__container {
         grid-template-columns: repeat(6, 1fr);
-    }
-}
-
-@media (min-width: 1000px) {
-
-    .approach__container {
-        grid-template-columns: repeat(3, 1fr);
     }
 
     .offer__item {
@@ -497,4 +585,17 @@
     .offer__content {
         margin: 0;
     }
+
+    .contact__container {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .approach__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }

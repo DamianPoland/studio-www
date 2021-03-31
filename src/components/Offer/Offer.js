@@ -130,9 +130,8 @@ const Offer = () => {
                     </figure>
 
                     <div className={style.info__textContainer}>
-                        <p className={`${style.desc} ${style.info__text}`}>Musisz mieć tylko pomysł, a ja zajmę się resztą. Wykonam cały projekt od
-                        początku
-                    dokońca. </p>
+                        <p className={style.info__text1}>Masz pomysł?</p>
+                        <p className={style.info__text2}>Ja zajmę się resztą!</p>
                     </div>
 
                     <figure className={style.info__figure2}>
