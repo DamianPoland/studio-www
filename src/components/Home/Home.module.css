@@ -70,7 +70,10 @@
     width: 100%;
     height: calc(100vh - 4rem);
     margin-top: 4rem;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .start__container {
@@ -167,7 +170,7 @@
 /* section TOOLS */
 
 .tools {
-    margin: auto;
+    margin: 100vh auto 0 auto;
     max-width: 1200px;
     padding: 4rem 1rem;
     display: flex;

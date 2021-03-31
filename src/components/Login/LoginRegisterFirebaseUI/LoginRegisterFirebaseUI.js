@@ -5,7 +5,7 @@ import { auth } from '../../../shared/fire' //a.d. 3
 import './firebaseui-overrides.global.css' // import style
 
 //components
-import { ReactComponent as Login } from '../../../assets/login.svg'
+import { ReactComponent as Login } from '../../../assets/login/login.svg'
 
 /*
 https://github.com/firebase/firebaseui-web - tu jest całość firebase UI

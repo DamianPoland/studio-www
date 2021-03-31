@@ -58,7 +58,7 @@
 .apps {
     margin: 4rem auto 0 auto;
     max-width: 1200px;
-    padding: 4rem 1rem;
+    padding: 0 1rem 4rem 1rem;
     display: flex;
     flex-direction: column;
 }

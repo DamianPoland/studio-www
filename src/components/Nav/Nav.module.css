@@ -1,11 +1,5 @@
-* {
-    /* add color in index.css eg: --accent: 0, 200, 0;*/
-    --colorNav: var(--accent);
-}
-
-
 .background {
-    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgb(var(--colorNav)) 50%, rgba(0, 0, 0, 1) 100%);
+    background: rgba(var(--dark), 0.9);
     position: fixed;
     left: 0;
     right: 0;
@@ -51,7 +45,8 @@
     position: absolute;
     top: 4rem;
     right: -50%;
-    background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, rgba(var(--colorNav), 1) 100%);
+    background: rgba(var(--dark), 0.9);
+
     height: calc(100vh - 4rem);
     width: 50%;
     transition: transform .6s ease;
@@ -72,8 +67,12 @@
     font-size: 1rem;
 }
 
-.activeLink {
+.listItemAnchor:hover {
     color: rgb(255, 255, 255);
+}
+
+.activeLink {
+    color: rgb(var(--accent));
 }
 
 

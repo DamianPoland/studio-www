@@ -65,9 +65,11 @@ const Realizations = () => {
                         <p className="text1">Strony www</p>
                         <p className={style.realizations__text}>Strona internetowa firmy hydraulicznej: tatarczuk.com.pl</p>
                         <a href="https://tatarczuk.com.pl" target="_blank" rel="noopener noreferrer" className={style.realizations__link}>Zobacz...</a>
+                        <span className={style.animation__border}></span>
                     </div>
                     <a href="https://tatarczuk.com.pl" target="_blank" rel="noopener noreferrer" data-aos="fade-up-left" className={style.realizations__figure}>
                         <img className={style.img} src={tatarczuk} alt='tatarczuk.com.pl' />
+                        <span className={`${style.animation__border} ${style.animation__borderRotate}`}></span>
                     </a>
                 </div>
 
@@ -89,9 +91,11 @@ const Realizations = () => {
                             <p className="text1">Strony www</p>
                             <p className={style.realizations__text}>Strona internetowa firmy ogólnobudowlanej: wlaczremont.pl</p>
                             <a href="http://wlaczremont.pl/" target="_blank" rel="noopener noreferrer" className={style.realizations__link}>Zobacz...</a>
+                            <span className={style.animation__border}></span>
                         </div>
                         <a href="http://wlaczremont.pl/" target="_blank" rel="noopener noreferrer" data-aos="fade-up-left" className={style.realizations__figure}>
                             <img className={style.img} src={wlaczremont} alt='wlaczremont.pl' />
+                            <span className={`${style.animation__border} ${style.animation__borderRotate}`}></span>
                         </a>
                     </div>
 
@@ -111,9 +115,11 @@ const Realizations = () => {
                             <p className="text1">Aplikacje webowe</p>
                             <p className={style.realizations__text}>Modół kalendarza do rezerwacji wizyt lub obiektów </p>
                             <a href='https://kalendarz.studio-www.com' target="_blank" rel="noopener noreferrer" className={style.realizations__link}>Zobacz...</a>
+                            <span className={style.animation__border}></span>
                         </div>
                         <a href='https://kalendarz.studio-www.com' target="_blank" rel="noopener noreferrer" data-aos="fade-up-left" className={style.realizations__figure}>
                             <img className={style.img} src={calendar} alt='calendar' />
+                            <span className={`${style.animation__border} ${style.animation__borderRotate}`}></span>
                         </a>
                     </div>
 
@@ -133,9 +139,11 @@ const Realizations = () => {
                             <p className="text1">Aplikacje webowe</p>
                             <p className={style.realizations__text}>Aplikacja służąca do rozpoznawania i tłumaczenia tekstu</p>
                             <a href='https://imgtotext.web.app' target="_blank" rel="noopener noreferrer" className={style.realizations__link}>Zobacz...</a>
+                            <span className={style.animation__border}></span>
                         </div>
                         <a href='https://imgtotext.web.app' target="_blank" rel="noopener noreferrer" data-aos="fade-up-left" className={style.realizations__figure}>
                             <img className={style.img} src={imgToText} alt='imgToText' />
+                            <span className={`${style.animation__border} ${style.animation__borderRotate}`}></span>
                         </a>
                     </div>
 

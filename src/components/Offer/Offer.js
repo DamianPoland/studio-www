@@ -16,8 +16,8 @@ import { ReactComponent as Server } from '../../assets/offer/server.svg'
 
 
 // images
-import info1 from '../../assets/info1.jpg'
-import info2 from '../../assets/info2.jpg'
+import info1 from '../../assets/offer/info1.jpg'
+import info2 from '../../assets/offer/info2.jpg'
 
 
 const Offer = () => {

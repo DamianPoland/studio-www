@@ -23,7 +23,6 @@ html,
 body {
   font-size: 100%;
   overflow-x: hidden;
-  background-color: white;
   color: black;
 
   /* scrollbar ONLY for mozilla, scrollbar-width - "auto" or "thin"  */
@@ -51,6 +50,7 @@ body::-webkit-scrollbar-thumb {
   border-left: rgb(var(--accent)) 0.2rem solid;
   padding-left: 0.5rem;
 }
+
 .marginLeftRight {
   margin: 0 1rem;
 }

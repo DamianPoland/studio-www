@@ -6,22 +6,30 @@ import { Link } from 'react-router-dom'
 import Carousel from '../../UI/Carousel/Carousel'
 
 //video
-import start_video from '../../assets/home_start_video.mp4'
+import start_video from '../../assets/home/home_start_video.mp4'
 
 // images
-import sitesImg from '../../assets/laptop2.png'
-import appsImg from '../../assets/laptop.png'
-import userImg from '../../assets/user.png'
-
-// images 
 import html from '../../assets/tools/html.png'
 import css from '../../assets/tools/css.png'
 import js from '../../assets/tools/js.png'
 import reactImg from '../../assets/tools/react.png'
 import ts from '../../assets/tools/ts.png'
 import firebase from '../../assets/tools/firebase.png'
-import seo from '../../assets/seo.png'
-import reactJs from '../../assets/reactJs.png'
+
+import quality from '../../assets/home/quality.jpg'
+import price from '../../assets/home/price.jpg'
+import apperance from '../../assets/home/apperance.jpg'
+import time from '../../assets/home/time.jpg'
+import solutions from '../../assets/home/solutions.jpg'
+import individual from '../../assets/home/individual.jpg'
+
+
+
+
+import sitesImg from '../../assets/home/laptop2.png'
+import appsImg from '../../assets/home/laptop.png'
+import seo from '../../assets/home/seo.png'
+import reactJs from '../../assets/home/reactJs.png'
 
 import beautystudio from '../../assets/realizations/beautystudio.jpg'
 import calendar from '../../assets/realizations/calendar.jpg'
@@ -31,8 +39,10 @@ import jatestuje from '../../assets/realizations/jatestuje.jpg'
 import tatarczuk from '../../assets/realizations/tatarczuk.jpg'
 import wlaczremont from '../../assets/realizations/wlaczremont.jpg'
 
+import userImg from '../../assets/home/user.png'
+
 //svg
-import { ReactComponent as Phone } from '../../assets/phone.svg'
+import { ReactComponent as Phone } from '../../assets/icons/phone__home.svg'
 
 
 const offer = [
@@ -48,10 +58,7 @@ const offer = [
 
 const Home = () => {
 
-    // scroll to top when componene render
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+    useEffect(() => { window.scrollTo(0, 0) }, [])
 
     return (
         <main className={style.background}>
@@ -79,7 +86,6 @@ const Home = () => {
                     <h1 className="text2">Czego używam w mojej pracy:</h1>
                 </div>
                 <div className={style.tools__container}>
-
                     <figure className={style.tools__figure}>
                         <img className={style.img} src={html} alt='html5' />
                     </figure>
@@ -111,37 +117,37 @@ const Home = () => {
                     <div className={style.approach__container}>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={sitesImg} alt='approach studio-www' />
+                                <img className={style.img} src={quality} alt='approach studio-www' />
                             </figure>
                             <p className={style.approach__text}>Wosoka<br /><span className={style.approach__textEmphasize}>jakość</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={sitesImg} alt='approach studio-www' />
+                                <img className={style.img} src={price} alt='approach studio-www' />
                             </figure>
                             <p className={style.approach__text}>Konkurencyjna<br /><span className={style.approach__textEmphasize}>cena</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={sitesImg} alt='approach studio-www' />
+                                <img className={style.img} src={apperance} alt='approach studio-www' />
                             </figure>
                             <p className={style.approach__text}>Nowoczesny<br /><span className={style.approach__textEmphasize}>wygląd</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={sitesImg} alt='approach studio-www' />
+                                <img className={style.img} src={time} alt='approach studio-www' />
                             </figure>
                             <p className={style.approach__text}>Wykonanie na<br /><span className={style.approach__textEmphasize}>czas</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={sitesImg} alt='approach studio-www' />
+                                <img className={style.img} src={solutions} alt='approach studio-www' />
                             </figure>
                             <p className={style.approach__text}>Sprawdzone<br /><span className={style.approach__textEmphasize}>rozwiązania</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={sitesImg} alt='approach studio-www' />
+                                <img className={style.img} src={individual} alt='approach studio-www' />
                             </figure>
                             <p className={style.approach__text}>Indywidualne<br /><span className={style.approach__textEmphasize}>podejście</span></p>
                         </div>

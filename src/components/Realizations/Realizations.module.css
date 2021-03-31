@@ -39,6 +39,7 @@
     margin: 0 0 2rem 0;
     padding: 1rem 1rem 2rem 1rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 .realizations__text {
@@ -57,8 +58,69 @@
     width: 100%;
     height: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
 }
+
+
+/* border ANIMATION */
+
+.animation__border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.animation__border:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0.3rem;
+    background: linear-gradient(180deg, rgb(var(--accent)), rgb(50, 0, 0));
+    animation: animateBorderVertical1 4s linear infinite;
+    animation-delay: -1s;
+}
+
+@keyframes animateBorderVertical1 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    50% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.animation__border:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    background: linear-gradient(90deg, rgb(0, 0, 500), rgb(var(--accent)));
+    animation: animateBorderHorizontal1 4s linear infinite;
+}
+
+@keyframes animateBorderHorizontal1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.animation__borderRotate {
+    transform: rotate(180deg);
+}
+
 
 /* setion SAMPLES */
 
