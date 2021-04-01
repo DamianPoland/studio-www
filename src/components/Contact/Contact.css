@@ -1,0 +1,73 @@
+/* amimotiona of svg in CONTACT */
+
+#contact_us_phone {
+    /* animation */
+    animation: shake 1s cubic-bezier(.36, .07, .19, .97) infinite;
+    transform: translate3d(-50px, -160px, 0);
+    backface-visibility: hidden;
+    perspective: 100px;
+}
+
+
+@keyframes shake {
+
+    5%,
+    95% {
+        transform: translate3d(-51px, -160px, 0);
+    }
+
+    10%,
+    90% {
+        transform: translate3d(-48px, -160px, 0);
+    }
+
+    15%,
+    85% {
+        transform: translate3d(-54px, -160px, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(-46px, -160px, 0);
+    }
+}
+
+#contact_us_nav {
+    /* animation */
+    animation: move 1s ease-in-out infinite;
+    transform: translate(-50px, -150px);
+}
+
+@keyframes move {
+    50% {
+        transform: translate(-50px, -180px);
+    }
+}
+
+#contact_us_mail {
+    /* animation */
+    animation: rotate 2s ease-in infinite;
+    /* transform: translate(0px, 0px); */
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0.5;
+    }
+
+    25%,
+    75% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(20px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(-20px);
+        opacity: 0.5;
+    }
+}

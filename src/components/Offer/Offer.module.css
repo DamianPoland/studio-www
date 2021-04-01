@@ -219,17 +219,24 @@
 
 .info__text1 {
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     align-self: center;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+
 }
 
 .info__text2 {
-    color: white;
+    color: black;
     font-size: 1.5rem;
+    letter-spacing: 1.2px;
+    font-family: "Kalam", cursive;
     font-weight: 600;
     align-self: center;
-    margin: 2rem 0 0 4rem;
+    margin: 1rem 0 0 4rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+
 }
 
 

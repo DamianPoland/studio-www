@@ -65,6 +65,29 @@ const Home = () => {
 
     useEffect(() => { window.scrollTo(0, 0) }, [])
 
+    // onScroll to parallax for section start
+    useEffect(() => {
+
+        const startContainer = document.querySelector("#start__contaner")
+
+        const startScrool = () => {
+
+            // console.log(window.pageYOffset);
+
+            let scrollPosition = window.pageYOffset
+            let scale = (1 - scrollPosition * 0.0015)
+
+            startContainer.style.transform = `translateY(${scrollPosition * -0.5}px) scale(${scale > 0 ? scale : 0})`
+            // startContainer.style.transform = `scale(${1 - scrollPosition * 0.001})`
+        }
+
+
+        window.addEventListener('scroll', startScrool)
+        return () => {
+            window.removeEventListener('scroll', startScrool)
+        }
+    }, [])
+
     return (
         <main className={style.background}>
 
@@ -75,10 +98,12 @@ const Home = () => {
                     <div className={style.start__videoFilter}></div>
                 </div>
                 <div className={style.start__container}>
-                    <h1 className={style.start__title}>studio-www</h1>
-                    <h1 className={`${style.start__text} ${style.start__text1}`}>Strony internetowe</h1>
-                    <h2 className={`${style.start__text} ${style.start__text2}`}>Aplikacje webowe</h2>
-                    <h2 className={`${style.start__text} ${style.start__text3}`}>Portale internetowe</h2>
+                    <div id="start__contaner" className={style.start__containerText}>
+                        <h1 className={style.start__title}>studio-www</h1>
+                        <h1 className={`${style.start__text} ${style.start__text1}`}>Strony internetowe</h1>
+                        <h2 className={`${style.start__text} ${style.start__text2}`}>Aplikacje webowe</h2>
+                        <h2 className={`${style.start__text} ${style.start__text3}`}>Portale internetowe</h2>
+                    </div>
                 </div>
                 <i className={style.start__arrow} />
             </section>
@@ -157,7 +182,9 @@ const Home = () => {
                             <p className={style.approach__text}>Indywidualne<br /><span className={style.approach__textEmphasize}>podejście</span></p>
                         </div>
                     </div>
-                    <Link to='/about' className={`${style.link} ${style.textWhite}`}>Dowiedz się więcej o mnie<p className={style.linkArrow}></p></Link>
+                    <div>
+                        <Link to='/about' className={`${style.link} ${style.textWhite}`}>Dowiedz się więcej o mnie<p className={style.linkArrow}></p></Link>
+                    </div>
                 </div>
             </section>
 
@@ -190,7 +217,9 @@ const Home = () => {
                         <img className={style.offer__img} src={reactJs} alt='react js' />
                     </figure>
                 </div>
-                <Link to='/offer' className={`${style.link} ${style.linkLeftPadding}`}>Zobacz pełną ofertę<p className={style.linkArrow}></p></Link>
+                <div>
+                    <Link to='/offer' className={`${style.link} ${style.linkLeftPadding}`}>Zobacz pełną ofertę<p className={style.linkArrow}></p></Link>
+                </div>
             </section>
 
 
@@ -206,42 +235,63 @@ const Home = () => {
                     <div className={style.price__content}>
 
                         <div data-aos="flip-left" className={style.price__item}>
-                            <p className={style.price__itemTextMine}>Strona internetowa<br />wizytówka</p>
-                            <p className={style.price__itemTextPrice}>800 zł</p>
-                            {siteSmall.map(item => {
-                                return (
-                                    <div key={item} className={style.price__itemContainer}>
-                                        <Mark />
-                                        <p className={style.price__itemDesc}>{item}</p>
-                                    </div>
-                                )
-                            })}
+                            <div className={style.price__itemCircle1}></div>
+                            <div className={style.price__itemContainer}>
+                                <p className={style.price__itemTextMine}>Strona internetowa<br />wizytówka</p>
+                                <p className={style.price__itemTextPrice}>800 zł</p>
+                                {siteSmall.map(item => {
+                                    return (
+                                        <div key={item} className={style.price__itemLineText}>
+                                            <Mark />
+                                            <p className={style.price__itemDesc}>{item}</p>
+                                        </div>
+                                    )
+                                })}
+                                <div className={style.price__center}>
+                                    <Link to='/contact' className={style.link}>Zamów<p className={style.linkArrow}></p></Link>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div data-aos="flip-left" className={style.price__item}>
+                            <div className={style.price__itemCircle2}></div>
+                            <div className={style.price__itemContainer}>
+                                <p className={style.price__itemTextMine}>Strona internetowa<br />rozbudowana</p>
+                                <p className={style.price__itemTextPrice}>1200 zł</p>
+                                {siteBig.map(item => {
+                                    return (
+                                        <div key={item} className={style.price__itemLineText}>
+                                            <Mark />
+                                            <p className={style.price__itemDesc}>{item}</p>
+                                        </div>
+                                    )
+                                })}
+                                <div className={style.price__center}>
+                                    <Link to='/contact' className={style.link}>Zamów<p className={style.linkArrow}></p></Link>
+                                </div>
+                            </div>
                         </div>
 
                         <div data-aos="flip-left" className={style.price__item}>
-                            <p className={style.price__itemTextMine}>Strona internetowa<br />rozbudowana</p>
-                            <p className={style.price__itemTextPrice}>1200 zł</p>
-                            {siteBig.map(item => {
-                                return (
-                                    <div key={item} className={style.price__itemContainer}>
-                                        <Mark />
-                                        <p className={style.price__itemDesc}>{item}</p>
-                                    </div>
-                                )
-                            })}
-                        </div>
+                            <div className={style.price__itemCircle3}></div>
 
-                        <div data-aos="flip-left" className={style.price__item}>
-                            <p className={style.price__itemTextMine}>Aplikacja webowa lub<br />portal internetowy</p>
-                            <p className={style.price__itemTextPrice}>od 1500 zł</p>
-                            {siteApp.map(item => {
-                                return (
-                                    <div key={item} className={style.price__itemContainer}>
-                                        <Mark />
-                                        <p className={style.price__itemDesc}>{item}</p>
-                                    </div>
-                                )
-                            })}
+                            <div className={style.price__itemCircle4}></div>
+                            <div className={style.price__itemContainer}>
+                                <p className={style.price__itemTextMine}>Aplikacja webowa lub<br />portal internetowy</p>
+                                <p className={style.price__itemTextPrice}>od 1500 zł</p>
+                                {siteApp.map(item => {
+                                    return (
+                                        <div key={item} className={style.price__itemLineText}>
+                                            <Mark />
+                                            <p className={style.price__itemDesc}>{item}</p>
+                                        </div>
+                                    )
+                                })}
+                                <div className={style.price__center}>
+                                    <Link to='/contact' className={style.link}>Zamów<p className={style.linkArrow}></p></Link>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -259,8 +309,9 @@ const Home = () => {
                 <div className={style.carousel}>
                     <Carousel array={offer} />
                 </div>
-
-                <Link to='/realizations' className={style.link}>Zobacz moje ostatnie realizacje<p className={style.linkArrow}></p></Link>
+                <div>
+                    <div><Link to='/realizations' className={style.link}>Zobacz moje ostatnie realizacje<p className={style.linkArrow}></p></Link></div>
+                </div>
             </section>
 
             {/* section USER */}
@@ -270,7 +321,9 @@ const Home = () => {
                         <div className="textContainer">
                             <p className="text1">STREFA KLIENTA</p>
                             <h1 className="text2 text__white">Jesteś już klientem?</h1>
-                            <Link to='/login' className={`${style.link} ${style.textWhite}`}>Śledź postępy w projekcie<p className={style.linkArrow}></p></Link>
+                            <div>
+                                <Link to='/login' className={`${style.link} ${style.textWhite}`}>Śledź postępy w projekcie<p className={style.linkArrow}></p></Link>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -300,7 +353,9 @@ const Home = () => {
                         <img className={style.img} src={contactImg} alt='userImg studio-www' />
                     </figure>
                 </div>
-                <Link to='/contact' className={style.link}>Sprawdź inne formy kontaktu<p className={style.linkArrow}></p></Link>
+                <div>
+                    <Link to='/contact' className={style.link}>Sprawdź inne formy kontaktu<p className={style.linkArrow}></p></Link>
+                </div>
             </section>
 
         </main >

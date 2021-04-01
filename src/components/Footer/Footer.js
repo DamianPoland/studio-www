@@ -7,6 +7,8 @@ import { ReactComponent as Phone } from '../../assets/icons/phone.svg'
 import { ReactComponent as Location } from '../../assets/icons/location.svg'
 import { ReactComponent as Email } from '../../assets/icons/email.svg'
 import { ReactComponent as Facebbok } from '../../assets/icons/facebook.svg'
+import { ReactComponent as LinkedIn } from '../../assets/icons/linkedIn.svg'
+import { ReactComponent as GitHub } from '../../assets/icons/gitHub.svg'
 
 // images 
 import html from '../../assets/tools/html.png'
@@ -60,6 +62,8 @@ const Footer = () => {
                             <a href='mailto:info@studio-www.com?subject=Zapytanie' className={style.svg}><Email /></a>
                             <a href='https://www.fb.me/StudioWWWGdynia' target='blank' className={style.svg}><Facebbok /></a>
                             <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Kaliska 22`} target='blank' className={style.svg}><Location /></a>
+                            <a href={`https://linkedin.com/in/damian-wil-9b1124195`} target='blank' className={style.svg}><LinkedIn /></a>
+                            <a href={`https://github.com/DamianPoland`} target='blank' className={style.svg}><GitHub /></a>
                         </div>
                     </div>
 

@@ -45,7 +45,7 @@ const About = () => {
                                 <p className="text1">O MNIE</p>
                                 <h1 className="text2">Kim jestem?</h1>
                             </div>
-                            <p className={style.text__desc}><span className={style.text__bigLeter}>J</span>estem osobą z tytułem mgr inż. Od kilku lat pracuję w branży IT. Mieszkam i pracuję w <strong>Gdyni</strong>. Zajmuję się tworzeniem <strong>stron internetowych</strong>, <strong>aplikacji webowych</strong> oraz <strong>serwisów internetowych</strong>. Przy tworzeniu projektów korzystam z najnowszych i najczęściej używanych technologii, dlatego każdy projekt jest wysokiej jakości i stosunkowo tani w produkcji oraz utrzymaniu.<br /> <span className={style.text__bigLeter}>D</span>zięki nawiązaniu współpracy z innymi profesjonalnymi programistami jestem w stanie tworzyć duże i skomplikowane projekty.</p>
+                            <p className={style.text__desc}><span className={style.text__bigLeter}>J</span>estem osobą z tytułem mgr inż. Od kilku lat pracuję w branży IT. Zajmuję się tworzeniem <strong>stron internetowych</strong>, <strong>aplikacji webowych</strong> oraz <strong>serwisów internetowych</strong>. Przy tworzeniu projektów korzystam z najnowszych i najczęściej używanych technologii, dlatego każdy projekt jest wysokiej jakości i stosunkowo tani w produkcji oraz utrzymaniu.<br /> <span className={style.text__bigLeter}>D</span>zięki nawiązaniu współpracy z innymi programistami jestem w stanie tworzyć duże i skomplikowane projekty.</p>
                         </div>
                     </div>
                 </div>

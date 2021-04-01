@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import style from './Contact.module.css'
+import './Contact.css'
 import axios from 'axios'
 
 // components
 import Alert from '../../UI/Alert/Alert'
 import Spinner from '../../UI/Spinner/Spinner'
-
-// images
-import BackgroundImg from '../../assets/background_contact.jpg'
 
 //svg
 import { ReactComponent as Phone } from '../../assets/icons/phone.svg'
@@ -16,6 +14,9 @@ import { ReactComponent as Email } from '../../assets/icons/email.svg'
 import { ReactComponent as Facebbok } from '../../assets/icons/facebook.svg'
 import { ReactComponent as Clock } from '../../assets/icons/clock.svg'
 import { ReactComponent as Envelope } from '../../assets/icons/envelope.svg'
+import { ReactComponent as ContactIcon } from '../../assets/icons/contact_us.svg'
+
+
 
 
 const Contact = () => {
@@ -24,9 +25,6 @@ const Contact = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
-
-    // is loading background image - only first time
-    const [isLoading, setIsLoading] = useState(true) // input value
 
     // input Name
     const [inputName, setInputName] = useState('') // input value
@@ -122,71 +120,69 @@ const Contact = () => {
     }
 
     return (
-        <section className={style.background}>
-            < img className={style.backgroundImg} src={BackgroundImg} alt="background contact" onLoad={() => setIsLoading(false)} />
-            {isLoading
-                ? <Spinner />
-                : <div className={style.section}>
-                    <div className={style.head}>
-                        <h1 className={style.header}>Skontaktuj się</h1>
-                        <p className={style.line}></p>
-                    </div>
-                    <div className={style.contact}>
+        <section className={style.section}>
 
-                        {/* contact links  */}
-                        <div className={style.content}>
-                            <div className={style.contentItem}>
-                                <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Kaliska 22`} target='blank' className={style.svg}><Location /></a>
-                                <p className={style.contentDesc}>Poland, Gdynia, Kaliska 22</p>
-                            </div>
-                            <div className={style.contentItem}>
-                                <a href='tel:+48795631039' className={style.svg}><Phone /></a>
-                                <p className={style.contentDesc}>+48 795-631-039</p>
-                            </div>
-                            <div className={style.contentItem}>
-                                <a href='mailto:info@studio-www.com?subject=Zapytanie' className={style.svg}><Email /></a>
-                                <p className={style.contentDesc}>info@studio-www.com</p>
-                            </div>
-                            <div className={style.contentItem}  >
-                                <a href='https://www.fb.me/StudioWWWGdynia' target='blank' className={style.svg}><Facebbok /></a>
-                                <p className={style.contentDesc}>@StudioWWWGdynia</p>
-                            </div>
-                            <div className={style.contentItem} >
-                                <a href='/' className={style.svg}><Clock /></a>
-                                <p className={style.contentDesc}>Pn - Pt 8.00-16.00</p>
-                            </div>
+            <div className={style.start__svg} data-aos="zoom-in">
+                <ContactIcon />
+            </div>
+
+            <div className={style.section__container}>
+
+                {/* contact links  */}
+                <div className={style.contacts}>
+                    <div className={style.contacts__container}>
+                        <div className={style.contacts__item}>
+                            <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Kaliska 22`} target='blank' className={style.svg}><Location /></a>
+                            <p className={style.contacts__desc}>Poland, Gdynia, Kaliska 22</p>
                         </div>
-
-                        {/* form */}
-                        <div className={style.formContainer}>
-                            <form className={`${style.form} ${isFormAnimation && style.formAnim}`} onSubmit={sendMessage} noValidate>
-                                {isAlertShow && <Alert click={() => setIsAlertShow(false)} alertName='Przepraszamy' alertDetails='Wiadomości nie udało się wysłać. Proszę skorzystać z innej formy kontaktu' />}
-                                {isSpinnerShow && <Spinner />}
-                                <div className={style.inputContainer}>
-                                    <input onChange={event => setInputName(event.target.value)} value={inputName} onFocus={() => setInputNameIsInvalid(false)} className={`${style.input} ${inputNameIsInvalid && style.inputIsInvalid}`} type='text' required />
-                                    <label className={style.label}>Twoje imię</label>
-                                    {inputNameIsInvalid && <p className={style.isValid}>{inputNameIsInvalid}</p>}
-                                </div>
-                                <div className={style.inputContainer}>
-                                    <input onChange={event => setInputEmail(event.target.value)} value={inputEmail} onFocus={() => setInputEmailIsInvalid(false)} className={`${style.input} ${inputEmailIsInvalid && style.inputIsInvalid}`} type='text' required />
-                                    <label className={style.label}>Twój e-mail</label>
-                                    {inputEmailIsInvalid && <p className={style.isValid}>{inputEmailIsInvalid}</p>}
-                                </div>
-                                <div className={style.inputContainer}>
-                                    <textarea onChange={event => setInputMessage(event.target.value)} value={inputMessage} onFocus={() => setInputMessageIsInvalid(false)} className={`${style.input} ${inputMessageIsInvalid && style.inputIsInvalid}`} type='textarea' rows='5' required />
-                                    <label className={style.label}>Wiadomość</label>
-                                    {inputMessageIsInvalid && <p className={style.isValid}>{inputMessageIsInvalid}</p>}
-                                </div>
-                                <input className={style.btn} type="submit" value="Wyślij" />
-                            </form>
-                            <div className={`${style.envelope} ${isFormAnimation && style.envelopeAnim}`}>
-                                <Envelope />
-                            </div>
+                        <div className={style.contacts__item}>
+                            <a href='tel:+48795631039' className={style.svg}><Phone /></a>
+                            <p className={style.contacts__desc}>+48 795-631-039</p>
                         </div>
-
+                        <div className={style.contacts__item}>
+                            <a href='mailto:info@studio-www.com?subject=Zapytanie' className={style.svg}><Email /></a>
+                            <p className={style.contacts__desc}>info@studio-www.com</p>
+                        </div>
+                        <div className={style.contacts__item}  >
+                            <a href='https://www.fb.me/StudioWWWGdynia' target='blank' className={style.svg}><Facebbok /></a>
+                            <p className={style.contacts__desc}>@StudioWWWGdynia</p>
+                        </div>
+                        <div className={style.contacts__item} >
+                            <a href='/' className={style.svg}><Clock /></a>
+                            <p className={style.contacts__desc}>Pn - Pt 8.00-16.00</p>
+                        </div>
                     </div>
                 </div>
-            }
+
+                {/* form */}
+                <div className={style.form}>
+                    <div className={style.form__container}>
+                        {isAlertShow && <Alert click={() => setIsAlertShow(false)} alertName='Przepraszamy' alertDetails='Wiadomości nie udało się wysłać. Proszę skorzystać z innej formy kontaktu' />}
+                        <form className={`${style.form__content} ${isFormAnimation && style.form__anim}`} onSubmit={sendMessage} noValidate>
+                            {isSpinnerShow && <Spinner />}
+                            <div className={style.input__container}>
+                                <input onChange={event => setInputName(event.target.value)} value={inputName} onFocus={() => setInputNameIsInvalid(false)} className={`${style.input} ${inputNameIsInvalid && style.input__isInvalid}`} type='text' required />
+                                <label className={style.label}>Twoje imię</label>
+                                {inputNameIsInvalid && <p className={style.isValid}>{inputNameIsInvalid}</p>}
+                            </div>
+                            <div className={style.input__container}>
+                                <input onChange={event => setInputEmail(event.target.value)} value={inputEmail} onFocus={() => setInputEmailIsInvalid(false)} className={`${style.input} ${inputEmailIsInvalid && style.input__isInvalid}`} type='text' required />
+                                <label className={style.label}>Twój e-mail</label>
+                                {inputEmailIsInvalid && <p className={style.isValid}>{inputEmailIsInvalid}</p>}
+                            </div>
+                            <div className={style.input__container}>
+                                <textarea onChange={event => setInputMessage(event.target.value)} value={inputMessage} onFocus={() => setInputMessageIsInvalid(false)} className={`${style.input} ${inputMessageIsInvalid && style.input__isInvalid}`} type='textarea' rows='5' required />
+                                <label className={style.label}>Wiadomość</label>
+                                {inputMessageIsInvalid && <p className={style.isValid}>{inputMessageIsInvalid}</p>}
+                            </div>
+                            <input className={style.btn} type="submit" value="Wyślij" />
+                        </form>
+                        <div className={`${style.envelope} ${isFormAnimation && style.envelopeAnim}`}>
+                            <Envelope />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     )
 }

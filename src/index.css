@@ -62,7 +62,7 @@ body::-webkit-scrollbar-thumb {
   color: rgb(var(--accent));
   font-family: "Kalam", cursive;
   font-weight: 600;
-
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .text2 {
