@@ -71,20 +71,23 @@ const Home = () => {
     // onScroll to parallax for section start
     useEffect(() => {
 
+        //get container with text
         const startContainer = document.querySelector("#start__contaner")
 
         const startScrool = () => {
 
-            // console.log(window.pageYOffset);
-
+            // get scrool position
             let scrollPosition = window.pageYOffset
-            let scale = (1 - scrollPosition * 0.0015)
 
+            // stop when > 700 => startContainer not visible
+            if (scrollPosition > 700) { return }
+
+            // console.log(window.pageYOffset);
+            let scale = (1 - scrollPosition * 0.0015)
             startContainer.style.transform = `translateY(${scrollPosition * -0.5}px) scale(${scale > 0 ? scale : 0})`
-            // startContainer.style.transform = `scale(${1 - scrollPosition * 0.001})`
         }
 
-
+        // add/remove event listener
         window.addEventListener('scroll', startScrool)
         return () => {
             window.removeEventListener('scroll', startScrool)
