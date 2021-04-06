@@ -46,7 +46,7 @@ const Login = props => {
         JSON.parse(localStorage.getItem(IS_AUTH))
 
             // user log in
-            ? <div className={style.background}>
+            ? <section className={style.background}>
                 <div className={style.projectContainer}>
                     <h1 className={style.projectHeader}>Poniżej znajdziesz wszelkie informację dotyczące Twojego projeku:</h1>
                     <div className={style.projectCoontent}>
@@ -65,7 +65,7 @@ const Login = props => {
                     </div>
                     <button className={style.btn} onClick={handlerLogOut}>Wyloguj</button>
                 </div>
-            </div>
+            </section>
 
             // user log out
             : <LoginRegisterFirebaseUI />

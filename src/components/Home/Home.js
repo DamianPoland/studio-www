@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import style from './Home.module.css'
+import AOS from 'aos'
 import { Link } from 'react-router-dom'
 
 // components
 import TouchSlider from "../../UI/TouchSlider/HomeTouchSlider"
+import Spinner from '../../UI/Spinner/Spinner'
 
 //video
 import start_video from '../../assets/home/home_start_video.mp4'
@@ -50,17 +52,17 @@ import { ReactComponent as Mark } from '../../assets/icons/mark__OK.svg'
 
 
 const offer = [
-    <img className={style.img} src={beautystudio} alt={`${beautystudio}`} />,
-    <img className={style.img} src={calendar} alt={`${calendar}`} />,
-    <img className={style.img} src={getpol} alt={`${getpol}`} />,
-    <img className={style.img} src={imgToText} alt={`${imgToText}`} />,
-    <img className={style.img} src={jatestuje} alt={`${jatestuje}`} />,
-    <img className={style.img} src={tatarczuk} alt={`${tatarczuk}`} />,
-    <img className={style.img} src={wlaczremont} alt={`${wlaczremont}`} />,
+    <img className={style.img} src={beautystudio} alt={`strona internetowa ${beautystudio}`} />,
+    <img className={style.img} src={calendar} alt={`aplikacja internetowa ${calendar}`} />,
+    <img className={style.img} src={getpol} alt={`strona internetowa ${getpol}`} />,
+    <img className={style.img} src={imgToText} alt={`aplikacja internetowa ${imgToText}`} />,
+    <img className={style.img} src={jatestuje} alt={`aplikacja internetowa ${jatestuje}`} />,
+    <img className={style.img} src={tatarczuk} alt={`strona internetowa ${tatarczuk}`} />,
+    <img className={style.img} src={wlaczremont} alt={`strona internetowa ${wlaczremont}`} />,
 ]
 
 const siteSmall = ["Jeden widok", "Darmowy hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO",]
-const siteBig = ["Do 5 widoków", "Darmowy hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO", "Formularz kontaktowy", "Polityka prywatności (cookies)", "Framework React",]
+const siteBig = ["Do 6 widoków", "Darmowy hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO", "Formularz kontaktowy", "Polityka prywatności (cookies)", "Framework React",]
 const siteApp = ["Wiele widoków", "Hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO", "Formularz kontaktowy", "Polityka prywatności (cookies)", "Framework React", "Usługi chmurowe (Firebase)", "Bazy danych noSQL", "Obliczenia", "API", "PWA (Progressive Web Apps)", "GPS, aparat", "Powiadomienia", "inne.."]
 
 
@@ -68,12 +70,21 @@ const Home = () => {
 
     useEffect(() => { window.scrollTo(0, 0) }, [])
 
+    // load movie
+    const [isVideoLoaded, setIsVideoLoaded] = useState(false)
+
+    // AOS reload after load video to not show animations before load screen
+    useEffect(() => { AOS.refresh() }, [isVideoLoaded])
+
     // onScroll to parallax for section start
     useEffect(() => {
 
         //get container with text
         const startContainer = document.querySelector("#start__contaner")
 
+        if (!startContainer) { return }
+
+        // event listener funcion
         const startScrool = () => {
 
             // get scrool position
@@ -92,7 +103,8 @@ const Home = () => {
         return () => {
             window.removeEventListener('scroll', startScrool)
         }
-    }, [])
+    }, [isVideoLoaded])
+
 
     return (
         <main className={style.background}>
@@ -100,46 +112,48 @@ const Home = () => {
             {/* section START */}
             <section className={style.start}>
                 <div className={style.start__videoContainer}>
-                    <video className={style.start__video} src={start_video} autoPlay loop muted playsInline alt="intro" onLoadedData={() => console.log('video onLoadedData')} />
+                    <video className={style.start__video} src={start_video} autoPlay loop muted playsInline alt="intro" onCanPlayThrough={() => setIsVideoLoaded(true)} />
                     <div className={style.start__videoFilter}></div>
                 </div>
-                <div className={style.start__container}>
-                    <div id="start__contaner" className={style.start__containerText}>
-                        <div className={style.start__titleContainer}>
-                            <img className={style.start__logo} src={logo} alt="log studio-www" />
-                            <h1 className={style.start__title}><span className={style.textWhite}>studio-</span>www</h1>
+                {!isVideoLoaded
+                    ? <Spinner />
+                    : <div className={style.start__container}>
+                        <div id="start__contaner" className={style.start__containerText}>
+                            <div className={style.start__titleContainer}>
+                                <img className={style.start__logo} src={logo} alt="logo studio-www" />
+                                <h2 className={style.start__title}><span className={style.textWhite}>studio-</span>www</h2>
+                            </div>
+                            <h1 className={`${style.start__text} ${style.start__text1}`}>Strony internetowe</h1>
+                            <h1 className={`${style.start__text} ${style.start__text2}`}>Aplikacje webowe</h1>
+                            <h1 className={`${style.start__text} ${style.start__text3}`}>Portale internetowe</h1>
                         </div>
-                        <h1 className={`${style.start__text} ${style.start__text1}`}>Strony internetowe</h1>
-                        <h2 className={`${style.start__text} ${style.start__text2}`}>Aplikacje webowe</h2>
-                        <h2 className={`${style.start__text} ${style.start__text3}`}>Portale internetowe</h2>
-                    </div>
-                </div>
+                    </div>}
                 <i className={style.start__arrow} />
             </section>
 
             {/* section TOOLS */}
             <section className={style.tools}>
                 <div className="textContainer">
-                    <p className="text1">NARZĘDZIA</p>
-                    <h1 className="text2">Czego używam w mojej pracy?</h1>
+                    <h2 className="text1">NARZĘDZIA</h2>
+                    <p className="text2">Czego używam w mojej pracy?</p>
                 </div>
                 <div className={style.tools__container}>
-                    <figure className={style.tools__figure}>
+                    <figure data-aos="zoom-in" className={style.tools__figure}>
                         <img className={style.img} src={html} alt='html5' />
                     </figure>
-                    <figure className={style.tools__figure}>
+                    <figure data-aos="zoom-in" className={style.tools__figure}>
                         <img className={style.img} src={css} alt='css3' />
                     </figure>
-                    <figure className={style.tools__figure}>
+                    <figure data-aos="zoom-in" className={style.tools__figure}>
                         <img className={style.img} src={js} alt='java script' />
                     </figure>
-                    <figure className={style.tools__figure}>
+                    <figure data-aos="zoom-in" className={style.tools__figure}>
                         <img className={style.img} src={reactImg} alt='react' />
                     </figure>
-                    <figure className={style.tools__figure}>
+                    <figure data-aos="zoom-in" className={style.tools__figure}>
                         <img className={style.img} src={ts} alt='type script' />
                     </figure>
-                    <figure className={style.tools__figure}>
+                    <figure data-aos="zoom-in" className={style.tools__figure}>
                         <img className={style.img} src={firebase} alt='firebase' />
                     </figure>
                 </div>
@@ -150,43 +164,43 @@ const Home = () => {
             <section className={style.approach}>
                 <div className={style.approach__content}>
                     <div className="textContainer">
-                        <p className="text1">DLACZEGO WARTO</p>
-                        <h1 className="text2 text__white">Co cechuje moje projekty?</h1>
+                        <h2 className="text1">DLACZEGO WARTO</h2>
+                        <p className="text2 text__white">Co cechuje moje projekty?</p>
                     </div>
                     <div className={style.approach__container}>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={quality} alt='approach studio-www' />
+                                <img className={style.img} src={quality} alt='jakość studio-www' />
                             </figure>
                             <p className={style.approach__text}>Wosoka<br /><span className={style.approach__textEmphasize}>jakość</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={price} alt='approach studio-www' />
+                                <img className={style.img} src={price} alt='cena studio-www' />
                             </figure>
                             <p className={style.approach__text}>Konkurencyjna<br /><span className={style.approach__textEmphasize}>cena</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={apperance} alt='approach studio-www' />
+                                <img className={style.img} src={apperance} alt='wygląd studio-www' />
                             </figure>
                             <p className={style.approach__text}>Nowoczesny<br /><span className={style.approach__textEmphasize}>wygląd</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={time} alt='approach studio-www' />
+                                <img className={style.img} src={time} alt='czas studio-www' />
                             </figure>
                             <p className={style.approach__text}>Wykonanie na<br /><span className={style.approach__textEmphasize}>czas</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={solutions} alt='approach studio-www' />
+                                <img className={style.img} src={solutions} alt='rozwiązania studio-www' />
                             </figure>
                             <p className={style.approach__text}>Sprawdzone<br /><span className={style.approach__textEmphasize}>rozwiązania</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
-                                <img className={style.img} src={individual} alt='approach studio-www' />
+                                <img className={style.img} src={individual} alt='podejście studio-www' />
                             </figure>
                             <p className={style.approach__text}>Indywidualne<br /><span className={style.approach__textEmphasize}>podejście</span></p>
                         </div>
@@ -201,8 +215,8 @@ const Home = () => {
             {/* section OFFER */}
             <section className={style.offer}>
                 <div className="textContainer marginLeftRight">
-                    <p className="text1">OFERTA</p>
-                    <h1 className="text2">Co mogę Tobie zaoferować?</h1>
+                    <h2 className="text1">OFERTA</h2>
+                    <p className="text2">Co mogę Tobie zaoferować?</p>
                 </div>
 
                 <div className={style.offer__item}>
@@ -237,14 +251,14 @@ const Home = () => {
                 <div className={style.price__container}>
 
                     <div className="textContainer">
-                        <p className="text1">CENNIK</p>
-                        <h1 className="text2 text__white">Ile to kosztuje?</h1>
+                        <h1 className="text1">CENNIK</h1>
+                        <p className="text2 text__white">Ile to kosztuje?</p>
                     </div>
 
                     <div className={style.price__content}>
 
                         <div data-aos="flip-left" className={style.price__item}>
-                            <p className={style.price__itemTextMine}>Strona internetowa<br />wizytówka</p>
+                            <h2 className={style.price__itemTextMine}>Strona internetowa<br />wizytówka</h2>
                             <p className={style.price__itemTextPrice}>800 zł</p>
                             {siteSmall.map(item => {
                                 return (
@@ -261,7 +275,7 @@ const Home = () => {
 
 
                         <div data-aos="flip-left" className={style.price__item}>
-                            <p className={style.price__itemTextMine}>Strona internetowa<br />rozbudowana</p>
+                            <h2 className={style.price__itemTextMine}>Strona internetowa<br />rozbudowana</h2>
                             <p className={style.price__itemTextPrice}>1200 zł</p>
                             {siteBig.map(item => {
                                 return (
@@ -277,7 +291,7 @@ const Home = () => {
                         </div>
 
                         <div data-aos="flip-left" className={style.price__item}>
-                            <p className={style.price__itemTextMine}>Aplikacja webowa lub<br />portal internetowy</p>
+                            <h2 className={style.price__itemTextMine}>Aplikacja webowa lub<br />portal internetowy</h2>
                             <p className={style.price__itemTextPrice}>od 1500 zł</p>
                             {siteApp.map(item => {
                                 return (
@@ -300,13 +314,13 @@ const Home = () => {
             {/* section REALIZATIONS */}
             <section className={style.realizations}>
                 <div className="textContainer">
-                    <p className="text1">REALIZACJE</p>
-                    <h1 className="text2">Co już wykonałem?</h1>
+                    <h2 className="text1">REALIZACJE</h2>
+                    <p className="text2">Co już wykonałem?</p>
                 </div>
 
                 <div className={style.slider}>
                     <TouchSlider itemsArray={offer} />
-                    <img className={style.slider__img} src={desktopEmpty} alt="desktopEmpty" />
+                    <img className={style.slider__img} src={desktopEmpty} alt="desktop empty" />
                 </div>
 
                 <div>
@@ -319,8 +333,8 @@ const Home = () => {
                 <div className={style.user__container}>
                     <div className={style.user__textContainer}>
                         <div className="textContainer">
-                            <p className="text1">STREFA KLIENTA</p>
-                            <h1 className="text2 text__white">Jesteś już klientem?</h1>
+                            <h2 className="text1">STREFA KLIENTA</h2>
+                            <p className="text2 text__white">Jesteś już klientem?</p>
                             <div>
                                 <Link to='/login' className={`${style.link} ${style.textWhite}`}>Śledź postępy w projekcie<p className={style.linkArrow}></p></Link>
                             </div>
@@ -341,8 +355,8 @@ const Home = () => {
                     </figure>
                     <div className={style.contact__desc}>
                         <div className="textContainer">
-                            <p className="text1">KONTAKT</p>
-                            <h1 className="text2">Jak się skontaktować?</h1>
+                            <h2 className="text1">KONTAKT</h2>
+                            <p className="text2">Jak się skontaktować?</p>
                         </div>
 
                         <p className={style.contact__tel}>

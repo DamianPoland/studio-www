@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import style from './About.module.css'
+import AOS from 'aos'
 
 
 // images
@@ -25,9 +26,13 @@ import { ReactComponent as Responsive } from '../../assets/icons/responsive.svg'
 const About = () => {
 
     // scroll to top when componene render
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+    useEffect(() => { window.scrollTo(0, 0) }, [])
+
+    // AOS reload after load first photo to not show animations before load screen
+    const [loadPhoto, setLoadPhoto] = useState(false)
+    useEffect(() => { AOS.refresh() }, [loadPhoto])
+
+
 
     return (
         <main className={style.background}>
@@ -37,13 +42,13 @@ const About = () => {
             <section className={style.who}>
                 <div className={style.who__container}>
                     <figure className={style.figure__img}>
-                        <img className={style.img} data-aos="fade-right" src={team} alt='wykonywanie stron internetowych i aplikacji webowych' />
+                        <img onLoad={() => setLoadPhoto(true)} className={style.img} data-aos="fade-right" src={team} alt='wykonywanie stron internetowych i aplikacji webowych' />
                     </figure>
                     <div className={style.who__text}>
                         <div className={style.who__textContainer}>
                             <div className="textContainer">
                                 <p className="text1">O MNIE</p>
-                                <h1 className="text2">Kim jestem?</h1>
+                                <p className="text2">Kim jestem?</p>
                             </div>
                             <p className={style.text__desc}><span className={style.text__bigLeter}>J</span>estem osobą z tytułem mgr inż. Od kilku lat pracuję w branży IT. Zajmuję się tworzeniem <strong>stron internetowych</strong>, <strong>aplikacji webowych</strong> oraz <strong>serwisów internetowych</strong>. Przy tworzeniu projektów korzystam z najnowszych i najczęściej używanych technologii, dlatego każdy projekt jest wysokiej jakości i stosunkowo tani w produkcji oraz utrzymaniu.<br /> <span className={style.text__bigLeter}>D</span>zięki nawiązaniu współpracy z innymi programistami jestem w stanie tworzyć duże i skomplikowane projekty.</p>
                         </div>
@@ -59,7 +64,7 @@ const About = () => {
                         <div className={style.why__textContainer}>
                             <div className="textContainer text__white">
                                 <p className="text1">O MNIE</p>
-                                <h1 className="text2 text__white">Dlaczego ja?</h1>
+                                <p className="text2 text__white">Dlaczego ja?</p>
                             </div>
                             <p className={`${style.text__desc} ${style.text__white}`}><span className={style.text__bigLeter}>Z</span>ajmuję się tworzeniem kompleksowych projektów od A-Z. Korzystam z nowoczesnych rozwiązań takich jak <strong>React</strong> i <strong>XaaS</strong>. Strony są projektowane jako <strong>RWD</strong> (<strong>Responsive Web Design</strong>) oraz <strong>PWA</strong> (<strong>Progressive Web Apps</strong>) dzięki czemu wyglądają dobrze na komputerze i na urządzeniu mobilnym. Każdy projekt jest przygotowany pod pozycjonowanie strony zgodnie z <strong>SEO</strong>.<br /> <span className={style.text__bigLeter}>C</span>ena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem, a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę, a się przekonasz.</p>
                         </div>

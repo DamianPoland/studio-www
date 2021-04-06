@@ -23,63 +23,54 @@ import info2 from '../../assets/offer/info2.jpg'
 const Offer = () => {
 
     // scroll to top when componene render
-    useEffect(() => {
-        window.scrollTo(0, 0)
+    useEffect(() => { window.scrollTo(0, 0) }, [])
 
-        // svg add animation
+    // svg add animations
+    useEffect(() => {
+
         document.querySelector('#cardCardId').classList.add(style.animationUPDown)
 
-        // svg add animation
         document.querySelector('#standPeopleId').classList.add(style.animationShowHide)
 
-        // svg add animation
         document.querySelector('#deviceScreen1Id').classList.add(style.animationBackgroundColor)
         document.querySelector('#deviceScreen2Id').classList.add(style.animationBackgroundColor)
         document.querySelector('#deviceScreen3Id').classList.add(style.animationBackgroundColor)
 
-        // svg  add animation
         document.querySelector('#domainId').classList.add(style.animationSkew)
 
-        // svg  add animation
         document.querySelector('#cardIdPresentation').classList.add(style.animationUPDown)
 
-        // svg  add animation
         document.querySelector('#walletId').classList.add(style.animationShowHide)
 
-        // svg  add animation
         document.querySelector('#preferences1Id').classList.add(style.animationBackgroundColorCheck1)
         document.querySelector('#preferences2Id').classList.add(style.animationBackgroundColorCheck2)
         document.querySelector('#preferences3Id').classList.add(style.animationBackgroundColorCheck3)
 
-        // svg  add animation
         document.querySelector('#mobileId').classList.add(style.animationRotate)
 
-        // svg add animation
         document.querySelector('#reactSign').classList.add(style.animationShowHide)
 
-        // svg  add animation
         document.querySelector('#serverId1').classList.add(style.animationBackgroundColorCheck1)
         document.querySelector('#serverId2').classList.add(style.animationBackgroundColorCheck2)
         document.querySelector('#serverId3').classList.add(style.animationBackgroundColorCheck3)
-
     }, [])
 
 
     return (
-        <div className={style.background}>
+        <main className={style.background}>
 
 
             {/* section PAGES */}
             <section className={style.pages}>
 
                 <div className="textContainer">
-                    <p className="text1">OFERTA</p>
+                    <h2 className="text1">OFERTA .01</h2>
                     <h1 className="text2">Strony internetowe:</h1>
                 </div>
 
                 <div className={style.pages__container}>
                     <div className={style.pages__item}>
-                        <p data-aos="flip-up" className={style.desc}>Strona internetowa to wizytówka Twojej marki w Internecie, która pozwala uzyskać informacje o firmie.</p>
+                        <p data-aos="flip-up" className={style.desc}>Strona internetowa to <strong>wizytówka Twojej marki</strong> w Internecie, która pozwala uzyskać informacje o firmie.</p>
                         <div className={style.svg} data-aos="zoom-in">
                             <Card />
                         </div>
@@ -89,11 +80,11 @@ const Offer = () => {
                         <div className={style.svg} data-aos="zoom-in">
                             <StandOut />
                         </div>
-                        <p data-aos="flip-up" className={style.desc}>Własna strona internetowa jest wyjątkową okazją do wyróżnienia się na tle konkurencji i zachęcenia klientów do zakupu Twoich produktów lub usług.</p>
+                        <p data-aos="flip-up" className={style.desc}>Własna strona internetowa <strong>jest wyjątkową okazją do wyróżnienia się na tle konkurencji</strong> i zachęcenia klientów do zakupu Twoich produktów lub usług.</p>
                     </div>
 
                     <div className={style.pages__item}>
-                        <p data-aos="flip-up" className={style.desc}>Dzięki projektowaniu RWD (Responsive Web Design) Twoja strona wygląda dobrze na każdym urządzeniu niezależnie czy korzystasz z dużego monitora, smartfonu lub tableta.</p>
+                        <p data-aos="flip-up" className={style.desc}>Dzięki projektowaniu RWD (Responsive Web Design) Twoja strona <strong>wygląda dobrze na każdym urządzeniu</strong> niezależnie czy korzystasz z dużego monitora, smartfonu lub tableta.</p>
                         <div className={style.svg} data-aos="zoom-in">
                             <Devices />
                         </div>
@@ -103,11 +94,11 @@ const Offer = () => {
                         <div className={style.svg} data-aos="zoom-in">
                             <Domain />
                         </div>
-                        <p data-aos="flip-up" className={style.desc}>Jeśli nie wiesz czym jest: domena, hosting, dns itp. to nic nie szkodzi. Przedstaw swój pomysł, a ja zajmę się resztą.</p>
+                        <p data-aos="flip-up" className={style.desc}>Jeśli nie wiesz czym jest: domena, hosting, dns itp. to nic nie szkodzi. <strong>Przedstaw swój pomysł, a ja zajmę się resztą.</strong></p>
                     </div>
 
                     <div className={style.pages__item}>
-                        <p data-aos="flip-up" className={style.desc}>SEO to projektowanie zgodne z zasadami optymalizacji pozwalającymi na osiągnięcie wysokich wyników w wyszukiwarkach.</p>
+                        <p data-aos="flip-up" className={style.desc}>SEO to projektowanie zgodne z zasadami optymalizacji pozwalającymi na <strong>osiągnięcie wysokich wyników w wyszukiwarkach.</strong></p>
                         <div className={style.svg} data-aos="zoom-in">
                             <Presentation />
                         </div>
@@ -117,7 +108,7 @@ const Offer = () => {
                         <div className={style.svg} data-aos="zoom-in">
                             <Wallet />
                         </div>
-                        <p data-aos="flip-up" className={style.desc}>Zapytaj o ofertę - to nic nie kosztuje.</p>
+                        <p data-aos="flip-up" className={style.desc}>Zapytaj o ofertę - to <strong>nic nie kosztuje.</strong></p>
                     </div>
                 </div>
             </section>
@@ -145,13 +136,13 @@ const Offer = () => {
             <section id='web' className={style.apps}>
 
                 <div className="textContainer">
-                    <p className="text1">OFERTA</p>
+                    <h2 className="text1">OFERTA .02</h2>
                     <h1 className="text2">Aplikacje webowe:</h1>
                 </div>
 
                 <div className={style.apps__container}>
                     <div className={style.apps__item}>
-                        <p data-aos="flip-up" className={style.desc}>Aplikacje webowe począwszy od prostych aplikacji ze stroną logowania, a skończywszy na skomplikowanych z możliwością aktualizacji za pomocą systemów CMS.</p>
+                        <p data-aos="flip-up" className={style.desc}>Aplikacje webowe <strong>dla małych, średnich i dużych przedsiębiorstw.</strong> Począwszy od prostych projektów ze stroną logowania, a skończywszy na skomplikowanych z możliwością aktualizacji za pomocą systemów CMS.</p>
                         <div className={style.svg} data-aos="zoom-in">
                             <Preferences />
                         </div>
@@ -161,11 +152,11 @@ const Offer = () => {
                         <div className={style.svg} data-aos="zoom-in">
                             <Mobile />
                         </div>
-                        <p data-aos="flip-up" className={style.desc}>Dzięki projektowaniu PWA (Progressive Web App) nie musisz płacić za wykonanie aplikacji mobilnej. Twoja aplikacja webowa będzie się zachowywać tak jak mobilna, gdy będzie używana na urządzeniu przenośnym.</p>
+                        <p data-aos="flip-up" className={style.desc}>Dzięki projektowaniu PWA (Progressive Web App) <strong>nie musisz płacić za wykonanie aplikacji mobilnej.</strong> Twoja aplikacja webowa będzie się zachowywać tak jak mobilna, gdy będzie używana na urządzeniu przenośnym.</p>
                     </div>
 
                     <div className={style.apps__item}>
-                        <p data-aos="flip-up" className={style.desc}>React to najczęściej używana biblioteka wykorzystywana przy tworzeniu aplikacji webowych, posiadająca ogromne wsparcie i nowoczesne rozwiązania.</p>
+                        <p data-aos="flip-up" className={style.desc}>React to najczęściej używana biblioteka wykorzystywana przy tworzeniu aplikacji webowych, posiadająca <strong>ogromne wsparcie i nowoczesne rozwiązania.</strong></p>
                         <div className={style.svg} data-aos="zoom-in">
                             <ReactIcon />
                         </div>
@@ -175,12 +166,12 @@ const Offer = () => {
                         <div className={style.svg} data-aos="zoom-in">
                             <Server />
                         </div>
-                        <p data-aos="flip-up" className={style.desc}>Projekty wykonane w oparciu o rozwiązania chmurowe (np: Firebase) są bardzo tanie w utrzymaniu, w 100% niezawodne i dobrze zabezpieczone.</p>
+                        <p data-aos="flip-up" className={style.desc}>Projekty wykonane w oparciu o rozwiązania chmurowe (np: Firebase) są bardzo <strong>tanie w utrzymaniu, w 100% niezawodne i dobrze zabezpieczone.</strong></p>
                     </div>
 
                 </div>
             </section>
-        </div>
+        </main >
     )
 }
 

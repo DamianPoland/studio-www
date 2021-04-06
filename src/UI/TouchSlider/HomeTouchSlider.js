@@ -33,8 +33,6 @@ const TouchSlider = props => {
             speed={1000}
             autoplay={{ delay: 2000 }}
 
-            // effect="coverflow" // cube or coverflow
-
             spaceBetween={8} // margin
 
             slidesPerView={3}

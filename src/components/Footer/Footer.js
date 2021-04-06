@@ -21,12 +21,12 @@ import firebase from '../../assets/tools/firebase.png'
 
 const Footer = () => {
     return (
-        <div className={style.background}>
+        <footer className={style.background}>
 
             <div className={style.desc}>
                 <div className={style.desc_container}>
 
-                    <div className={style.desc__item}>
+                    <section className={style.desc__item}>
                         <p className={style.desc__title}>O MNIE</p>
                         <p className={style.desc__text}>Zajmuję się tworzeniem stron<br />internetowych, aplikacji webowych<br />oraz serwisów internetowych.</p>
                         <div className={style.desc__tools}>
@@ -37,11 +37,11 @@ const Footer = () => {
                             <img className={style.desc__img} src={ts} alt='type script' />
                             <img className={style.desc__img} src={firebase} alt='firebase' />
                         </div>
-                    </div>
+                    </section>
 
-                    <div className={style.desc__item}>
+                    <section className={style.desc__item}>
                         <p className={style.desc__title}>NAWIGACJA</p>
-                        <div className={style.desc__nav}>
+                        <nav className={style.desc__nav}>
                             <Link to='/home' className={style.desc__link}><i className={style.desc__arrow} />Strona główna</Link>
                             <Link to='/about' className={style.desc__link}><i className={style.desc__arrow} />O mnie</Link>
                             <Link to='/offer' className={style.desc__link}><i className={style.desc__arrow} />Oferta</Link>
@@ -49,11 +49,11 @@ const Footer = () => {
                             <Link to='/login' className={style.desc__link}><i className={style.desc__arrow} />Strefa klienta</Link>
                             <Link to='/contact' className={style.desc__link}><i className={style.desc__arrow} />Kontakt</Link>
                             <Link to='/privacy-policy' className={style.desc__link}><i className={style.desc__arrow} />Polityka prywatności</Link>
-                        </div>
-                    </div>
+                        </nav>
+                    </section>
 
-                    <div className={style.desc__item}>
-                        <p className={style.desc__title}>KONTAKT</p>
+                    <section className={style.desc__item}>
+                        <h1 className={style.desc__title}>KONTAKT</h1>
                         <div className={style.desc__phone}>
                             <a href='tel:+48795631039' className={style.svgBig}><Phone /></a>
                             <p className={style.desc__phoneText}>+48 795-631-039</p>
@@ -61,16 +61,16 @@ const Footer = () => {
                         <div className={style.desc__contact}>
                             <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Kaliska 22`} target='_blank' rel="noopener noreferrer" className={style.svg}><Location /></a>
                             <a href='mailto:info@studio-www.com?subject=Zapytanie' className={style.svg}><Email /></a>
-                            <a href='https://www.fb.me/StudioWWWGdynia' target='_blank' rel="noopener noreferrer" className={style.svg}><Facebbok /></a>
+                            <a href='https://www.fb.me/StronyAplikacjeInternetowe' target='_blank' rel="noopener noreferrer" className={style.svg}><Facebbok /></a>
                             <a href={`https://linkedin.com/in/damian-wil-9b1124195`} target='_blank' rel="noopener noreferrer" className={style.svg}><LinkedIn /></a>
                             <a href={`https://github.com/DamianPoland`} target='_blank' rel="noopener noreferrer" className={style.svg}><GitHub /></a>
                         </div>
-                    </div>
+                    </section>
 
                 </div>
             </div>
             <p className={style.foot}>Copyright © 2020 studio-www</p>
-        </div>
+        </footer>
     )
 }
 
