@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import style from './Nav.module.css'
-import logo from '../../assets/nav/logo_gif_small.gif'
+import logo from '../../assets/nav/logo192.png'
+
 
 
 
@@ -20,7 +21,7 @@ const Nav = props => {
             <nav className={style.container}>
                 <Link to='/home' className={style.header}>
                     <img className={style.headerImg} src={logo} alt='logo' />
-                    <p className={style.headerDesc}>studio-www.com</p>
+                    <p className={style.headerDesc}><span className={style.textWhite}>studio-</span>www</p>
                 </Link>
                 <ul onClick={() => setIsOpenMobileMenu(false)} className={`${style.list} ${styleMobileMenu}`}>
                     <li className={style.listItem}><NavLink to='/home' activeClassName={style.activeLink} className={style.listItemAnchor}>Strona główna</NavLink></li>

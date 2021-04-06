@@ -155,7 +155,7 @@ const Realizations = () => {
 
                 <div className="textContainer">
                     <p className="text1">REALIZACJE</p>
-                    <h1 className="text2">Obejrzyj przykładowe strony www:</h1>
+                    <h1 className="text2">Obejrzyj inne strony www:</h1>
                 </div>
 
                 <div className={style.slider}>

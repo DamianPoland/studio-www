@@ -59,11 +59,11 @@ const Footer = () => {
                             <p className={style.desc__phoneText}>+48 795-631-039</p>
                         </div>
                         <div className={style.desc__contact}>
+                            <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Kaliska 22`} target='_blank' rel="noopener noreferrer" className={style.svg}><Location /></a>
                             <a href='mailto:info@studio-www.com?subject=Zapytanie' className={style.svg}><Email /></a>
-                            <a href='https://www.fb.me/StudioWWWGdynia' target='blank' className={style.svg}><Facebbok /></a>
-                            <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Kaliska 22`} target='blank' className={style.svg}><Location /></a>
-                            <a href={`https://linkedin.com/in/damian-wil-9b1124195`} target='blank' className={style.svg}><LinkedIn /></a>
-                            <a href={`https://github.com/DamianPoland`} target='blank' className={style.svg}><GitHub /></a>
+                            <a href='https://www.fb.me/StudioWWWGdynia' target='_blank' rel="noopener noreferrer" className={style.svg}><Facebbok /></a>
+                            <a href={`https://linkedin.com/in/damian-wil-9b1124195`} target='_blank' rel="noopener noreferrer" className={style.svg}><LinkedIn /></a>
+                            <a href={`https://github.com/DamianPoland`} target='_blank' rel="noopener noreferrer" className={style.svg}><GitHub /></a>
                         </div>
                     </div>
 

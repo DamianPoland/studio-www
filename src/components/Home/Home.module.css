@@ -29,6 +29,7 @@
     display: inline-flex;
     align-items: center;
     border: 0.2rem solid rgb(var(--accent), 1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 999px;
 }
 
@@ -42,6 +43,7 @@
 
 .textWhite {
     color: white;
+    font-family: inherit;
 }
 
 .linkArrow {
@@ -92,19 +94,31 @@
     flex-direction: column;
 }
 
-.start__title {
-    font-size: 3.5rem;
-    color: rgb(var(--accent));
-    font-family: "Kalam", cursive;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
 .start__containerText {
     padding: 1rem;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2));
     border-radius: 2rem;
+}
+
+.start__titleContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.start__logo {
+    height: 3rem;
+    width: 3rem;
+}
+
+.start__title {
+    font-size: 2.5rem;
+    color: rgb(var(--accent));
+    font-family: "Kalam", cursive;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 1rem;
 }
 
 .start__text {
@@ -122,14 +136,14 @@
 }
 
 .start__text2 {
-    margin-left: 4rem;
+    margin-left: 3rem;
     animation: showText 1s ease forwards;
     animation-delay: 1.5s;
     opacity: 0;
 }
 
 .start__text3 {
-    margin-left: 8rem;
+    margin-left: 6rem;
     animation: showText 1s ease forwards;
     animation-delay: 2.5s;
     opacity: 0;
@@ -389,9 +403,11 @@
     font-size: 1.5rem;
     color: rgb(var(--accent));
     font-family: 'Kalam', cursive;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 2rem;
     text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 1);
+
 }
 
 .price__itemTextPrice {
@@ -606,12 +622,17 @@
         font-size: 2rem;
     }
 
-    .start__text {
-        font-size: 3rem;
+    .start__logo {
+        height: 6rem;
+        width: 6rem;
     }
 
     .start__title {
-        font-size: 6rem;
+        font-size: 5rem;
+    }
+
+    .start__text {
+        font-size: 3rem;
     }
 
     .approach__container {

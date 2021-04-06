@@ -12,6 +12,8 @@ import { ReactComponent as Phone } from '../../assets/icons/phone.svg'
 import { ReactComponent as Location } from '../../assets/icons/location.svg'
 import { ReactComponent as Email } from '../../assets/icons/email.svg'
 import { ReactComponent as Facebbok } from '../../assets/icons/facebook.svg'
+import { ReactComponent as LinkedIn } from '../../assets/icons/linkedIn.svg'
+import { ReactComponent as GitHub } from '../../assets/icons/gitHub.svg'
 import { ReactComponent as Clock } from '../../assets/icons/clock.svg'
 import { ReactComponent as Envelope } from '../../assets/icons/envelope.svg'
 import { ReactComponent as ContactIcon } from '../../assets/icons/contact_us.svg'
@@ -132,7 +134,7 @@ const Contact = () => {
                 <div className={style.contacts}>
                     <div className={style.contacts__container}>
                         <div className={style.contacts__item}>
-                            <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Kaliska 22`} target='blank' className={style.svg}><Location /></a>
+                            <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Kaliska 22`} target='_blank' rel="noopener noreferrer" className={style.svg}><Location /></a>
                             <p className={style.contacts__desc}>Poland, Gdynia, Kaliska 22</p>
                         </div>
                         <div className={style.contacts__item}>
@@ -144,8 +146,16 @@ const Contact = () => {
                             <p className={style.contacts__desc}>info@studio-www.com</p>
                         </div>
                         <div className={style.contacts__item}  >
-                            <a href='https://www.fb.me/StudioWWWGdynia' target='blank' className={style.svg}><Facebbok /></a>
-                            <p className={style.contacts__desc}>@StudioWWWGdynia</p>
+                            <a href='https://www.fb.me/StronyAplikacjeInternetowe' target='_blank' rel="noopener noreferrer" className={style.svg}><Facebbok /></a>
+                            <p className={style.contacts__desc}>@StronyAplikacjeInternetowe</p>
+                        </div>
+                        <div className={style.contacts__item}  >
+                            <a href='https://linkedin.com/in/damian-wil-9b1124195' target='_blank' rel="noopener noreferrer" className={style.svg}><LinkedIn /></a>
+                            <p className={style.contacts__desc}>LinkedIn</p>
+                        </div>
+                        <div className={style.contacts__item}  >
+                            <a href='https://github.com/DamianPoland' target='_blank' rel="noopener noreferrer" className={style.svg}><GitHub /></a>
+                            <p className={style.contacts__desc}>GitHub</p>
                         </div>
                         <div className={style.contacts__item} >
                             <a href='/' className={style.svg}><Clock /></a>

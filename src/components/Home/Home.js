@@ -9,6 +9,8 @@ import TouchSlider from "../../UI/TouchSlider/HomeTouchSlider"
 import start_video from '../../assets/home/home_start_video.mp4'
 
 // images
+import logo from '../../assets/nav/logo192.png'
+
 import html from '../../assets/tools/html.png'
 import css from '../../assets/tools/css.png'
 import js from '../../assets/tools/js.png'
@@ -41,8 +43,6 @@ import desktopEmpty from '../../assets/home/desktopEmpty.png'
 import userImg from '../../assets/home/user.png'
 
 import contactImg from '../../assets/home/contact.png'
-
-
 
 //svg
 import { ReactComponent as Phone } from '../../assets/icons/phone__home.svg'
@@ -105,7 +105,10 @@ const Home = () => {
                 </div>
                 <div className={style.start__container}>
                     <div id="start__contaner" className={style.start__containerText}>
-                        <h1 className={style.start__title}>studio-www</h1>
+                        <div className={style.start__titleContainer}>
+                            <img className={style.start__logo} src={logo} alt="log studio-www" />
+                            <h1 className={style.start__title}><span className={style.textWhite}>studio-</span>www</h1>
+                        </div>
                         <h1 className={`${style.start__text} ${style.start__text1}`}>Strony internetowe</h1>
                         <h2 className={`${style.start__text} ${style.start__text2}`}>Aplikacje webowe</h2>
                         <h2 className={`${style.start__text} ${style.start__text3}`}>Portale internetowe</h2>
@@ -333,6 +336,9 @@ const Home = () => {
             {/* section CONTACT */}
             <section className={style.contact}>
                 <div className={style.contact__container}>
+                    <figure className={style.contact__figure}>
+                        <img className={style.img} src={contactImg} alt='userImg studio-www' />
+                    </figure>
                     <div className={style.contact__desc}>
                         <div className="textContainer">
                             <p className="text1">KONTAKT</p>
@@ -346,9 +352,6 @@ const Home = () => {
                         +48 795-631-039
                         </p>
                     </div>
-                    <figure className={style.contact__figure}>
-                        <img className={style.img} src={contactImg} alt='userImg studio-www' />
-                    </figure>
                 </div>
                 <div>
                     <Link to='/contact' className={style.link}>Sprawdź inne formy kontaktu<p className={style.linkArrow}></p></Link>

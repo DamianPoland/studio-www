@@ -74,22 +74,22 @@ const About = () => {
             {/* section APPROACH */}
             <section className={style.approach}>
                 <div className={style.approach__textContainer}>
-                    <div data-aos="zoom-in" className={style.approach__item}>
+                    <div data-aos="flip-left" className={style.approach__item}>
                         <Aperance />
                         <h2 className={style.approach__h2}>Wygląd</h2>
                         <p className={style.approach__p}>Wygląd to sprawa priorytetowa. Każda zrobiona przeze mnie strona wygląda nowocześnie i jest niepowtarzalna.</p>
                     </div>
-                    <div data-aos="zoom-in" className={style.approach__item}>
+                    <div data-aos="flip-left" className={style.approach__item}>
                         <Tech />
                         <h2 className={style.approach__h2}>Technologia</h2>
                         <p className={style.approach__p}>Korzystam z najnowszych technologii i stosuję się do aktualnych trendów. Stale ulepszam jakość swoich usług.</p>
                     </div>
-                    <div data-aos="zoom-in" className={style.approach__item}>
+                    <div data-aos="flip-left" className={style.approach__item}>
                         <Quality />
                         <h2 className={style.approach__h2}>Jakość</h2>
                         <p className={style.approach__p}>Zawsze stawiam na jakość. Nigdy nie idę na kompromis. Dzięki temu moje produkty są łatwe w utrzymaniu i rozwoju. </p>
                     </div>
-                    <div data-aos="zoom-in" className={style.approach__item}>
+                    <div data-aos="flip-left" className={style.approach__item}>
                         <Responsive />
                         <h2 className={style.approach__h2}>Skalowanie</h2>
                         <p className={style.approach__p}>Wszystkie projekty robię w technologii RWD, dzięki czemu są dopasowane do rozdzielczości wszystkich urządzeń.  </p>
@@ -112,7 +112,6 @@ const About = () => {
                             <h2 className={style.standards__header2}>(<strong>Responsive Web Design</strong>)</h2>
                             <p className={style.standards__text}><strong>RWD</strong> to technika projektowania widoków, dzięki której Twoja strona wygląda dobrze na każdym urządzeniu. Niezależnie czy korzystasz z dużego monitora, smartfonu lub tableta, widok automatycznie dopasuje się do danej rozdzielczości.
                                 </p>
-                            <a href='https://pl.wikipedia.org/wiki/Responsive_web_design' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
                         </div>
                         <figure className={style.standards__figure}>
                             <img data-aos="fade-up-left" className={style.img} src={rwd} alt='Responsive Web Design' />
@@ -125,7 +124,6 @@ const About = () => {
                             <h2 className={style.standards__header2}>(<strong>Progressive Web Apps</strong>)</h2>
                             <p className={style.standards__text}><strong>PWA</strong> pozwala tak zaprojektować stronę internetową, aby na urządzeniu mobilnym mogła być używana jak aplikacja mobilna. Można ją zainstalować w telefonie i korzystać w trybie offline. Działa na platformie Android i iOS.
                                 </p>
-                            <a href='https://pl.wikipedia.org/wiki/Progressive_web_app' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
                         </div>
                         <figure className={style.standards__figure}>
                             <img data-aos="fade-up-left" className={style.img} src={pwa} alt='Progressive Web Apps' />
@@ -138,7 +136,6 @@ const About = () => {
                             <h2 className={style.standards__header2}>(<strong>Trusted Web Activities</strong>)</h2>
                             <p className={style.standards__text}><strong>TWA</strong> daje możliwość udostępniania w sklepie Google Play aplikacji PWA. Nie ma potrzeby pisania oddzielnego kodu. Wszelkie aktualizacje są automatyczne i nie wymagają ingerencji w sklepie, dzięki czemu utrzymanie całego projektu jest o wiele tańsze.
                                 </p>
-                            <a href='https://developers.google.com/web/android/trusted-web-activity' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
                         </div>
                         <figure className={style.standards__figure}>
                             <img data-aos="fade-up-left" className={style.img} src={twa} alt='Trusted Web Activities' />
@@ -151,7 +148,6 @@ const About = () => {
                             <h2 className={style.standards__header2}>(<strong>Search Engine Optimization</strong>)</h2>
                             <p className={style.standards__text}><strong>SEO</strong> to projektowanie zgodne z zasadami optymalizacji pozwalającymi na osiągnięcie wysokich wyników w wyszukiwarkach dla wybranych słów lub fraz kluczowych. Kod strony, jej treść oraz responsywność są dostosowane do aktualnych algorytmów wyszukiwarek w celu poprawienia pozycji danego serwisu na liście wynikowej.
                                 </p>
-                            <a href='https://pl.wikipedia.org/wiki/Optymalizacja_dla_wyszukiwarek_internetowych' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
                         </div>
                         <figure className={style.standards__figure}>
                             <img data-aos="fade-up-left" className={style.img} src={seo} alt='Search Engine Optimization' />
@@ -164,7 +160,6 @@ const About = () => {
                             <h2 className={style.standards__header2}>(<strong>Cloud platform</strong>)</h2>
                             <p className={style.standards__text}><strong>Firebase</strong> to usługi chmurowe pozwalająca na bardzo łatwe, szybkie i tanie projektowanie tzw. backendu. Projekty wykonane w oparciu o platformę, wspieraną przez takiego giganta jak Google, są bardzo tanie w utrzymaniu, w 100% niezawodne i dobrze zabezpieczone.
                                 </p>
-                            <a href='https://en.wikipedia.org/wiki/Firebase' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
                         </div>
                         <figure className={style.standards__figure}>
                             <img data-aos="fade-up-left" className={style.img} src={faas} alt='Function as a Service' />
@@ -177,7 +172,6 @@ const About = () => {
                             <h2 className={style.standards__header2}>(<strong>JavaScript Library</strong>)</h2>
                             <p className={style.standards__text}><strong>React</strong> to javascriptowa biblioteka służąca do tworzenia interfejsów użytkownika. Aktualnie jest to najczęściej używana biblioteka wykorzystywana przy tworzeniu aplikacji webowych, posiadająca ogromne wsparcie i nowoczesne rozwiązania.
                                 </p>
-                            <a href='https://pl.wikipedia.org/wiki/React.js' target='blank' className={style.standards__anchor}>Czytaj więcej...</a>
                         </div>
                         <figure className={style.standards__figure}>
                             <img data-aos="fade-up-left" className={style.img} src={react} alt='React JavaScript Library' />
