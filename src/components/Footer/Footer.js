@@ -62,7 +62,7 @@ const Footer = () => {
                             <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Kaliska 22`} target='_blank' rel="noopener noreferrer" className={style.svg}><Location /></a>
                             <a href='mailto:info@studio-www.com?subject=Zapytanie' className={style.svg}><Email /></a>
                             <a href='https://www.fb.me/StronyAplikacjeInternetowe' target='_blank' rel="noopener noreferrer" className={style.svg}><Facebbok /></a>
-                            <a href={`https://linkedin.com/in/damian-wil-9b1124195`} target='_blank' rel="noopener noreferrer" className={style.svg}><LinkedIn /></a>
+                            <a href={`https://linkedin.com/in/damian-wi-9b1124195`} target='_blank' rel="noopener noreferrer" className={style.svg}><LinkedIn /></a>
                             <a href={`https://github.com/DamianPoland`} target='_blank' rel="noopener noreferrer" className={style.svg}><GitHub /></a>
                         </div>
                     </section>

@@ -150,7 +150,7 @@ const Contact = () => {
                             <p className={style.contacts__desc}>@StronyAplikacjeInternetowe</p>
                         </div>
                         <div className={style.contacts__item}  >
-                            <a href='https://linkedin.com/in/damian-wil-9b1124195' target='_blank' rel="noopener noreferrer" className={style.svg}><LinkedIn /></a>
+                            <a href='https://linkedin.com/in/damian-wi-9b1124195' target='_blank' rel="noopener noreferrer" className={style.svg}><LinkedIn /></a>
                             <p className={style.contacts__desc}>LinkedIn</p>
                         </div>
                         <div className={style.contacts__item}  >
