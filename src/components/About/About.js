@@ -66,7 +66,7 @@ const About = () => {
                                 <p className="text1">O MNIE</p>
                                 <p className="text2 text__white">Dlaczego ja?</p>
                             </div>
-                            <p className={`${style.text__desc} ${style.text__white}`}><span className={style.text__bigLeter}>Z</span>ajmuję się tworzeniem kompleksowych projektów od A-Z. Korzystam z nowoczesnych rozwiązań takich jak <strong>React</strong> i <strong>XaaS</strong>. Strony są projektowane jako <strong>RWD</strong> (<strong>Responsive Web Design</strong>) oraz <strong>PWA</strong> (<strong>Progressive Web Apps</strong>) dzięki czemu wyglądają dobrze na komputerze i na urządzeniu mobilnym. Każdy projekt jest przygotowany pod pozycjonowanie strony zgodnie z <strong>SEO</strong>.<br /> <span className={style.text__bigLeter}>C</span>ena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem, a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę, a się przekonasz.</p>
+                            <p className={`${style.text__desc} ${style.text__white}`}><span className={style.text__bigLeter}>Z</span>ajmuję się tworzeniem kompleksowych projektów od A do Z. Korzystam z nowoczesnych rozwiązań, takich jak <strong>React</strong> i <strong>XaaS</strong>. Strony są projektowane jako <strong>RWD</strong> (<strong>Responsive Web Design</strong>) oraz <strong>PWA</strong> (<strong>Progressive Web Apps</strong>), dzięki czemu wyglądają dobrze na komputerze i na urządzeniu mobilnym. Każdy projekt jest przygotowany pod pozycjonowanie strony zgodnie z <strong>SEO</strong>.<br /> <span className={style.text__bigLeter}>C</span>ena też jest ważna. Nie trać pieniędzy zamawiając projekt w dużej firmie z ogromnymi kosztami utrzymania. U mnie płacisz tylko za realnie spędzony czas nad projektem, a nie za utrzymanie całej infrastruktury. Zapytaj o wycenę, a się przekonasz.</p>
                         </div>
                     </div>
                     <figure className={style.figure__img}>
@@ -115,7 +115,7 @@ const About = () => {
                         <div className={style.standards__content}>
                             <h2 data-aos="zoom-in" className={style.standards__header}><strong className={style.font}>RWD</strong></h2>
                             <h2 className={style.standards__header2}>(<strong>Responsive Web Design</strong>)</h2>
-                            <p className={style.standards__text}><strong>RWD</strong> to technika projektowania widoków, dzięki której Twoja strona wygląda dobrze na każdym urządzeniu. Niezależnie czy korzystasz z dużego monitora, smartfonu lub tableta, widok automatycznie dopasuje się do danej rozdzielczości.
+                            <p className={style.standards__text}><strong>RWD</strong> to technika projektowania widoków, dzięki której Twoja strona wygląda dobrze na każdym urządzeniu. Niezależnie, czy korzystasz z dużego monitora, smartfonu lub tableta, widok automatycznie dopasuje się do danej rozdzielczości.
                                 </p>
                         </div>
                         <figure className={style.standards__figure}>

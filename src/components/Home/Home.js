@@ -63,7 +63,7 @@ const offer = [
 
 const siteSmall = ["Jeden widok", "Darmowy hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO",]
 const siteBig = ["Do 6 widoków", "Darmowy hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO", "Formularz kontaktowy", "Polityka prywatności (cookies)", "Framework React",]
-const siteApp = ["Wiele widoków", "Hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO", "Formularz kontaktowy", "Polityka prywatności (cookies)", "Framework React", "Usługi chmurowe (Firebase)", "Bazy danych noSQL", "Obliczenia", "API", "PWA (Progressive Web Apps)", "GPS, aparat", "Powiadomienia", "inne.."]
+const siteApp = ["Wiele widoków", "Hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO", "Formularz kontaktowy", "Polityka prywatności (cookies)", "Framework React", "Usługi chmurowe (Firebase)", "Bazy danych noSQL", "Obliczenia", "API", "PWA (Progressive Web Apps)", "GPS, aparat", "Powiadomienia", "inne"]
 
 
 const Home = () => {
@@ -172,7 +172,7 @@ const Home = () => {
                             <figure className={style.approach__figure}>
                                 <img className={style.img} src={quality} alt='jakość studio-www' />
                             </figure>
-                            <p className={style.approach__text}>Wosoka<br /><span className={style.approach__textEmphasize}>jakość</span></p>
+                            <p className={style.approach__text}>Wysoka<br /><span className={style.approach__textEmphasize}>jakość</span></p>
                         </div>
                         <div data-aos="flip-left" className={style.approach__item}>
                             <figure className={style.approach__figure}>
@@ -233,7 +233,7 @@ const Home = () => {
                 <div className={style.offer__item}>
                     <div className={style.offer__content}>
                         <h2 data-aos="zoom-in" className={style.offer__header}><strong className={style.font}>Aplikacje webowe</strong></h2>
-                        <p className={style.offer__text}><strong>Aplikacje webowe (aplikacje internetowe)</strong> to moźliwość realizacji Twojej idei w internecie. Jeśli masz pomysł to zgłoś się do mnie a ja wykonam projekt od początku do końca.</p>
+                        <p className={style.offer__text}><strong>Aplikacje webowe (aplikacje internetowe)</strong> to moźliwość realizacji Twojej idei w Internecie. Jeśli masz pomysł, to zgłoś się do mnie, a ja wykonam projekt od początku do końca.</p>
                     </div>
                     <figure className={style.offer__figure}>
                         <img data-aos="fade-up-left" className={style.img} src={appsImg} alt='React JavaScript Library' />

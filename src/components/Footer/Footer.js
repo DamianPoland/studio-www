@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import style from './Footer.module.css'
 
+// chat messanger facebbok
+import MessengerCustomerChat from 'react-messenger-customer-chat'
+
 //svg
 import { ReactComponent as Phone } from '../../assets/icons/phone.svg'
 import { ReactComponent as Location } from '../../assets/icons/location.svg'
@@ -22,6 +25,12 @@ import firebase from '../../assets/tools/firebase.png'
 const Footer = () => {
     return (
         <footer className={style.background}>
+
+            {/* facebook messanger */}
+            <MessengerCustomerChat
+                pageId="102970285240583" //<YOUR_PAGE_ID>
+                appId="197285065265377" //<YOUR_APP_ID>
+            />
 
             <div className={style.desc}>
                 <div className={style.desc_container}>

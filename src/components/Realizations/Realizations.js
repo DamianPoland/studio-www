@@ -116,7 +116,7 @@ const Realizations = () => {
                     <div className={style.realizations__item}>
                         <div className={style.realizations__itemTextContainer}>
                             <h2 className="text1">Aplikacje webowe</h2>
-                            <h3 className={style.realizations__text}>Modół kalendarza do rezerwacji wizyt lub obiektów </h3>
+                            <h3 className={style.realizations__text}>Moduł kalendarza do rezerwacji wizyt lub obiektów </h3>
                             <a href='https://kalendarz.studio-www.com' target="_blank" rel="noopener noreferrer" className={style.realizations__link}>Zobacz...</a>
                             <span className={style.animation__border}></span>
                         </div>
