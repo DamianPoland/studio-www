@@ -146,8 +146,8 @@ const Contact = () => {
                             <p className={style.contacts__desc}>info@studio-www.com</p>
                         </div>
                         <div className={style.contacts__item}  >
-                            <a href='https://www.fb.me/StronyAplikacjeInternetowe' target='_blank' rel="noopener noreferrer" className={style.svg}><Facebbok /></a>
-                            <p className={style.contacts__desc}>@StronyAplikacjeInternetowe</p>
+                            <a href='https://www.fb.me/AplikacjeIStronyInternetowe' target='_blank' rel="noopener noreferrer" className={style.svg}><Facebbok /></a>
+                            <p className={style.contacts__desc}>@AplikacjeIStronyInternetowe</p>
                         </div>
                         <div className={style.contacts__item}  >
                             <a href='https://linkedin.com/in/damian-wi-9b1124195' target='_blank' rel="noopener noreferrer" className={style.svg}><LinkedIn /></a>

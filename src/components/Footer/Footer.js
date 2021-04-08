@@ -28,8 +28,8 @@ const Footer = () => {
 
             {/* facebook messanger */}
             <MessengerCustomerChat
-                pageId="102970285240583" //<YOUR_PAGE_ID>
-                appId="197285065265377" //<YOUR_APP_ID>
+                pageId="100619948474636" //<YOUR_PAGE_ID>
+                appId="1998434536978637" //<YOUR_APP_ID>
             />
 
             <div className={style.desc}>
@@ -70,7 +70,7 @@ const Footer = () => {
                         <div className={style.desc__contact}>
                             <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Kaliska 22`} target='_blank' rel="noopener noreferrer" className={style.svg}><Location /></a>
                             <a href='mailto:info@studio-www.com?subject=Zapytanie' className={style.svg}><Email /></a>
-                            <a href='https://www.fb.me/StronyAplikacjeInternetowe' target='_blank' rel="noopener noreferrer" className={style.svg}><Facebbok /></a>
+                            <a href='https://www.fb.me/AplikacjeIStronyInternetowe' target='_blank' rel="noopener noreferrer" className={style.svg}><Facebbok /></a>
                             <a href={`https://linkedin.com/in/damian-wi-9b1124195`} target='_blank' rel="noopener noreferrer" className={style.svg}><LinkedIn /></a>
                             <a href={`https://github.com/DamianPoland`} target='_blank' rel="noopener noreferrer" className={style.svg}><GitHub /></a>
                         </div>
