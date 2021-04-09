@@ -91,23 +91,42 @@
     padding-top: 2rem;
 }
 
-.svg {
-    height: 1.5rem;
-    width: 1.5rem;
+.desc__contactItem {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 1rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.desc__contactItemSvg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.desc__contactItemSvg:active {
+    transform: scale(1.5);
+}
+
+.desc__contactItemText {
+    color: white;
+    font-size: 0.5rem;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.desc__contactItemSvg:hover+.desc__contactItemText {
+    transform: scale(2) translateY(150%);
+    opacity: 1;
 }
 
 
 
-.svg:active,
-.svgBig:active {
-    transform: scale(1.3);
-}
 
-.svgBig {
+
+.desc__contactSvgBig {
     height: 2.5rem;
     width: 2.5rem;
     display: flex;

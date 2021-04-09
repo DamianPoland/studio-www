@@ -269,8 +269,8 @@
     padding: 2rem;
     background: rgba(255, 255, 255, 0.6);
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
-    /* backdrop-filter: blur(2px); */
 }
+
 
 .approach__figure {
     width: 8rem;
@@ -290,6 +290,7 @@
     font-size: 2rem;
     font-family: "Kalam", cursive;
     font-weight: 600;
+    color: black;
 }
 
 
@@ -368,6 +369,7 @@
     width: 100%;
     background: rgb(var(--dark));
 }
+
 
 .price__container {
     max-width: 1200px;

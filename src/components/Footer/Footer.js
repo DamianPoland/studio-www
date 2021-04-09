@@ -64,15 +64,36 @@ const Footer = () => {
                     <section className={style.desc__item}>
                         <h1 className={style.desc__title}>KONTAKT</h1>
                         <div className={style.desc__phone}>
-                            <a href='tel:+48795631039' className={style.svgBig}><Phone /></a>
+                            <a href='tel:+48795631039' className={style.desc__contactSvgBig}><Phone /></a>
                             <p className={style.desc__phoneText}>+48 795-631-039</p>
                         </div>
                         <div className={style.desc__contact}>
-                            <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Kaliska 22`} target='_blank' rel="noopener noreferrer" className={style.svg}><Location /></a>
-                            <a href='mailto:info@studio-www.com?subject=Zapytanie' className={style.svg}><Email /></a>
-                            <a href='https://www.fb.me/AplikacjeIStronyInternetowe' target='_blank' rel="noopener noreferrer" className={style.svg}><Facebbok /></a>
-                            <a href={`https://linkedin.com/in/damian-wi-9b1124195`} target='_blank' rel="noopener noreferrer" className={style.svg}><LinkedIn /></a>
-                            <a href={`https://github.com/DamianPoland`} target='_blank' rel="noopener noreferrer" className={style.svg}><GitHub /></a>
+
+                            <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Kaliska 22`} target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
+                                <Location className={style.desc__contactItemSvg} />
+                                <p className={style.desc__contactItemText}>Mapa</p>
+                            </a>
+
+                            <a href='mailto:info@studio-www.com?subject=Zapytanie' className={style.desc__contactItem}>
+                                <Email className={style.desc__contactItemSvg} />
+                                <p className={style.desc__contactItemText}>Email</p>
+                            </a>
+
+                            <a href='https://www.fb.me/AplikacjeIStronyInternetowe' target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
+                                <Facebbok className={style.desc__contactItemSvg} />
+                                <p className={style.desc__contactItemText}>Facebbok</p>
+                            </a>
+
+                            <a href={`https://linkedin.com/in/damian-wi-9b1124195`} target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
+                                <LinkedIn className={style.desc__contactItemSvg} />
+                                <p className={style.desc__contactItemText}>LinkedIn</p>
+                            </a>
+
+                            <a href={`https://github.com/DamianPoland`} target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
+                                <GitHub className={style.desc__contactItemSvg} />
+                                <p className={style.desc__contactItemText}>GitHub</p>
+                            </a>
+
                         </div>
                     </section>
 
