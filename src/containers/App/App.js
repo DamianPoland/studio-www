@@ -73,7 +73,8 @@ function App() {
         <Route path='/privacy-policy' component={PrivacyPolicy} />
         <Redirect to='/home' />
       </Switch>
-      <Footer path='/' /> {permissionPrivacyPolicy ? null : <Route path='/' render={props => <AlertPrivacy {...props} click={setPermission} />} />}
+      <Footer path='/' />
+      {permissionPrivacyPolicy ? null : <Route path='/' render={props => <AlertPrivacy {...props} click={setPermission} />} />}
     </BrowserRouter>
   );
 }

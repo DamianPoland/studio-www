@@ -62,7 +62,7 @@ const Footer = () => {
                     </section>
 
                     <section className={style.desc__item}>
-                        <h1 className={style.desc__title}>KONTAKT</h1>
+                        <p className={style.desc__title}>KONTAKT</p>
                         <div className={style.desc__phone}>
                             <a href='tel:+48795631039' className={style.desc__contactSvgBig}><Phone /></a>
                             <p className={style.desc__phoneText}>+48 795-631-039</p>
