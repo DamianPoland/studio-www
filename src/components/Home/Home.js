@@ -63,7 +63,7 @@ const offer = [
 
 const siteSmall = ["Jeden widok", "Darmowy hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO",]
 const siteBig = ["Do 6 widoków", "Darmowy hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO", "Formularz kontaktowy", "Polityka prywatności (cookies)", "Framework React",]
-const siteApp = ["Wiele widoków", "Hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO", "Formularz kontaktowy", "Polityka prywatności (cookies)", "Framework React", "Usługi chmurowe (Firebase)", "Bazy danych noSQL", "Obliczenia", "API", "PWA (Progressive Web Apps)", "GPS, aparat", "Powiadomienia", "inne"]
+const siteApp = ["Wiele widoków", "Hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO", "Formularz kontaktowy", "Polityka prywatności (cookies)", "Framework React", "Logowanie (Gmail, Facebook, telefon)", "Usługi chmurowe (Firebase)", "Bazy danych noSQL", "Obliczenia", "API", "PWA (Progressive Web Apps)", "GPS, aparat", "Powiadomienia", "inne"]
 
 
 const Home = () => {
