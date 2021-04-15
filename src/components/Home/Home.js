@@ -32,6 +32,8 @@ import appsImg from '../../assets/home/laptop.png'
 import seo from '../../assets/home/seo.png'
 import reactJs from '../../assets/home/reactJs.png'
 
+import banknote from '../../assets/home/banknote.jpg'
+
 import beautystudio from '../../assets/realizations/beautystudio.jpg'
 import calendar from '../../assets/realizations/calendar.jpg'
 import getpol from '../../assets/realizations/getpol.jpg'
@@ -60,10 +62,6 @@ const offer = [
     <img className={style.img} src={tatarczuk} alt={`strona internetowa ${tatarczuk}`} />,
     <img className={style.img} src={wlaczremont} alt={`strona internetowa ${wlaczremont}`} />,
 ]
-
-const siteSmall = ["Jeden widok", "Darmowy hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO",]
-const siteBig = ["Do 6 widoków", "Darmowy hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO", "Formularz kontaktowy", "Polityka prywatności (cookies)", "Framework React",]
-const siteApp = ["Wiele widoków", "Hosting", "Konfiguracja DNS (domena)", "Certyfikat SSL", "Logo", "RWD (Responsive Web Design)", "Zdjęcia i ikony", "Google maps", "Przygotowanie pod CEO", "Formularz kontaktowy", "Polityka prywatności (cookies)", "Framework React", "Logowanie (Gmail, Facebook, telefon)", "Usługi chmurowe (Firebase)", "Bazy danych noSQL", "Obliczenia", "API", "PWA (Progressive Web Apps)", "GPS, aparat", "Powiadomienia", "inne"]
 
 
 const Home = () => {
@@ -248,64 +246,35 @@ const Home = () => {
 
             {/* section PRICE */}
             <section className={style.price}>
-                <div className={style.price__container}>
+                <div className={style.price__background}>
+                    <div className={style.price__container}>
+                        <div className={style.price__containerText}>
+                            <div className="textContainer">
+                                <h1 className="text1">CENNIK</h1>
+                                <p className="text2 text__white">Ile to kosztuje?</p>
+                            </div>
 
-                    <div className="textContainer">
-                        <h1 className="text1">CENNIK</h1>
-                        <p className="text2 text__white">Ile to kosztuje?</p>
-                    </div>
+                            <div className={style.price__content}>
 
-                    <div className={style.price__content}>
+                                <div className={style.price__item}>
+                                    <Mark />
+                                    <h2 className={style.price__desc}>Strona internetowa - 800 zł</h2>
+                                </div>
 
-                        <div data-aos="flip-left" className={style.price__item}>
-                            <h2 className={style.price__itemTextMine}>Strona internetowa<br />wizytówka</h2>
-                            <p className={style.price__itemTextPrice}>800 zł</p>
-                            {siteSmall.map(item => {
-                                return (
-                                    <div key={item} className={style.price__itemLineText}>
-                                        <Mark />
-                                        <p className={style.price__itemDesc}>{item}</p>
-                                    </div>
-                                )
-                            })}
-                            <div className={style.price__center}>
-                                <Link to='/contact' className={style.link}>Zamów<p className={style.linkArrow}></p></Link>
+                                <div className={style.price__item}>
+                                    <Mark />
+                                    <h2 className={style.price__desc}>Aplikacja webowa - od 1500 zł</h2>
+                                </div>
+
+                                <div>
+                                    <div><Link to='/cennik' className={`${style.link} ${style.textWhite}`}>Zobacz szczegółowy cennik<p className={style.linkArrow}></p></Link></div>
+                                </div>
+
                             </div>
                         </div>
-
-
-                        <div data-aos="flip-left" className={style.price__item}>
-                            <h2 className={style.price__itemTextMine}>Strona internetowa<br />rozbudowana</h2>
-                            <p className={style.price__itemTextPrice}>1200 zł</p>
-                            {siteBig.map(item => {
-                                return (
-                                    <div key={item} className={style.price__itemLineText}>
-                                        <Mark />
-                                        <p className={style.price__itemDesc}>{item}</p>
-                                    </div>
-                                )
-                            })}
-                            <div className={style.price__center}>
-                                <Link to='/contact' className={style.link}>Zamów<p className={style.linkArrow}></p></Link>
-                            </div>
-                        </div>
-
-                        <div data-aos="flip-left" className={style.price__item}>
-                            <h2 className={style.price__itemTextMine}>Aplikacja webowa lub<br />portal internetowy</h2>
-                            <p className={style.price__itemTextPrice}>od 1500 zł</p>
-                            {siteApp.map(item => {
-                                return (
-                                    <div key={item} className={style.price__itemLineText}>
-                                        <Mark />
-                                        <p className={style.price__itemDesc}>{item}</p>
-                                    </div>
-                                )
-                            })}
-                            <div className={style.price__center}>
-                                <Link to='/contact' className={style.link}>Zamów<p className={style.linkArrow}></p></Link>
-                            </div>
-                        </div>
-
+                        <figure className={style.price__figure}>
+                            <img className={style.img} src={banknote} alt='banknote' />
+                        </figure>
                     </div>
                 </div>
             </section>
@@ -365,10 +334,10 @@ const Home = () => {
                             </a>
                         +48 795-631-039
                         </p>
+                        <div>
+                            <Link to='/contact' className={style.link}>Sprawdź inne formy kontaktu<p className={style.linkArrow}></p></Link>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <Link to='/contact' className={style.link}>Sprawdź inne formy kontaktu<p className={style.linkArrow}></p></Link>
                 </div>
             </section>
 

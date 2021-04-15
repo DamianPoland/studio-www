@@ -27,6 +27,7 @@ const Nav = props => {
                     <li className={style.listItem}><NavLink to='/home' activeClassName={style.activeLink} className={style.listItemAnchor}>Strona główna</NavLink></li>
                     <li className={style.listItem}><NavLink to='/about' activeClassName={style.activeLink} className={style.listItemAnchor}>O mnie</NavLink></li>
                     <li className={style.listItem}><NavLink to='/offer' activeClassName={style.activeLink} className={style.listItemAnchor}>Oferta</NavLink></li>
+                    <li className={style.listItem}><NavLink to='/cennik' activeClassName={style.activeLink} className={style.listItemAnchor}>Cennik</NavLink></li>
                     <li className={style.listItem}><NavLink to='/realizations' activeClassName={style.activeLink} className={style.listItemAnchor}>Realizacje</NavLink></li>
                     <li className={style.listItem}><NavLink to='/login' activeClassName={style.activeLink} className={style.listItemAnchor}>Strefa klienta</NavLink></li>
                     <li className={style.listItem}><NavLink to='/contact' activeClassName={style.activeLink} className={style.listItemAnchor}>Kontakt</NavLink></li>
