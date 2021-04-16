@@ -80,6 +80,16 @@ const About = () => {
             <section className={style.approach}>
                 <div className={style.approach__textContainer}>
                     <div data-aos="flip-left" className={style.approach__item}>
+                        <Responsive />
+                        <h2 className={style.approach__h2}>Skalowanie</h2>
+                        <p className={style.approach__p}>Wszystkie projekty robię w technologii RWD, dzięki czemu są dopasowane do rozdzielczości wszystkich urządzeń.  </p>
+                    </div>
+                    <div data-aos="flip-left" className={style.approach__item}>
+                        <Quality />
+                        <h2 className={style.approach__h2}>Jakość</h2>
+                        <p className={style.approach__p}>Zawsze stawiam na jakość. Nigdy nie idę na kompromis. Dzięki temu moje produkty są łatwe w utrzymaniu i rozwoju. </p>
+                    </div>
+                    <div data-aos="flip-left" className={style.approach__item}>
                         <Aperance />
                         <h2 className={style.approach__h2}>Wygląd</h2>
                         <p className={style.approach__p}>Wygląd to sprawa priorytetowa. Każda zrobiona przeze mnie strona wygląda nowocześnie i jest niepowtarzalna.</p>
@@ -88,16 +98,6 @@ const About = () => {
                         <Tech />
                         <h2 className={style.approach__h2}>Technologia</h2>
                         <p className={style.approach__p}>Korzystam z najnowszych technologii i stosuję się do aktualnych trendów. Stale ulepszam jakość swoich usług.</p>
-                    </div>
-                    <div data-aos="flip-left" className={style.approach__item}>
-                        <Quality />
-                        <h2 className={style.approach__h2}>Jakość</h2>
-                        <p className={style.approach__p}>Zawsze stawiam na jakość. Nigdy nie idę na kompromis. Dzięki temu moje produkty są łatwe w utrzymaniu i rozwoju. </p>
-                    </div>
-                    <div data-aos="flip-left" className={style.approach__item}>
-                        <Responsive />
-                        <h2 className={style.approach__h2}>Skalowanie</h2>
-                        <p className={style.approach__p}>Wszystkie projekty robię w technologii RWD, dzięki czemu są dopasowane do rozdzielczości wszystkich urządzeń.  </p>
                     </div>
                 </div>
             </section>

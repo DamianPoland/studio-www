@@ -13,7 +13,7 @@
 /* section PRICE */
 
 .price {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8)100%), url('../../assets/background_price.jpg') center center no-repeat;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%), url('../../assets/background_price.jpg') center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }

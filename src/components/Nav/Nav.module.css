@@ -72,16 +72,18 @@
 .listItemAnchor {
     padding: 1rem;
     text-decoration: none;
-    color: rgb(220, 220, 220);
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
     font-size: 1rem;
 }
 
 .listItemAnchor:hover {
-    color: rgb(255, 255, 255);
+    opacity: 1;
 }
 
 .activeLink {
     color: rgb(var(--accent));
+    opacity: 1;
 }
 
 
