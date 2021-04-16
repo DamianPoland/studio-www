@@ -32,8 +32,6 @@ import appsImg from '../../assets/home/laptop.png'
 import seo from '../../assets/home/seo.png'
 import reactJs from '../../assets/home/reactJs.png'
 
-import banknote from '../../assets/home/banknote.jpg'
-
 import beautystudio from '../../assets/realizations/beautystudio.jpg'
 import calendar from '../../assets/realizations/calendar.jpg'
 import getpol from '../../assets/realizations/getpol.jpg'
@@ -247,34 +245,29 @@ const Home = () => {
             {/* section PRICE */}
             <section className={style.price}>
                 <div className={style.price__background}>
-                    <div className={style.price__container}>
-                        <div className={style.price__containerText}>
-                            <div className="textContainer">
-                                <h1 className="text1">CENNIK</h1>
-                                <p className="text2 text__white">Ile to kosztuje?</p>
-                            </div>
-
-                            <div className={style.price__content}>
-
-                                <div className={style.price__item}>
-                                    <Mark />
-                                    <h2 className={style.price__desc}>Strona internetowa - 800 zł</h2>
-                                </div>
-
-                                <div className={style.price__item}>
-                                    <Mark />
-                                    <h2 className={style.price__desc}>Aplikacja webowa - od 1500 zł</h2>
-                                </div>
-
-                                <div>
-                                    <div><Link to='/cennik' className={`${style.link} ${style.textWhite}`}>Zobacz szczegółowy cennik<p className={style.linkArrow}></p></Link></div>
-                                </div>
-
-                            </div>
+                    <div className={style.price__containerText}>
+                        <div className="textContainer">
+                            <h1 className="text1">CENNIK</h1>
+                            <p className="text2 text__white">Ile to kosztuje?</p>
                         </div>
-                        <figure className={style.price__figure}>
-                            <img className={style.img} src={banknote} alt='banknote' />
-                        </figure>
+
+                        <div className={style.price__content}>
+
+                            <div className={style.price__item}>
+                                <Mark />
+                                <h2 className={style.price__desc}>Strona internetowa - 800 zł</h2>
+                            </div>
+
+                            <div className={style.price__item}>
+                                <Mark />
+                                <h2 className={style.price__desc}>Aplikacja webowa - od 1500 zł</h2>
+                            </div>
+
+                            <div>
+                                <div><Link to='/cennik' className={`${style.link} ${style.textWhite}`}>Zobacz szczegółowy cennik<p className={style.linkArrow}></p></Link></div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </section>
