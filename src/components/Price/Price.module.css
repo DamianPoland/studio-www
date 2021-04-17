@@ -1,6 +1,7 @@
 .background {
-    background: white;
     color: black;
+    position: relative;
+
 }
 
 .img {
@@ -13,15 +14,25 @@
 /* section PRICE */
 
 .price {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%), url('../../assets/background_price.jpg') center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgb(var(--dark));
+    z-index: -2;
 }
 
-@supports (-webkit-overflow-scrolling: touch) {
-    .price {
-        background-attachment: scroll;
-    }
+.price__background {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7)100%), url('../../assets/background_price.jpg') center center no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    /*full screen in mobile first section (cut browser search bar on mobile) + js code*/
+    height: 120vh;
+    height: calc(var(--vh, 1vh) * 120);
 }
 
 .price__container {

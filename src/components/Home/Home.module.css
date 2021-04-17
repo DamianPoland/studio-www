@@ -77,12 +77,15 @@
 .start {
     background-color: rgb(var(--dark));
     width: 100%;
-    height: calc(100vh - 4rem);
     margin-top: 4rem;
     position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
+
+    /*full screen in mobile first section (cut browser search bar on mobile) + js code*/
+    height: calc(100vh - 4rem);
+    height: calc(var(--vh, 1vh) * 100 - 4rem);
 }
 
 .start__container {
@@ -206,7 +209,11 @@
 /* section TOOLS */
 
 .tools {
+
+    /*full screen in mobile first section (cut browser search bar on mobile) + js code*/
     margin: 100vh auto 0 auto;
+    margin: calc(var(--vh, 1vh) * 100) auto 0 auto;
+
     max-width: 1200px;
     padding: 4rem 1rem;
     display: flex;

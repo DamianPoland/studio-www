@@ -54,6 +54,7 @@ const Footer = () => {
                             <Link to='/home' className={style.desc__link}><i className={style.desc__arrow} />Strona główna</Link>
                             <Link to='/about' className={style.desc__link}><i className={style.desc__arrow} />O mnie</Link>
                             <Link to='/offer' className={style.desc__link}><i className={style.desc__arrow} />Oferta</Link>
+                            <Link to='/cennik' className={style.desc__link}><i className={style.desc__arrow} />Cennik</Link>
                             <Link to='/realizations' className={style.desc__link}><i className={style.desc__arrow} />Realizacje</Link>
                             <Link to='/login' className={style.desc__link}><i className={style.desc__arrow} />Strefa klienta</Link>
                             <Link to='/contact' className={style.desc__link}><i className={style.desc__arrow} />Kontakt</Link>

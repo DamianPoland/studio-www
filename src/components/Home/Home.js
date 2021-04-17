@@ -72,6 +72,16 @@ const Home = () => {
     // AOS reload after load video to not show animations before load screen
     useEffect(() => { AOS.refresh() }, [isVideoLoaded])
 
+    // full screen in mobile first section (cut browser search bar on mobile) + css code
+    useEffect(() => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`)
+        // window.addEventListener('resize', () => { // change vh when browser search bar disapear
+        //     document.querySelector(':root').style
+        //         .setProperty('--vh', window.innerHeight / 100 + 'px')
+        // })
+    }, [])
+
     // onScroll to parallax for section start
     useEffect(() => {
 
