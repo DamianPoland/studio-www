@@ -5,6 +5,7 @@
 
 .container {
     position: fixed;
+    flex-direction: column;
     bottom: 0;
     left: 0;
     right: 0;
@@ -68,4 +69,12 @@
 
 .anchor:active {
     opacity: 1;
+}
+
+@media (min-width:800px) {
+
+    .container {
+        flex-direction: row;
+        padding: 1rem 6rem;
+    }
 }
