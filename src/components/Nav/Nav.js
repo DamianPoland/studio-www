@@ -35,7 +35,7 @@ const Nav = props => {
                 <div onClick={() => setIsOpenMobileMenu(!isOpenMobileMenu)} className={`${style.burgerMenu} ${styleMobileButtonBurger}`}>
                     <div className={style.burgerBtn}></div>
                 </div>
-
+                {isOpenMobileMenu && <div className={style.navBackgroundMobile} onClick={() => setIsOpenMobileMenu(false)}></div>}
             </nav>
         </header>
     )

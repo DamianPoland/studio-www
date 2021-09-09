@@ -86,6 +86,14 @@
     opacity: 1;
 }
 
+.navBackgroundMobile {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 50%;
+    height: calc(100vh - 4rem);
+    z-index: 10;
+}
 
 /* burger */
 
