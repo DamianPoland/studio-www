@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
                     <h2><strong className={style.font}>1. Informacje ogólne</strong></h2>
                     <ol>
                         <li>Niniejsza polityka dotyczy Serwisu www, funkcjonującego pod adresem url: <b>studio-www.com</b></li>
-                        <li>Operatorem serwisu oraz Administratorem danych osobowych jest: studio-www ul. Kaliska 22, Gdynia, Poland</li>
+                        <li>Operatorem serwisu oraz Administratorem danych osobowych jest: studio-www ul. Lipnowska 17, Gdynia, Poland</li>
 
                         <li>Adres kontaktowy poczty elektronicznej operatora: info@studio-www.com</li>
 
@@ -30,7 +30,7 @@ const PrivacyPolicy = () => {
                         <ul><li>Prowadzenie newslettera</li><li>Obsługa zapytań przez formularz</li><li>Realizacja zamówionych usług</li><li>Prezentacja oferty lub informacji</li>
                         </ul>
                         <li>Serwis realizuje funkcje pozyskiwania informacji o użytkownikach i ich zachowaniu w następujący sposób:
-	                                <ol>
+                            <ol>
                                 <li>Poprzez dobrowolnie wprowadzone w formularzach dane, które zostają wprowadzone do systemów Operatora.</li>
                                 <li>Poprzez zapisywanie w urządzeniach końcowych plików cookie (tzw. „ciasteczka”).</li>
                             </ol>
@@ -47,7 +47,7 @@ const PrivacyPolicy = () => {
                     <ol><li>W niektórych sytuacjach Administrator ma prawo przekazywać Twoje dane osobowe innym odbiorcom, jeśli będzie to niezbędne do wykonania zawartej z Tobą umowy lub do zrealizowania obowiązków ciążących na Administratorze. Dotyczy to takich grup odbiorców:<ul><li>firma hostingowa na zasadzie powierzenia</li></ul></li>
                         <li>Twoje dane osobowe przetwarzane przez Administratora nie dłużej, niż jest to konieczne do wykonania związanych z nimi czynności określonych osobnymi przepisami (np. o prowadzeniu rachunkowości). W odniesieniu do danych marketingowych dane nie będą przetwarzane dłużej niż przez 3 lata.</li>
                         <li>Przysługuje Ci prawo żądania od Administratora:
-	                                <ul>
+                            <ul>
                                 <li>dostępu do danych osobowych Ciebie dotyczących,</li>
                                 <li>ich sprostowania,</li>
                                 <li>usunięcia,</li>
@@ -80,7 +80,7 @@ const PrivacyPolicy = () => {
                         <li>Pliki cookies (tzw. „ciasteczka”) stanowią dane informatyczne, w szczególności pliki tekstowe, które przechowywane są w urządzeniu końcowym Użytkownika Serwisu i przeznaczone są do korzystania ze stron internetowych Serwisu. Cookies zazwyczaj zawierają nazwę strony internetowej, z której pochodzą, czas przechowywania ich na urządzeniu końcowym oraz unikalny numer.</li>
                         <li>Podmiotem zamieszczającym na urządzeniu końcowym Użytkownika Serwisu pliki cookies oraz uzyskującym do nich dostęp jest operator Serwisu.</li>
                         <li>Pliki cookies wykorzystywane są w następujących celach:
-	                                <ol>
+                            <ol>
                                 <li>utrzymanie sesji użytkownika Serwisu (po zalogowaniu), dzięki której użytkownik nie musi na każdej podstronie Serwisu ponownie wpisywać loginu i hasła;</li>
                                 <li>realizacji celów określonych powyżej w części "Istotne techniki marketingowe";</li>
                             </ol>
@@ -94,7 +94,7 @@ const PrivacyPolicy = () => {
                     <ol>
                         <li>Jeśli użytkownik nie chce otrzymywać plików cookies, może zmienić ustawienia przeglądarki. Zastrzegamy, że wyłączenie obsługi plików cookies niezbędnych dla procesów uwierzytelniania, bezpieczeństwa, utrzymania preferencji użytkownika może utrudnić,&nbsp;a w skrajnych przypadkach może uniemożliwić korzystanie ze stron www</li>
                         <li>W celu zarządzania ustawienia cookies wybierz z listy poniżej przeglądarkę internetową, której używasz i postępuj zgodnie z instrukcjami:
-	                                <ul>
+                            <ul>
                                 <li><a target='blank' href="https://support.microsoft.com/pl-pl/help/10607/microsoft-edge-view-delete-browser-history">Edge</a></li>
                                 <li><a target='blank' href="https://support.microsoft.com/pl-pl/help/278835/how-to-delete-cookie-files-in-internet-explorer">Internet Explorer</a></li>
                                 <li><a target='blank' href="http://support.google.com/chrome/bin/answer.py?hl=pl&amp;answer=95647">Chrome</a></li>

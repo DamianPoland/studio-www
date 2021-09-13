@@ -134,12 +134,12 @@ const Contact = () => {
                 <div className={style.contacts}>
                     <div className={style.contacts__container}>
                         <div className={style.contacts__item}>
-                            <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Kaliska 22`} target='_blank' rel="noopener noreferrer" className={style.svg}><Location /></a>
-                            <p className={style.contacts__desc}>Poland, Gdynia, Kaliska 22</p>
+                            <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Lipnowska 17`} target='_blank' rel="noopener noreferrer" className={style.svg}><Location /></a>
+                            <p className={style.contacts__desc}>Poland, Gdynia, Lipnowska 17</p>
                         </div>
                         <div className={style.contacts__item}>
-                            <a href='tel:+48795631039' className={style.svg}><Phone /></a>
-                            <p className={style.contacts__desc}>+48 795-631-039</p>
+                            <a href='tel:+48887638907' className={style.svg}><Phone /></a>
+                            <p className={style.contacts__desc}>+48 887-638-907</p>
                         </div>
                         <div className={style.contacts__item}>
                             <a href='mailto:info@studio-www.com?subject=Zapytanie' className={style.svg}><Email /></a>
@@ -150,7 +150,7 @@ const Contact = () => {
                             <p className={style.contacts__desc}>@AplikacjeIStronyInternetowe</p>
                         </div>
                         <div className={style.contacts__item}  >
-                            <a href='https://linkedin.com/in/damian-wi-9b1124195' target='_blank' rel="noopener noreferrer" className={style.svg}><LinkedIn /></a>
+                            <a href='https://www.linkedin.com/in/damian-wilczy%C5%84ski-9b1124195/' target='_blank' rel="noopener noreferrer" className={style.svg}><LinkedIn /></a>
                             <p className={style.contacts__desc}>LinkedIn</p>
                         </div>
                         <div className={style.contacts__item}  >

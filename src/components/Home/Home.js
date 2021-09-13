@@ -335,7 +335,7 @@ const Home = () => {
                             <a href='tel:+48795631039' className={style.contact__telIcon}>
                                 <Phone />
                             </a>
-                        +48 795-631-039
+                            +48 795-631-039
                         </p>
                         <div>
                             <Link to='/contact' className={style.link}>Sprawdź inne formy kontaktu<p className={style.linkArrow}></p></Link>

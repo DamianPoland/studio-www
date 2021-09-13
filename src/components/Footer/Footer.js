@@ -65,12 +65,12 @@ const Footer = () => {
                     <section className={style.desc__item}>
                         <p className={style.desc__title}>KONTAKT</p>
                         <div className={style.desc__phone}>
-                            <a href='tel:+48795631039' className={style.desc__contactSvgBig}><Phone /></a>
-                            <p className={style.desc__phoneText}>+48 795-631-039</p>
+                            <a href='tel:+48887638907' className={style.desc__contactSvgBig}><Phone /></a>
+                            <p className={style.desc__phoneText}>+48 887-638-907</p>
                         </div>
                         <div className={style.desc__contact}>
 
-                            <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Kaliska 22`} target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
+                            <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Lipnowska 17`} target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
                                 <Location className={style.desc__contactItemSvg} />
                                 <p className={style.desc__contactItemText}>Mapa</p>
                             </a>
@@ -85,7 +85,7 @@ const Footer = () => {
                                 <p className={style.desc__contactItemText}>Facebbok</p>
                             </a>
 
-                            <a href={`https://linkedin.com/in/damian-wi-9b1124195`} target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
+                            <a href={`https://www.linkedin.com/in/damian-wilczy%C5%84ski-9b1124195/`} target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
                                 <LinkedIn className={style.desc__contactItemSvg} />
                                 <p className={style.desc__contactItemText}>LinkedIn</p>
                             </a>
