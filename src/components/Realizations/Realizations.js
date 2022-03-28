@@ -7,6 +7,7 @@ import TouchSlider from "../../UI/TouchSlider/TouchSlider"
 
 
 // images realizations
+import ketozocha from '../../assets/realizations/ketozocha.jpg'
 import beautystudio from '../../assets/realizations/beautystudio.jpg'
 import calendar from '../../assets/realizations/calendar.jpg'
 import getpol from '../../assets/realizations/getpol.jpg'
@@ -43,8 +44,9 @@ const arrayPages = [
 
 const Realizations = () => {
 
-    // scroll to top when componene render
+
     useEffect(() => { window.scrollTo(0, 0) }, [])
+
 
     // AOS reload after load first photo to not show animations before load screen
     const [loadPhoto, setLoadPhoto] = useState(false)
@@ -65,13 +67,24 @@ const Realizations = () => {
 
                 <div className={style.realizations__item}>
                     <div className={style.realizations__itemTextContainer}>
+                        <h2 className="text1">Portale www</h2>
+                        <h3 className={style.realizations__text}>Blog dietetyczny: ketozocha.pl</h3>
+                        <a href="https://ketozocha.pl" target="_blank" rel="noopener noreferrer" className={style.realizations__link}>Zobacz...</a>
+                    </div>
+                    <a href="https://ketozocha.pl" target="_blank" rel="noopener noreferrer" data-aos="fade-up-left" className={style.realizations__figure}>
+                        <img onLoad={() => setLoadPhoto(true)} className={style.img} src={ketozocha} alt='ketozocha.pl' />
+                    </a>
+                </div>
+
+                <div className={style.realizations__item}>
+                    <div className={style.realizations__itemTextContainer}>
                         <h2 className="text1">Strony www</h2>
                         <h3 className={style.realizations__text}>Strona internetowa firmy hydraulicznej: tatarczuk.com.pl</h3>
                         <a href="https://tatarczuk.com.pl" target="_blank" rel="noopener noreferrer" className={style.realizations__link}>Zobacz...</a>
                         <span className={style.animation__border}></span>
                     </div>
                     <a href="https://tatarczuk.com.pl" target="_blank" rel="noopener noreferrer" data-aos="fade-up-left" className={style.realizations__figure}>
-                        <img onLoad={() => setLoadPhoto(true)} className={style.img} src={tatarczuk} alt='tatarczuk.com.pl' />
+                        <img className={style.img} src={tatarczuk} alt='tatarczuk.com.pl' />
                         <span className={`${style.animation__border} ${style.animation__borderRotate}`}></span>
                     </a>
                 </div>

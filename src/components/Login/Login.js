@@ -22,10 +22,8 @@ const Login = props => {
 
     useEffect(() => {
 
-        // scroll to top when component render
         window.scrollTo(0, 0)
 
-        //get data about project if user is logged
         if (localStorage.getItem(IS_AUTH)) {
             firestore.collection('projects').doc(localStorage.getItem(USER_ID)).get() //get data with user id from 'projects'
                 .then(resp => {
@@ -36,10 +34,10 @@ const Login = props => {
         }
     }, [])
 
-    // log out button
+
     const handlerLogOut = () => {
         auth.signOut() // sign out
-        props.history.replace('/home') // go to /home
+        props.history.replace('/home')
     }
 
     return (
@@ -51,7 +49,6 @@ const Login = props => {
                     <h1 className={style.projectHeader}>Poniżej znajdziesz wszelkie informację dotyczące Twojego projeku:</h1>
                     <div className={style.projectCoontent}>
 
-                        {/* show data from db */}
                         {
                             dataFromDB.map((item, id) => {
                                 return (

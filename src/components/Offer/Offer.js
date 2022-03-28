@@ -22,34 +22,24 @@ import info2 from '../../assets/offer/info2.jpg'
 
 const Offer = () => {
 
-    // scroll to top when componene render
+
     useEffect(() => { window.scrollTo(0, 0) }, [])
 
     // svg add animations
     useEffect(() => {
-
         document.querySelector('#cardCardId').classList.add(style.animationUPDown)
-
         document.querySelector('#standPeopleId').classList.add(style.animationShowHide)
-
         document.querySelector('#deviceScreen1Id').classList.add(style.animationBackgroundColor)
         document.querySelector('#deviceScreen2Id').classList.add(style.animationBackgroundColor)
         document.querySelector('#deviceScreen3Id').classList.add(style.animationBackgroundColor)
-
         document.querySelector('#domainId').classList.add(style.animationSkew)
-
         document.querySelector('#cardIdPresentation').classList.add(style.animationUPDown)
-
         document.querySelector('#walletId').classList.add(style.animationShowHide)
-
         document.querySelector('#preferences1Id').classList.add(style.animationBackgroundColorCheck1)
         document.querySelector('#preferences2Id').classList.add(style.animationBackgroundColorCheck2)
         document.querySelector('#preferences3Id').classList.add(style.animationBackgroundColorCheck3)
-
         document.querySelector('#mobileId').classList.add(style.animationRotate)
-
         document.querySelector('#reactSign').classList.add(style.animationShowHide)
-
         document.querySelector('#serverId1').classList.add(style.animationBackgroundColorCheck1)
         document.querySelector('#serverId2').classList.add(style.animationBackgroundColorCheck2)
         document.querySelector('#serverId3').classList.add(style.animationBackgroundColorCheck3)

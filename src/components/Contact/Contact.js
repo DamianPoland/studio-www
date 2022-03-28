@@ -23,36 +23,24 @@ import { ReactComponent as ContactIcon } from '../../assets/icons/contact_us.svg
 
 const Contact = () => {
 
-    // scroll to top when componene render
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
 
-    // input Name
+    useEffect(() => { window.scrollTo(0, 0) }, [])
+
+
     const [inputName, setInputName] = useState('') // input value
     const [inputNameIsInvalid, setInputNameIsInvalid] = useState(false) // only for set isValid/inInvalid before send
-
-    // input Email
     const [inputEmail, setInputEmail] = useState('') // input value
     const [inputEmailIsInvalid, setInputEmailIsInvalid] = useState(false) // only for set isValid/inInvalid before send
-
-    // input Message
     const [inputMessage, setInputMessage] = useState('') // input value
     const [inputMessageIsInvalid, setInputMessageIsInvalid] = useState(false) // only for set isValid/inInvalid before send
-
-    // Alert
     const [isAlertShow, setIsAlertShow] = useState(false)
-
-    // Spinner
     const [isSpinnerShow, setIsSpinnerShow] = useState(false)
-
-    // form animation
     const [isFormAnimation, setIsFormAnimation] = useState(false)
 
-    // click Send
+
     const sendMessage = event => {
         event.preventDefault()
-        // validation 
+
         let isInvalid = false
 
         // name validation if is min 3 chars
@@ -80,34 +68,26 @@ const Contact = () => {
             setInputMessageIsInvalid(false)
         }
 
-        //check if all inputs are valid
-        if (isInvalid) {
-            return
-        }
+        if (isInvalid) return
 
-        //show spinner
         setIsSpinnerShow(true)
 
         //sent email
         axios.put(process.env.REACT_APP_TO_SEND_EMAIL_PATH, { name: inputName, email: inputEmail, message: inputMessage })
             .then(resp => {
 
-                // turn off spinner
                 setIsSpinnerShow(false)
 
-                // turn on animation sent
                 setIsFormAnimation(true)
                 const okId = document.querySelector('#okId')
                 okId.classList.add(style.svgOkIdAnim)
 
-                // clear inputs after 1s when during animation
                 setTimeout(() => {
-                    setInputName('') // clear input
-                    setInputEmail('') // clear input
-                    setInputMessage('') // clear input
+                    setInputName('')
+                    setInputEmail('')
+                    setInputMessage('')
                 }, 1000)
 
-                // clear animation classes after 4s when animations stop
                 setTimeout(() => {
                     setIsFormAnimation(false)
                     okId.classList.remove(style.svgOkIdAnim)
@@ -115,10 +95,9 @@ const Contact = () => {
 
             })
             .catch(err => {
-                setIsSpinnerShow(false) // turn off spinner
-                setIsAlertShow(true) // show error alert
+                setIsSpinnerShow(false)
+                setIsAlertShow(true)
             })
-        // .finally(() => setIsSpinnerShow(false))
     }
 
     return (

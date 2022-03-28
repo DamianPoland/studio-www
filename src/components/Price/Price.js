@@ -18,10 +18,6 @@ const Price = () => {
     useEffect(() => {
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`)
-        // window.addEventListener('resize', () => { // change vh when browser search bar disapear
-        //     document.querySelector(':root').style
-        //         .setProperty('--vh', window.innerHeight / 100 + 'px')
-        // })
     }, [])
 
 
@@ -42,7 +38,7 @@ const Price = () => {
 
                         <div data-aos="flip-left" className={style.price__item}>
                             <h2 className={style.price__itemTextMine}>Strona internetowa<br />wizytówka</h2>
-                            <p className={style.price__itemTextPrice}>800 zł</p>
+                            <p className={style.price__itemTextPrice}>1200 zł</p>
                             {siteSmall.map(item => {
                                 return (
                                     <div key={item} className={style.price__itemLineText}>
@@ -56,7 +52,7 @@ const Price = () => {
 
                         <div data-aos="flip-left" className={style.price__item}>
                             <h2 className={style.price__itemTextMine}>Strona internetowa<br />rozbudowana</h2>
-                            <p className={style.price__itemTextPrice}>1200 zł</p>
+                            <p className={style.price__itemTextPrice}>1600 zł</p>
                             {siteBig.map(item => {
                                 return (
                                     <div key={item} className={style.price__itemLineText}>
@@ -69,7 +65,7 @@ const Price = () => {
 
                         <div data-aos="flip-left" className={style.price__item}>
                             <h2 className={style.price__itemTextMine}>Aplikacja webowa lub<br />portal internetowy</h2>
-                            <p className={style.price__itemTextPrice}>od 1500 zł</p>
+                            <p className={style.price__itemTextPrice}>od 1900 zł</p>
                             {siteApp.map(item => {
                                 return (
                                     <div key={item} className={style.price__itemLineText}>

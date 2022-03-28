@@ -33,6 +33,7 @@ import seo from '../../assets/home/seo.png'
 import reactJs from '../../assets/home/reactJs.png'
 
 import beautystudio from '../../assets/realizations/beautystudio.jpg'
+import ketozocha from '../../assets/realizations/ketozocha.jpg'
 import calendar from '../../assets/realizations/calendar.jpg'
 import getpol from '../../assets/realizations/getpol.jpg'
 import imgToText from '../../assets/realizations/imgToText.jpg'
@@ -52,6 +53,7 @@ import { ReactComponent as Mark } from '../../assets/icons/mark__OK.svg'
 
 
 const offer = [
+    <img className={style.img} src={ketozocha} alt={`portal internetowy ${ketozocha}`} />,
     <img className={style.img} src={beautystudio} alt={`strona internetowa ${beautystudio}`} />,
     <img className={style.img} src={calendar} alt={`aplikacja internetowa ${calendar}`} />,
     <img className={style.img} src={getpol} alt={`strona internetowa ${getpol}`} />,
@@ -64,28 +66,27 @@ const offer = [
 
 const Home = () => {
 
+
     useEffect(() => { window.scrollTo(0, 0) }, [])
 
-    // load movie
+
     const [isVideoLoaded, setIsVideoLoaded] = useState(false)
+
 
     // AOS reload after load video to not show animations before load screen
     useEffect(() => { AOS.refresh() }, [isVideoLoaded])
+
 
     // full screen in mobile first section (cut browser search bar on mobile) + css code
     useEffect(() => {
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`)
-        // window.addEventListener('resize', () => { // change vh when browser search bar disapear
-        //     document.querySelector(':root').style
-        //         .setProperty('--vh', window.innerHeight / 100 + 'px')
-        // })
     }, [])
+
 
     // onScroll to parallax for section start
     useEffect(() => {
 
-        //get container with text
         const startContainer = document.querySelector("#start__contaner")
 
         if (!startContainer) { return }
@@ -93,13 +94,11 @@ const Home = () => {
         // event listener funcion
         const startScrool = () => {
 
-            // get scrool position
             let scrollPosition = window.pageYOffset
 
             // stop when > 700 => startContainer not visible
             if (scrollPosition > 700) { return }
 
-            // console.log(window.pageYOffset);
             let scale = (1 - scrollPosition * 0.0015)
             startContainer.style.transform = `translateY(${scrollPosition * -0.5}px) scale(${scale > 0 ? scale : 0})`
         }
@@ -265,12 +264,12 @@ const Home = () => {
 
                             <div className={style.price__item}>
                                 <Mark />
-                                <h2 className={style.price__desc}>Strona internetowa - 800 zł</h2>
+                                <h2 className={style.price__desc}>Strona internetowa - 1200 zł</h2>
                             </div>
 
                             <div className={style.price__item}>
                                 <Mark />
-                                <h2 className={style.price__desc}>Aplikacja webowa - od 1500 zł</h2>
+                                <h2 className={style.price__desc}>Aplikacja webowa - od 1900 zł</h2>
                             </div>
 
                             <div>
