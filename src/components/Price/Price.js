@@ -52,7 +52,7 @@ const Price = () => {
 
                         <div data-aos="flip-left" className={style.price__item}>
                             <h2 className={style.price__itemTextMine}>Strona internetowa<br />rozbudowana</h2>
-                            <p className={style.price__itemTextPrice}>1600 zł</p>
+                            <p className={style.price__itemTextPrice}>2200 zł</p>
                             {siteBig.map(item => {
                                 return (
                                     <div key={item} className={style.price__itemLineText}>
@@ -65,7 +65,7 @@ const Price = () => {
 
                         <div data-aos="flip-left" className={style.price__item}>
                             <h2 className={style.price__itemTextMine}>Aplikacja webowa lub<br />portal internetowy</h2>
-                            <p className={style.price__itemTextPrice}>od 1900 zł</p>
+                            <p className={style.price__itemTextPrice}>od 4000 zł</p>
                             {siteApp.map(item => {
                                 return (
                                     <div key={item} className={style.price__itemLineText}>

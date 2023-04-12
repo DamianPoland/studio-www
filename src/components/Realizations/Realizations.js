@@ -16,31 +16,6 @@ import jatestuje from '../../assets/realizations/jatestuje.jpg'
 import tatarczuk from '../../assets/realizations/tatarczuk.jpg'
 import wlaczremont from '../../assets/realizations/wlaczremont.jpg'
 
-// images sites
-import wolfmobileapps from '../../assets/realizations/wolfmobileapps.png'
-import food from '../../assets/realizations/food.png'
-import next from '../../assets/realizations/next.png'
-import careo from '../../assets/realizations/careo.png'
-import health from '../../assets/realizations/health.png'
-import crypto from '../../assets/realizations/crypto.png'
-import design from '../../assets/realizations/design.png'
-import mobile from '../../assets/realizations/mobile.png'
-import gym from '../../assets/realizations/gym.png'
-
-
-// array of agregat images
-const arrayPages = [
-    <img href='https://wolfmobileapps.com/pl/' className={style.img} src={wolfmobileapps} alt={`${wolfmobileapps}`} />,
-    <img href='https://examples.studio-www.com//food' className={style.img} src={food} alt={`${food}`} />,
-    <img href='https://examples.studio-www.com//next' className={style.img} src={next} alt={`${next}`} />,
-    <img href='https://examples.studio-www.com//careo' className={style.img} src={careo} alt={`${careo}`} />,
-    <img href='https://examples.studio-www.com//health' className={style.img} src={health} alt={`${health}`} />,
-    <img href='https://examples.studio-www.com//crypto' className={style.img} src={crypto} alt={`${crypto}`} />,
-    <img href='https://examples.studio-www.com//design' className={style.img} src={design} alt={`${design}`} />,
-    <img href='https://examples.studio-www.com//mobile' className={style.img} src={mobile} alt={`${mobile}`} />,
-    <img href='https://examples.studio-www.com//gym' className={style.img} src={gym} alt={`${gym}`} />,
-]
-
 
 const Realizations = () => {
 
@@ -164,20 +139,6 @@ const Realizations = () => {
                     </div>
 
                 </div>
-            </section>
-
-            {/* section SAMPLES */}
-            <section className={style.samples}>
-
-                <div className="textContainer">
-                    <p className="text1">REALIZACJE</p>
-                    <h1 className="text2">Obejrzyj pozostałe strony www:</h1>
-                </div>
-
-                <div className={style.slider}>
-                    <TouchSlider itemsArray={arrayPages} />
-                </div>
-
             </section>
 
         </main>
