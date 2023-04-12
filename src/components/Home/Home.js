@@ -305,10 +305,10 @@ const Home = () => {
                     <div className={style.user__textContainer}>
                         <div className="textContainer">
                             <h2 className="text1">STREFA KLIENTA</h2>
-                            <p className="text2 text__white">Jesteś już klientem?</p>
-                            <div>
+                            <p className="text2 text__white">Przekonaj się sam o jakości naszych produktów!</p>
+                            {/* <div>
                                 <Link to='/login' className={`${style.link} ${style.textWhite}`}>Śledź postępy w projekcie<p className={style.linkArrow}></p></Link>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
