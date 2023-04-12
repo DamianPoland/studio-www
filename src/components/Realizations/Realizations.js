@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react'
 import style from './Realizations.module.css'
 import AOS from 'aos'
 
-// components
-import TouchSlider from "../../UI/TouchSlider/TouchSlider"
-
 
 // images realizations
 import ketozocha from '../../assets/realizations/ketozocha.jpg'

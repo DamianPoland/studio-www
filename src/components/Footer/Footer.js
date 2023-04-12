@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import style from './Footer.module.css'
-
-// chat messanger facebbok
-import MessengerCustomerChat from 'react-messenger-customer-chat'
+import logoAlexaWeb from '../../assets/logoAlexaWeb.png'
 
 //svg
 import { ReactComponent as Phone } from '../../assets/icons/phone.svg'
@@ -25,12 +23,6 @@ import firebase from '../../assets/tools/firebase.png'
 const Footer = () => {
     return (
         <footer className={style.background}>
-
-            {/* facebook messanger */}
-            <MessengerCustomerChat
-                pageId="100619948474636" //<YOUR_PAGE_ID>
-                appId="1998434536978637" //<YOUR_APP_ID>
-            />
 
             <div className={style.desc}>
                 <div className={style.desc_container}>
@@ -56,7 +48,6 @@ const Footer = () => {
                             <Link to='/offer' className={style.desc__link}><i className={style.desc__arrow} />Oferta</Link>
                             <Link to='/cennik' className={style.desc__link}><i className={style.desc__arrow} />Cennik</Link>
                             <Link to='/realizations' className={style.desc__link}><i className={style.desc__arrow} />Realizacje</Link>
-                            <Link to='/login' className={style.desc__link}><i className={style.desc__arrow} />Strefa klienta</Link>
                             <Link to='/contact' className={style.desc__link}><i className={style.desc__arrow} />Kontakt</Link>
                             <Link to='/privacy-policy' className={style.desc__link}><i className={style.desc__arrow} />Polityka prywatności</Link>
                         </nav>
@@ -101,6 +92,15 @@ const Footer = () => {
                 </div>
             </div>
             <p className={style.foot}>Copyright © 2020 studio-www</p>
+            <div className={style.foot}>
+                <p>Designed & Developed by</p>
+                <figure><img src={logoAlexaWeb} alt='logo' style={{ margin: "0 0.5rem" }} /></figure>
+                <a href='https://alexa-web.com/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className={style.foot_link}
+                >Alexa-Web.com</a>
+            </div>
         </footer>
     )
 }
