@@ -91,7 +91,7 @@ const Footer = () => {
 
                 </div>
             </div>
-            <p className={style.foot}>Copyright © 2020 studio-www</p>
+            <p className={style.foot}>Copyright © 2023 studio-www</p>
             <div className={style.foot}>
                 <p>Designed & Developed by</p>
                 <figure><img src={logoAlexaWeb} alt='logo' style={{ margin: "0 0.5rem" }} /></figure>
