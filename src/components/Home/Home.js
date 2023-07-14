@@ -19,6 +19,12 @@ import js from '../../assets/tools/js.png'
 import reactImg from '../../assets/tools/react.png'
 import ts from '../../assets/tools/ts.png'
 import firebase from '../../assets/tools/firebase.png'
+import node from '../../assets/tools/node.png'
+import next from '../../assets/tools/next.png'
+import express from '../../assets/tools/express.png'
+import mui from '../../assets/tools/mui.png'
+import cypress from '../../assets/tools/cypress.png'
+import git from '../../assets/tools/git.jpg'
 
 import quality from '../../assets/home/quality.jpg'
 import price from '../../assets/home/price.jpg'
@@ -42,6 +48,18 @@ import tatarczuk from '../../assets/realizations/tatarczuk.jpg'
 import wlaczremont from '../../assets/realizations/wlaczremont.jpg'
 
 import desktopEmpty from '../../assets/home/desktopEmpty.png'
+
+import horde from '../../assets/companies/horde.png'
+import nest from '../../assets/companies/nest.png'
+import aic from '../../assets/companies/aic.png'
+import getpolLogo from '../../assets/companies/getpol.png'
+import beauty from '../../assets/companies/beauty.png'
+import jj from '../../assets/companies/jj.png'
+import novil from '../../assets/companies/novil.png'
+import alexa from '../../assets/companies/alexa.png'
+import tatarczukLogo from '../../assets/companies/tatarczuk.png'
+import more from '../../assets/companies/more.jpg'
+
 
 import userImg from '../../assets/home/user.png'
 
@@ -139,27 +157,45 @@ const Home = () => {
             {/* section TOOLS */}
             <section className={style.tools}>
                 <div className="textContainer">
-                    <h2 className="text1">NARZĘDZIA</h2>
-                    <p className="text2">Czego używam w mojej pracy?</p>
+                    <h2 className="text1">TECHNOLOGIE</h2>
+                    <p className="text2">Czego używamy w naszej pracy?</p>
                 </div>
                 <div className={style.tools__container}>
                     <figure data-aos="zoom-in" className={style.tools__figure}>
-                        <img className={style.img} src={html} alt='html5' />
-                    </figure>
-                    <figure data-aos="zoom-in" className={style.tools__figure}>
-                        <img className={style.img} src={css} alt='css3' />
-                    </figure>
-                    <figure data-aos="zoom-in" className={style.tools__figure}>
                         <img className={style.img} src={js} alt='java script' />
                     </figure>
-                    <figure data-aos="zoom-in" className={style.tools__figure}>
+                    <figure data-aos="zoom-in" className={`${style.tools__figure} ${style.tools__figure_padding}`}>
                         <img className={style.img} src={reactImg} alt='react' />
                     </figure>
                     <figure data-aos="zoom-in" className={style.tools__figure}>
                         <img className={style.img} src={ts} alt='type script' />
                     </figure>
-                    <figure data-aos="zoom-in" className={style.tools__figure}>
+                    <figure data-aos="zoom-in" className={`${style.tools__figure} ${style.tools__figure_padding}`}>
+                        <img className={style.img} src={html} alt='html5' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={`${style.tools__figure} ${style.tools__figure_padding}`}>
+                        <img className={style.img} src={css} alt='css3' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={`${style.tools__figure} ${style.tools__figure_padding}`}>
                         <img className={style.img} src={firebase} alt='firebase' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={`${style.tools__figure} ${style.tools__figure_padding}`}>
+                        <img className={style.img} src={node} alt='node' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={`${style.tools__figure} ${style.tools__figure_padding}`}>
+                        <img className={style.img} src={next} alt='next.js' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={`${style.tools__figure} ${style.tools__figure_padding}`}>
+                        <img className={style.img} src={express} alt='express.js' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={`${style.tools__figure} ${style.tools__figure_padding}`}>
+                        <img className={style.img} src={mui} alt='mui' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={`${style.tools__figure} ${style.tools__figure_padding}`}>
+                        <img className={style.img} src={cypress} alt='cypress' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={`${style.tools__figure} ${style.tools__figure_padding}`}>
+                        <img className={style.img} src={git} alt='git' />
                     </figure>
                 </div>
             </section>
@@ -170,7 +206,7 @@ const Home = () => {
                 <div className={style.approach__content}>
                     <div className="textContainer">
                         <h2 className="text1">DLACZEGO WARTO</h2>
-                        <p className="text2 text__white">Co cechuje moje projekty?</p>
+                        <p className="text2 text__white">Co cechuje nasze projekty?</p>
                     </div>
                     <div className={style.approach__container}>
                         <div data-aos="flip-left" className={style.approach__item}>
@@ -211,7 +247,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div>
-                        <Link to='/about' className={`${style.link} ${style.textWhite}`}>Dowiedz się więcej o mnie<p className={style.linkArrow}></p></Link>
+                        <Link to='/about' className={`${style.link} ${style.textWhite}`}>Dowiedz się o nas więcej<p className={style.linkArrow}></p></Link>
                     </div>
                 </div>
             </section>
@@ -221,7 +257,7 @@ const Home = () => {
             <section className={style.offer}>
                 <div className="textContainer marginLeftRight">
                     <h2 className="text1">OFERTA</h2>
-                    <p className="text2">Co mogę Tobie zaoferować?</p>
+                    <p className="text2">Co możemy Tobie zaoferować?</p>
                 </div>
 
                 <div className={style.offer__item}>
@@ -238,7 +274,7 @@ const Home = () => {
                 <div className={style.offer__item}>
                     <div className={style.offer__content}>
                         <h2 data-aos="zoom-in" className={style.offer__header}><strong className={style.font}>Aplikacje webowe</strong></h2>
-                        <p className={style.offer__text}><strong>Aplikacje webowe (aplikacje internetowe)</strong> to moźliwość realizacji Twojej idei w Internecie. Jeśli masz pomysł, to zgłoś się do mnie, a ja wykonam projekt od początku do końca.</p>
+                        <p className={style.offer__text}><strong>Aplikacje webowe (aplikacje internetowe)</strong> to moźliwość realizacji Twojej idei w Internecie. Jeśli masz pomysł, to zgłoś się do nas, a my wykonamy projekt od początku do końca.</p>
                     </div>
                     <figure className={style.offer__figure}>
                         <img data-aos="fade-up-left" className={style.img} src={appsImg} alt='React JavaScript Library' />
@@ -264,12 +300,12 @@ const Home = () => {
 
                             <div className={style.price__item}>
                                 <Mark />
-                                <h2 className={style.price__desc}>Strona internetowa - 1200 zł</h2>
+                                <h2 className={style.price__desc}>Strona internetowa - od 1200 zł</h2>
                             </div>
 
                             <div className={style.price__item}>
                                 <Mark />
-                                <h2 className={style.price__desc}>Aplikacja webowa - od 1900 zł</h2>
+                                <h2 className={style.price__desc}>Aplikacja webowa - od 4000 zł</h2>
                             </div>
 
                             <div>
@@ -283,7 +319,7 @@ const Home = () => {
 
 
             {/* section REALIZATIONS */}
-            <section className={style.realizations}>
+            {/* <section className={style.realizations}>
                 <div className="textContainer">
                     <h2 className="text1">REALIZACJE</h2>
                     <p className="text2">Co już wykonałem?</p>
@@ -297,6 +333,46 @@ const Home = () => {
                 <div>
                     <div><Link to='/realizations' className={style.link}>Zobacz ostatnie realizacje<p className={style.linkArrow}></p></Link></div>
                 </div>
+            </section> */}
+
+            {/* section CLIENTS */}
+            <section className={style.realizations}>
+                <div className="textContainer">
+                    <h2 className="text1">NASI KLIENCI</h2>
+                    <p className="text2">Z kim współpracujemy</p>
+                </div>
+                <div className={style.tools__container}>
+                    <figure data-aos="zoom-in" className={style.tools__figure}>
+                        <img className={style.img} src={nest} alt='nest' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={style.tools__figure}>
+                        <img className={style.img} src={horde} alt='horde' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={style.tools__figure}>
+                        <img className={style.img} src={aic} alt='aic' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={style.tools__figure}>
+                        <img className={style.img} src={getpolLogo} alt='getpol' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={style.tools__figure}>
+                        <img className={style.img} src={beauty} alt='beauty' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={style.tools__figure}>
+                        <img className={style.img} src={jj} alt='jj' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={style.tools__figure}>
+                        <img className={style.img} src={novil} alt='novil' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={style.tools__figure}>
+                        <img className={style.img} src={alexa} alt='alexa-web' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={style.tools__figure}>
+                        <img className={style.img} src={tatarczukLogo} alt='tatarczuk' />
+                    </figure>
+                    <figure data-aos="zoom-in" className={`${style.tools__figure} ${style.tools__figure_textMore}`}>
+                        <img className={style.img} src={more} alt='more' />
+                    </figure>
+                </div>
             </section>
 
             {/* section USER */}
@@ -304,7 +380,7 @@ const Home = () => {
                 <div className={style.user__container}>
                     <div className={style.user__textContainer}>
                         <div className="textContainer">
-                            <h2 className="text1">STREFA KLIENTA</h2>
+                            <h2 className="text1">DOŁĄCZ DO NAS</h2>
                             <p className="text2 text__white">Przekonaj się sam o jakości naszych produktów!</p>
                         </div>
                     </div>

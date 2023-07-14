@@ -68,7 +68,7 @@ function App() {
         <Route path='/about' render={props => <About {...props} />} />
         <Route path='/offer' render={props => <Offer {...props} />} />
         <Route path='/cennik' render={props => <Price {...props} />} />
-        <Route path='/realizations' render={props => <Realizations {...props} />} />
+        {/* <Route path='/realizations' render={props => <Realizations {...props} />} /> */}
         <Route path='/contact' render={props => <Contact {...props} />} />
         <Route path='/privacy-policy' component={PrivacyPolicy} />
         <Redirect to='/home' />

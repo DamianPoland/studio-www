@@ -28,8 +28,8 @@ const Footer = () => {
                 <div className={style.desc_container}>
 
                     <section className={style.desc__item}>
-                        <p className={style.desc__title}>O MNIE</p>
-                        <p className={style.desc__text}>Zajmuję się tworzeniem stron<br />internetowych, aplikacji webowych<br />oraz serwisów internetowych.</p>
+                        <p className={style.desc__title}>O NAS</p>
+                        <p className={style.desc__text}>Zajmujemy się tworzeniem stron<br />internetowych, aplikacji webowych<br />oraz serwisów internetowych.</p>
                         <div className={style.desc__tools}>
                             <img className={style.desc__img} src={html} alt='html5' />
                             <img className={style.desc__img} src={css} alt='css3' />
@@ -44,10 +44,10 @@ const Footer = () => {
                         <p className={style.desc__title}>NAWIGACJA</p>
                         <nav className={style.desc__nav}>
                             <Link to='/home' className={style.desc__link}><i className={style.desc__arrow} />Strona główna</Link>
-                            <Link to='/about' className={style.desc__link}><i className={style.desc__arrow} />O mnie</Link>
+                            <Link to='/about' className={style.desc__link}><i className={style.desc__arrow} />O nas</Link>
                             <Link to='/offer' className={style.desc__link}><i className={style.desc__arrow} />Oferta</Link>
                             <Link to='/cennik' className={style.desc__link}><i className={style.desc__arrow} />Cennik</Link>
-                            <Link to='/realizations' className={style.desc__link}><i className={style.desc__arrow} />Realizacje</Link>
+                            {/* <Link to='/realizations' className={style.desc__link}><i className={style.desc__arrow} />Realizacje</Link> */}
                             <Link to='/contact' className={style.desc__link}><i className={style.desc__arrow} />Kontakt</Link>
                             <Link to='/privacy-policy' className={style.desc__link}><i className={style.desc__arrow} />Polityka prywatności</Link>
                         </nav>
@@ -61,7 +61,7 @@ const Footer = () => {
                         </div>
                         <div className={style.desc__contact}>
 
-                            <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Lipnowska 17`} target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
+                            <a href={`http://maps.google.com/?q=studio-www, Bydgoszcz ul. Filtrowa 27`} target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
                                 <Location className={style.desc__contactItemSvg} />
                                 <p className={style.desc__contactItemText}>Mapa</p>
                             </a>
@@ -76,15 +76,15 @@ const Footer = () => {
                                 <p className={style.desc__contactItemText}>Facebbok</p>
                             </a>
 
-                            <a href={`https://www.linkedin.com/in/damian-wilczy%C5%84ski-9b1124195/`} target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
+                            {/* <a href={`https://www.linkedin.com/in/damian-wilczy%C5%84ski-9b1124195/`} target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
                                 <LinkedIn className={style.desc__contactItemSvg} />
                                 <p className={style.desc__contactItemText}>LinkedIn</p>
-                            </a>
+                            </a> */}
 
-                            <a href={`https://github.com/DamianPoland`} target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
+                            {/* <a href={`https://github.com/DamianPoland`} target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
                                 <GitHub className={style.desc__contactItemSvg} />
                                 <p className={style.desc__contactItemText}>GitHub</p>
-                            </a>
+                            </a> */}
 
                         </div>
                     </section>

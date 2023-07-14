@@ -84,7 +84,7 @@ const Offer = () => {
                         <div className={style.svg} data-aos="zoom-in">
                             <Domain />
                         </div>
-                        <p data-aos="flip-up" className={style.desc}>Jeśli nie wiesz czym jest: domena, hosting, dns itp. to nic nie szkodzi. <strong>Przedstaw swój pomysł, a ja zajmę się resztą.</strong></p>
+                        <p data-aos="flip-up" className={style.desc}>Jeśli nie wiesz czym jest: domena, hosting, dns itp. to nic nie szkodzi. <strong>Przedstaw swój pomysł, a my zajmiemy się resztą.</strong></p>
                     </div>
 
                     <div className={style.pages__item}>
@@ -112,7 +112,7 @@ const Offer = () => {
 
                     <div className={style.info__textContainer}>
                         <p className={style.info__text1}>Masz pomysł?</p>
-                        <p className={style.info__text2}>Ja zajmę się resztą!</p>
+                        <p className={style.info__text2}>My zajmiemy się resztą!</p>
                     </div>
 
                     <figure className={style.info__figure2}>

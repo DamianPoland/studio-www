@@ -113,8 +113,8 @@ const Contact = () => {
                 <div className={style.contacts}>
                     <div className={style.contacts__container}>
                         <div className={style.contacts__item}>
-                            <a href={`http://maps.google.com/?q=studio-www, Gdynia ul. Lipnowska 17`} target='_blank' rel="noopener noreferrer" className={style.svg}><Location /></a>
-                            <p className={style.contacts__desc}>Poland, Gdynia, Lipnowska 17</p>
+                            <a href={`http://maps.google.com/?q=studio-www, Bydgoszcz ul. Filtrowa 17`} target='_blank' rel="noopener noreferrer" className={style.svg}><Location /></a>
+                            <p className={style.contacts__desc}>Poland, Bydgoszcz, Filtrowa 27</p>
                         </div>
                         <div className={style.contacts__item}>
                             <a href='tel:+48887638907' className={style.svg}><Phone /></a>
@@ -128,14 +128,14 @@ const Contact = () => {
                             <a href='https://www.fb.me/AplikacjeIStronyInternetowe' target='_blank' rel="noopener noreferrer" className={style.svg}><Facebbok /></a>
                             <p className={style.contacts__desc}>@AplikacjeIStronyInternetowe</p>
                         </div>
-                        <div className={style.contacts__item}  >
+                        {/* <div className={style.contacts__item}  >
                             <a href='https://www.linkedin.com/in/damian-wilczy%C5%84ski-9b1124195/' target='_blank' rel="noopener noreferrer" className={style.svg}><LinkedIn /></a>
                             <p className={style.contacts__desc}>LinkedIn</p>
-                        </div>
-                        <div className={style.contacts__item}  >
+                        </div> */}
+                        {/* <div className={style.contacts__item}  >
                             <a href='https://github.com/DamianPoland' target='_blank' rel="noopener noreferrer" className={style.svg}><GitHub /></a>
                             <p className={style.contacts__desc}>GitHub</p>
-                        </div>
+                        </div> */}
                         <div className={style.contacts__item} >
                             <a href='/' className={style.svg}><Clock /></a>
                             <p className={style.contacts__desc}>Pn - Pt 8.00-16.00</p>
