@@ -56,8 +56,8 @@ const Footer = () => {
                     <section className={style.desc__item}>
                         <p className={style.desc__title}>KONTAKT</p>
                         <div className={style.desc__phone}>
-                            <a href='tel:+48887638907' className={style.desc__contactSvgBig}><Phone /></a>
-                            <p className={style.desc__phoneText}>+48 887-638-907</p>
+                            <a href='tel:+48795631039' className={style.desc__contactSvgBig}><Phone /></a>
+                            <p className={style.desc__phoneText}>+48 795-631-039</p>
                         </div>
                         <div className={style.desc__contact}>
 
@@ -66,7 +66,7 @@ const Footer = () => {
                                 <p className={style.desc__contactItemText}>Mapa</p>
                             </a>
 
-                            <a href='mailto:info@studio-www.com?subject=Zapytanie' className={style.desc__contactItem}>
+                            <a href='mailto:studiowww.com@gmail.com?subject=Zapytanie' className={style.desc__contactItem}>
                                 <Email className={style.desc__contactItemSvg} />
                                 <p className={style.desc__contactItemText}>Email</p>
                             </a>
