@@ -117,12 +117,12 @@ const Contact = () => {
                             <p className={style.contacts__desc}>Poland, Bydgoszcz, Filtrowa 27</p>
                         </div>
                         <div className={style.contacts__item}>
-                            <a href='tel:+48887638907' className={style.svg}><Phone /></a>
-                            <p className={style.contacts__desc}>+48 887-638-907</p>
+                            <a href='tel:+48795631039' className={style.svg}><Phone /></a>
+                            <p className={style.contacts__desc}>+48 795-631-039</p>
                         </div>
                         <div className={style.contacts__item}>
-                            <a href='mailto:info@studio-www.com?subject=Zapytanie' className={style.svg}><Email /></a>
-                            <p className={style.contacts__desc}>info@studio-www.com</p>
+                            <a href='mailto:studiowww.com@gmail.com?subject=Zapytanie' className={style.svg}><Email /></a>
+                            <p className={style.contacts__desc}>studiowww.com@gmail.com</p>
                         </div>
                         <div className={style.contacts__item}  >
                             <a href='https://www.fb.me/AplikacjeIStronyInternetowe' target='_blank' rel="noopener noreferrer" className={style.svg}><Facebbok /></a>

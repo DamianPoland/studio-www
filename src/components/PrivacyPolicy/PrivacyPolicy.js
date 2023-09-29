@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
                         <li>Niniejsza polityka dotyczy Serwisu www, funkcjonującego pod adresem url: <b>studio-www.com</b></li>
                         <li>Operatorem serwisu oraz Administratorem danych osobowych jest: studio-www ul. Filtrowa 27, Bydgoszcz, Poland</li>
 
-                        <li>Adres kontaktowy poczty elektronicznej operatora: info@studio-www.com</li>
+                        <li>Adres kontaktowy poczty elektronicznej operatora: studiowww.com@gmail.com</li>
 
                         <li>Operator jest Administratorem Twoich danych osobowych w odniesieniu do danych podanych dobrowolnie w Serwisie.</li>
                         <li>Serwis wykorzystuje dane osobowe w następujących celach:</li>
