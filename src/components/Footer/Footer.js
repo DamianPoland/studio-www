@@ -55,13 +55,13 @@ const Footer = () => {
 
                     <section className={style.desc__item}>
                         <p className={style.desc__title}>KONTAKT</p>
-                        <div className={style.desc__phone}>
+                        {/* <div className={style.desc__phone}>
                             <a href='tel:+48795631039' className={style.desc__contactSvgBig}><Phone /></a>
                             <p className={style.desc__phoneText}>+48 795-631-039</p>
-                        </div>
+                        </div> */}
                         <div className={style.desc__contact}>
 
-                            <a href={`http://maps.google.com/?q=studio-www, Bydgoszcz ul. Filtrowa 27`} target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
+                            <a href={`http://maps.google.com/?q=gdynia, Gdynia`} target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
                                 <Location className={style.desc__contactItemSvg} />
                                 <p className={style.desc__contactItemText}>Mapa</p>
                             </a>

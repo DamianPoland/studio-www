@@ -113,13 +113,13 @@ const Contact = () => {
                 <div className={style.contacts}>
                     <div className={style.contacts__container}>
                         <div className={style.contacts__item}>
-                            <a href={`http://maps.google.com/?q=studio-www, Bydgoszcz ul. Filtrowa 17`} target='_blank' rel="noopener noreferrer" className={style.svg}><Location /></a>
-                            <p className={style.contacts__desc}>Poland, Bydgoszcz, Filtrowa 27</p>
+                            <a href={`http://maps.google.com/?q=gdynia, Gdynia`} target='_blank' rel="noopener noreferrer" className={style.svg}><Location /></a>
+                            <p className={style.contacts__desc}>Poland, Gdynia</p>
                         </div>
-                        <div className={style.contacts__item}>
+                        {/* <div className={style.contacts__item}>
                             <a href='tel:+48795631039' className={style.svg}><Phone /></a>
                             <p className={style.contacts__desc}>+48 795-631-039</p>
-                        </div>
+                        </div> */}
                         <div className={style.contacts__item}>
                             <a href='mailto:studiowww.com@gmail.com?subject=Zapytanie' className={style.svg}><Email /></a>
                             <p className={style.contacts__desc}>studiowww.com@gmail.com</p>
